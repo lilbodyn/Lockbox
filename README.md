@@ -24,5 +24,6 @@ make build
 
 - [Вимоги до Lockbox](docs/PRD.md)
 - [Компоненти](docs/hardware-components.md)
+- [Звіт ЛР1, чернетка](docs/report.md)
 
 Прошивка почалася з [прикладу Wokwi для Nucleo-C031C6](https://github.com/wokwi/stm32-hello-wokwi). Його ліцензія збережена у `LICENSE`, ліцензії ST/CMSIS — у `firmware/Drivers`.
