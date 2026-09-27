@@ -9,6 +9,93 @@
       "top": 0,
       "left": 0,
       "attrs": {}
+    },
+    {
+      "type": "wokwi-mpu6050",
+      "id": "imu",
+      "top": -170,
+      "left": 260,
+      "attrs": {
+        "accelZ": "1"
+      }
+    },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "light",
+      "top": 70,
+      "left": 330,
+      "attrs": {
+        "lux": "10"
+      }
+    },
+    {
+      "type": "wokwi-pir-motion-sensor",
+      "id": "nearby",
+      "top": -160,
+      "left": -170,
+      "attrs": {
+        "delayTime": "1",
+        "inhibitTime": "0.2"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "mode",
+      "top": 190,
+      "left": -130,
+      "attrs": {
+        "color": "blue",
+        "label": "ОХОРОНА",
+        "bounce": "1"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "alarm",
+      "top": 190,
+      "left": 270,
+      "attrs": {
+        "color": "red",
+        "label": "ТРИВОГА"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "alarmR",
+      "top": 260,
+      "left": 270,
+      "attrs": {
+        "value": "1000"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "sclR",
+      "top": -70,
+      "left": 230,
+      "attrs": {
+        "value": "4700"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "sdaR",
+      "top": -30,
+      "left": 230,
+      "attrs": {
+        "value": "4700"
+      }
+    },
+    {
+      "type": "wokwi-logic-analyzer",
+      "id": "logic",
+      "top": -210,
+      "left": 530,
+      "attrs": {
+        "bufferSize": "3000000",
+        "channelNames": "SCL,SDA,UART_TX,PIR,ADC_MARK,BUTTON,HEARTBEAT,ALARM",
+        "triggerMode": "off"
+      }
     }
   ],
   "connections": [
@@ -22,6 +109,180 @@
       "$serialMonitor:RX",
       "nucleo:PA2",
       "",
+      []
+    ],
+    [
+      "imu:VCC",
+      "nucleo:3V3.1",
+      "green",
+      []
+    ],
+    [
+      "imu:GND",
+      "nucleo:GND.1",
+      "black",
+      []
+    ],
+    [
+      "imu:AD0",
+      "nucleo:GND.1",
+      "black",
+      []
+    ],
+    [
+      "imu:SCL",
+      "nucleo:PB8",
+      "green",
+      []
+    ],
+    [
+      "imu:SDA",
+      "nucleo:PB9",
+      "green",
+      []
+    ],
+    [
+      "sclR:1",
+      "nucleo:3V3.1",
+      "green",
+      []
+    ],
+    [
+      "sclR:2",
+      "nucleo:PB8",
+      "green",
+      []
+    ],
+    [
+      "sdaR:1",
+      "nucleo:3V3.1",
+      "green",
+      []
+    ],
+    [
+      "sdaR:2",
+      "nucleo:PB9",
+      "green",
+      []
+    ],
+    [
+      "light:VCC",
+      "nucleo:3V3.1",
+      "green",
+      []
+    ],
+    [
+      "light:GND",
+      "nucleo:GND.1",
+      "black",
+      []
+    ],
+    [
+      "light:AO",
+      "nucleo:PA0",
+      "green",
+      []
+    ],
+    [
+      "nearby:VCC",
+      "nucleo:5V.1",
+      "green",
+      []
+    ],
+    [
+      "nearby:GND",
+      "nucleo:GND.1",
+      "black",
+      []
+    ],
+    [
+      "nearby:OUT",
+      "nucleo:PA10",
+      "green",
+      []
+    ],
+    [
+      "mode:1.l",
+      "nucleo:PA1",
+      "green",
+      []
+    ],
+    [
+      "mode:2.l",
+      "nucleo:GND.1",
+      "black",
+      []
+    ],
+    [
+      "alarm:A",
+      "nucleo:PB5",
+      "green",
+      []
+    ],
+    [
+      "alarm:C",
+      "alarmR:1",
+      "green",
+      []
+    ],
+    [
+      "alarmR:2",
+      "nucleo:GND.1",
+      "black",
+      []
+    ],
+    [
+      "logic:GND",
+      "nucleo:GND.1",
+      "black",
+      []
+    ],
+    [
+      "logic:D0",
+      "nucleo:PB8",
+      "green",
+      []
+    ],
+    [
+      "logic:D1",
+      "nucleo:PB9",
+      "green",
+      []
+    ],
+    [
+      "logic:D2",
+      "nucleo:PA2",
+      "green",
+      []
+    ],
+    [
+      "logic:D3",
+      "nucleo:PA10",
+      "green",
+      []
+    ],
+    [
+      "logic:D4",
+      "nucleo:PA4",
+      "green",
+      []
+    ],
+    [
+      "logic:D5",
+      "nucleo:PA1",
+      "green",
+      []
+    ],
+    [
+      "logic:D6",
+      "nucleo:PA5",
+      "green",
+      []
+    ],
+    [
+      "logic:D7",
+      "nucleo:PB5",
+      "green",
       []
     ]
   ],
