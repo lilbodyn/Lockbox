@@ -1,0 +1,14 @@
+name: Lockbox checks
+on:
+  push:
+  pull_request:
+    branches: [main]
+jobs:
+  firmware-and-host:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - run: make build
+      - run: make test
+      - run: make sanitize
+      - run: make coverage
