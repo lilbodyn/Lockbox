@@ -1,0 +1,2 @@
+LB STATUS ms=500 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=1000 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0

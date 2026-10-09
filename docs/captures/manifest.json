@@ -1,0 +1,18 @@
+{
+  "i2c-register-success-full.vcd": {
+    "sha256": "69467444a8a9fab5511231b4889ebae1ec1918a4bee40dc15e21a14c8af54c9f",
+    "bytes": 13101984
+  },
+  "hal-bringup-failure-full.vcd": {
+    "sha256": "64836310bffb4fe7a51b55634521b1fa051ee45b5c85b9ce2d44a8dfca47cc35",
+    "bytes": 687741
+  },
+  "rx-delay-failure-full.vcd": {
+    "sha256": "b5c652c12858e32ac8d9b7794307a82eb63adbde5f8541df387630f999e8582a",
+    "bytes": 566184
+  },
+  "guard-rx-interrupt-full.vcd": {
+    "sha256": "afdd5daee21370ead5db2d974edf42ee63862e4222a37c7b32e987652e85848f",
+    "bytes": 28742886
+  }
+}

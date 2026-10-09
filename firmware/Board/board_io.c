@@ -3,26 +3,63 @@
 extern I2C_HandleTypeDef hi2c1;
 static ADC_HandleTypeDef light_adc;
 
-static bus_result_t result_of(HAL_StatusTypeDef result)
+static void byte_settle(void)
 {
-    if (result == HAL_OK) return BUS_OK;
-    if (result == HAL_TIMEOUT) return BUS_TIMEOUT;
-    if ((HAL_I2C_GetError(&hi2c1) & HAL_I2C_ERROR_AF) != 0) return BUS_NACK;
-    return BUS_IO_ERROR;
+    /* A wire byte takes 9 / 100 kHz = 90 us. The simulator exposes TXIS
+       before its queued transfer completes. Allow one byte plus 20 us.
+       This is board adaptation, not a change to the sensor driver. */
+    uint32_t before = SysTick->VAL, cycles = 0;
+    while (cycles < 110U * 48U) {
+        uint32_t after = SysTick->VAL;
+        cycles += before >= after ? before - after : before + SysTick->LOAD + 1U - after;
+        before = after;
+    }
+}
+static bus_result_t wait_flag(uint32_t flag, uint32_t started)
+{
+    for (;;) {
+        uint32_t flags = I2C1->ISR;
+        if ((flags & I2C_ISR_NACKF) != 0) return BUS_NACK;
+        if ((flags & (I2C_ISR_BERR | I2C_ISR_ARLO)) != 0) return BUS_IO_ERROR;
+        if ((flags & flag) != 0) return BUS_OK;
+        if (HAL_GetTick() - started >= 10) return BUS_TIMEOUT;
+    }
+}
+static bus_result_t transfer(uint8_t address, uint8_t *data, size_t length, bool reading)
+{
+    if (length == 0 || length > 255) return BUS_IO_ERROR;
+    I2C1->ICR = I2C_ICR_NACKCF | I2C_ICR_STOPCF | I2C_ICR_BERRCF | I2C_ICR_ARLOCF;
+    uint32_t started = HAL_GetTick();
+    I2C1->CR2 = ((uint32_t)address << 1) | ((uint32_t)length << 16) |
+        I2C_CR2_AUTOEND | I2C_CR2_START | (reading ? I2C_CR2_RD_WRN : 0U);
+    bus_result_t result = BUS_OK;
+    if (!reading) byte_settle();
+    for (size_t i = 0; i < length; ++i) {
+        result = wait_flag(reading ? I2C_ISR_RXNE : I2C_ISR_TXIS, started);
+        if (result != BUS_OK) break;
+        if (reading) data[i] = (uint8_t)I2C1->RXDR;
+        else { I2C1->TXDR = data[i]; byte_settle(); }
+    }
+    if (result == BUS_OK) result = wait_flag(I2C_ISR_STOPF, started);
+    if (result != BUS_OK) I2C1->CR2 |= I2C_CR2_STOP;
+    I2C1->ICR = I2C_ICR_NACKCF | I2C_ICR_STOPCF | I2C_ICR_BERRCF | I2C_ICR_ARLOCF;
+    I2C1->CR2 = 0;
+    return result;
 }
 static bus_result_t register_read(void *context, uint8_t address, uint8_t reg,
     uint8_t *data, size_t length)
 {
     (void)context;
-    return result_of(HAL_I2C_Mem_Read(&hi2c1, (uint16_t)address << 1, reg,
-        I2C_MEMADD_SIZE_8BIT, data, (uint16_t)length, 10));
+    bus_result_t result = transfer(address, &reg, 1, false);
+    return result == BUS_OK ? transfer(address, data, length, true) : result;
 }
 static bus_result_t register_write(void *context, uint8_t address, uint8_t reg,
     const uint8_t *data, size_t length)
 {
     (void)context;
-    return result_of(HAL_I2C_Mem_Write(&hi2c1, (uint16_t)address << 1, reg,
-        I2C_MEMADD_SIZE_8BIT, (uint8_t *)data, (uint16_t)length, 10));
+    if (length != 1) return BUS_IO_ERROR;
+    uint8_t frame[2] = {reg, data[0]};
+    return transfer(address, frame, sizeof frame, false);
 }
 register_bus_t board_register_bus(void)
 {

@@ -1,0 +1,188 @@
+{
+  "sha256": "2427b4eef772995ab2972c628bed13cef2c7aaaa1b28c6d86fd612dfa4c1fd84",
+  "uart_bytes": 13,
+  "scl_period_ns": 10000,
+  "adc_period_ns": null,
+  "heartbeat_intervals_ns": [],
+  "i2c": [
+    {
+      "start_ns": 2756375,
+      "bytes": [
+        {
+          "value": 208,
+          "ack": true,
+          "time_ns": 2846375
+        },
+        {
+          "value": 117,
+          "ack": true,
+          "time_ns": 2963875
+        }
+      ],
+      "end_ns": 3012150,
+      "end": "RESTART"
+    },
+    {
+      "start_ns": 3012150,
+      "bytes": [
+        {
+          "value": 209,
+          "ack": true,
+          "time_ns": 3102150
+        },
+        {
+          "value": 235,
+          "ack": false,
+          "time_ns": 3192150
+        }
+      ],
+      "end_ns": 3207150,
+      "end": "STOP"
+    },
+    {
+      "start_ns": 3234175,
+      "bytes": [
+        {
+          "value": 208,
+          "ack": true,
+          "time_ns": 3324175
+        },
+        {
+          "value": 59,
+          "ack": true,
+          "time_ns": 3441675
+        }
+      ],
+      "end_ns": 3489950,
+      "end": "RESTART"
+    },
+    {
+      "start_ns": 3489950,
+      "bytes": [
+        {
+          "value": 209,
+          "ack": true,
+          "time_ns": 3579950
+        },
+        {
+          "value": 253,
+          "ack": false,
+          "time_ns": 3669950
+        },
+        {
+          "value": 221,
+          "ack": false,
+          "time_ns": 3759950
+        },
+        {
+          "value": 255,
+          "ack": false,
+          "time_ns": 3849950
+        },
+        {
+          "value": 255,
+          "ack": false,
+          "time_ns": 3939950
+        },
+        {
+          "value": 239,
+          "ack": false,
+          "time_ns": 4029950
+        },
+        {
+          "value": 255,
+          "ack": false,
+          "time_ns": 4119950
+        }
+      ],
+      "end_ns": 4134950,
+      "end": "STOP"
+    }
+  ],
+  "signals": {
+    "PIR": [
+      [
+        0,
+        0
+      ]
+    ],
+    "ADC_MARK": [
+      [
+        0,
+        0
+      ]
+    ],
+    "BUTTON": [
+      [
+        0,
+        1
+      ]
+    ],
+    "HEARTBEAT": [
+      [
+        0,
+        1
+      ]
+    ],
+    "ALARM": [
+      [
+        0,
+        1
+      ]
+    ]
+  },
+  "uart_byte_times_ns": [
+    [
+      6829175,
+      76
+    ],
+    [
+      6922325,
+      66
+    ],
+    [
+      7015475,
+      32
+    ],
+    [
+      7108625,
+      80
+    ],
+    [
+      7201775,
+      82
+    ],
+    [
+      7294925,
+      79
+    ],
+    [
+      7388075,
+      66
+    ],
+    [
+      7483725,
+      69
+    ],
+    [
+      7576875,
+      32
+    ],
+    [
+      7670025,
+      109
+    ],
+    [
+      7763175,
+      115
+    ],
+    [
+      7856325,
+      61
+    ],
+    [
+      7949475,
+      249
+    ]
+  ]
+}

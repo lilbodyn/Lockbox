@@ -1,0 +1,2 @@
+LB EVENT seq=9 ms=100998 type=DISARMED mode=OFF cause=0 adc=999 ax=399 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB STATUS ms=101000 mode=OFF cause=0 adc=999 mv=805 ax=399 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=9 overwritten=0 dropped=0 rx_errors=0

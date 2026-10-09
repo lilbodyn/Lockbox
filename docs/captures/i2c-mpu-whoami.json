@@ -1,0 +1,76 @@
+{
+  "sha256": "e6a1b57fa3a7c1bc5c0fccbb67c294151028043df23e1a783b758532e031236d",
+  "uart_bytes": 0,
+  "scl_period_ns": 10000,
+  "adc_period_ns": null,
+  "heartbeat_intervals_ns": [],
+  "i2c": [
+    {
+      "start_ns": 127100,
+      "bytes": [
+        {
+          "value": 208,
+          "ack": true,
+          "time_ns": 217100
+        },
+        {
+          "value": 117,
+          "ack": true,
+          "time_ns": 334600
+        }
+      ],
+      "end_ns": 382875,
+      "end": "RESTART"
+    },
+    {
+      "start_ns": 382875,
+      "bytes": [
+        {
+          "value": 209,
+          "ack": true,
+          "time_ns": 472875
+        },
+        {
+          "value": 235,
+          "ack": false,
+          "time_ns": 562875
+        }
+      ],
+      "end_ns": 577875,
+      "end": "STOP"
+    }
+  ],
+  "signals": {
+    "PIR": [
+      [
+        0,
+        0
+      ]
+    ],
+    "ADC_MARK": [
+      [
+        0,
+        0
+      ]
+    ],
+    "BUTTON": [
+      [
+        0,
+        1
+      ]
+    ],
+    "HEARTBEAT": [
+      [
+        0,
+        1
+      ]
+    ],
+    "ALARM": [
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "uart_byte_times_ns": []
+}

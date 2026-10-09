@@ -1,0 +1,6 @@
+LB BOOT project=Lockbox lab=2 mode=OFF
+LB SELFTEST device=MPU6050 addr=0x68 expected_id=0x68 result=OK sample_ok=1
+LB SELFTEST device=LDR result=READABLE adc=3413
+LB SELFTEST device=PIR result=READABLE level=0
+LB READY sample_ms=20 heartbeat_ms=500 debounce_ms=30 calibration_samples=25
+LB HELP status|arm|disarm|probe|nack|journal|help|imu 68|imu 69; LF executes

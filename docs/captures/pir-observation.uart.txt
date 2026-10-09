@@ -1,0 +1,6 @@
+LB EVENT seq=5 ms=73741 type=MOTION_ON mode=ALARM cause=3 adc=999 ax=399 ay=0 az=1000 pir=1 imu_ok=1 adc_ok=1
+LB DIAG ms=73849 sampling_addr=0x69
+LB EVENT seq=6 ms=73860 type=IMU_FAULT mode=ALARM cause=3 adc=999 ax=399 ay=0 az=1000 pir=1 imu_ok=0 adc_ok=1
+LB STATUS ms=74000 mode=ALARM cause=3 adc=999 mv=805 ax=399 ay=0 az=1000 pir=1 imu_ok=0 adc_ok=1 records=6 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=74500 mode=ALARM cause=3 adc=999 mv=805 ax=399 ay=0 az=1000 pir=1 imu_ok=0 adc_ok=1 records=6 overwritten=0 dropped=0 rx_errors=0
+LB EVENT seq=7 ms=74760 type=MOTION_OFF mode=ALARM cause=3 adc=999 ax=399 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1
