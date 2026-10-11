@@ -1,0 +1,14 @@
+/Library/Developer/CommandLineTools/usr/bin/make -C tests sanitize
+mkdir -p build/Darwin-arm64
+cc -std=c11 -Wall -Wextra -Werror -g -I../firmware/Sensors -I../firmware/Guard -fsanitize=address,undefined -fno-omit-frame-pointer test_lockbox.c ../firmware/Sensors/mpu6050.c ../firmware/Sensors/analog.c ../firmware/Guard/guard.c ../firmware/Guard/commands.c -o build/Darwin-arm64/sanitized
+./build/Darwin-arm64/sanitized
+PASS register order and all bus error positions
+PASS signed acceleration ADC and median
+PASS debounce hold startup and tick wrap
+PASS calibration stability timeout and boundaries
+PASS shock threshold vector latch and disarm
+PASS light threshold persistence glitch drift and invalid data
+PASS concurrent causes PIR fault and recovery
+PASS event snapshots ordering and journal overwrite
+PASS UART grammar overflow and recovery
+PASS actual captured UART acceleration payloads

@@ -1,0 +1,56 @@
+/Library/Developer/CommandLineTools/usr/bin/make -C tests coverage
+mkdir -p coverage/Darwin-arm64
+rm -f coverage/Darwin-arm64/*.gcda coverage/Darwin-arm64/*.gcno
+clang -std=c11 -Wall -Wextra -Werror -g -I../firmware/Sensors -I../firmware/Guard --coverage test_lockbox.c ../firmware/Sensors/mpu6050.c ../firmware/Sensors/analog.c ../firmware/Guard/guard.c ../firmware/Guard/commands.c -o coverage/Darwin-arm64/test_lockbox
+./coverage/Darwin-arm64/test_lockbox
+PASS register order and all bus error positions
+PASS signed acceleration ADC and median
+PASS debounce hold startup and tick wrap
+PASS calibration stability timeout and boundaries
+PASS shock threshold vector latch and disarm
+PASS light threshold persistence glitch drift and invalid data
+PASS concurrent causes PIR fault and recovery
+PASS event snapshots ordering and journal overwrite
+PASS UART grammar overflow and recovery
+PASS actual captured UART acceleration payloads
+cd coverage/Darwin-arm64 && xcrun llvm-cov gcov -b -c *.gcno
+../firmware/Sensors/analog.c: No such file or directory
+../firmware/Guard/commands.c: No such file or directory
+../firmware/Guard/guard.c: No such file or directory
+../firmware/Sensors/mpu6050.c: No such file or directory
+test_lockbox.c: No such file or directory
+File '../firmware/Sensors/analog.c'
+Lines executed:100.00% of 7
+Branches executed:100.00% of 8
+Taken at least once:100.00% of 8
+No calls
+Creating 'analog.c.gcov'
+
+File '../firmware/Guard/commands.c'
+Lines executed:100.00% of 16
+Branches executed:100.00% of 12
+Taken at least once:100.00% of 12
+No calls
+Creating 'commands.c.gcov'
+
+File '../firmware/Guard/guard.c'
+Lines executed:100.00% of 136
+Branches executed:100.00% of 102
+Taken at least once:97.06% of 102
+No calls
+Creating 'guard.c.gcov'
+
+File '../firmware/Sensors/mpu6050.c'
+Lines executed:100.00% of 48
+Branches executed:100.00% of 21
+Taken at least once:100.00% of 21
+No calls
+Creating 'mpu6050.c.gcov'
+
+File 'test_lockbox.c'
+Lines executed:100.00% of 232
+Branches executed:100.00% of 288
+Taken at least once:62.15% of 288
+No calls
+Creating 'test_lockbox.c.gcov'
+

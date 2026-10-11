@@ -1,0 +1,54 @@
+python3 tools/check_layers.py
+PASS portable include graph and hardware independence
+python3 tools/check_wiring.py
+PASS Lockbox simultaneous wiring, analyzer channels and .ioc
+make -C tests test
+make[1]: Entering directory '/workspace/tests'
+mkdir -p build/Linux-aarch64
+cc -std=c11 -Wall -Wextra -Werror -g -I../firmware/Sensors -I../firmware/Guard test_lockbox.c ../firmware/Sensors/mpu6050.c ../firmware/Sensors/analog.c ../firmware/Guard/guard.c ../firmware/Guard/commands.c -o build/Linux-aarch64/test_lockbox
+test_lockbox.c: In function 'test_calibration':
+test_lockbox.c:118:9: error: this 'if' clause does not guard... [-Werror=misleading-indentation]
+  118 |         if(variant==0)s.imu_ok=false; if(variant==1)s.adc_ok=false;
+      |         ^~
+test_lockbox.c:118:39: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  118 |         if(variant==0)s.imu_ok=false; if(variant==1)s.adc_ok=false;
+      |                                       ^~
+test_lockbox.c:119:9: error: this 'if' clause does not guard... [-Werror=misleading-indentation]
+  119 |         if(variant==2)s.accel.z=799; if(variant==3)s.accel.z=1201;
+      |         ^~
+test_lockbox.c:119:38: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  119 |         if(variant==2)s.accel.z=799; if(variant==3)s.accel.z=1201;
+      |                                      ^~
+test_lockbox.c: In function 'test_light':
+test_lockbox.c:153:5: error: this 'for' clause does not guard... [-Werror=misleading-indentation]
+  153 |     for(unsigned i=0;i<10;++i)guard_observe(&g,s,540+i*20);assert(g.causes==0);
+      |     ^~~
+In file included from test_lockbox.c:4:
+test_lockbox.c:153:60: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  153 |     for(unsigned i=0;i<10;++i)guard_observe(&g,s,540+i*20);assert(g.causes==0);
+      |                                                            ^~~~~~
+test_lockbox.c:155:5: error: this 'for' clause does not guard... [-Werror=misleading-indentation]
+  155 |     for(unsigned i=0;i<10;++i)guard_observe(&g,s,520+i*20);assert(g.causes==0);
+      |     ^~~
+In file included from test_lockbox.c:4:
+test_lockbox.c:155:60: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  155 |     for(unsigned i=0;i<10;++i)guard_observe(&g,s,520+i*20);assert(g.causes==0);
+      |                                                            ^~~~~~
+test_lockbox.c:160:5: error: this 'for' clause does not guard... [-Werror=misleading-indentation]
+  160 |     for(unsigned i=0;i<4;++i)guard_observe(&g,s,520+i*20);assert(g.causes==CAUSE_LIGHT);
+      |     ^~~
+In file included from test_lockbox.c:4:
+test_lockbox.c:160:59: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  160 |     for(unsigned i=0;i<4;++i)guard_observe(&g,s,520+i*20);assert(g.causes==CAUSE_LIGHT);
+      |                                                           ^~~~~~
+test_lockbox.c:165:5: error: this 'for' clause does not guard... [-Werror=misleading-indentation]
+  165 |     for(unsigned i=0;i<10;++i)guard_observe(&g,s,940+i*20);assert(g.causes==0);
+      |     ^~~
+In file included from test_lockbox.c:4:
+test_lockbox.c:165:60: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  165 |     for(unsigned i=0;i<10;++i)guard_observe(&g,s,940+i*20);assert(g.causes==0);
+      |                                                            ^~~~~~
+cc1: all warnings being treated as errors
+make[1]: *** [Makefile:13: build/Linux-aarch64/test_lockbox] Error 1
+make: *** [Makefile:19: test] Error 2
+make[1]: Leaving directory '/workspace/tests'

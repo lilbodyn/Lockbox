@@ -1,0 +1,95 @@
+python3 tools/check_layers.py
+PASS portable include graph and hardware independence
+python3 tools/check_wiring.py
+PASS Lockbox simultaneous wiring, analyzer channels and .ioc
+make -C tests test
+make[1]: Entering directory '/workspace/tests'
+mkdir -p build/Linux-aarch64
+cc -std=c11 -Wall -Wextra -Werror -g -I../firmware/Sensors -I../firmware/Guard test_lockbox.c ../firmware/Sensors/mpu6050.c ../firmware/Sensors/analog.c ../firmware/Guard/guard.c ../firmware/Guard/commands.c -o build/Linux-aarch64/test_lockbox
+./build/Linux-aarch64/test_lockbox
+PASS register order and all bus error positions
+PASS signed acceleration ADC and median
+PASS debounce hold startup and tick wrap
+PASS calibration stability timeout and boundaries
+PASS shock threshold vector latch and disarm
+PASS light threshold persistence glitch drift and invalid data
+PASS concurrent causes PIR fault and recovery
+PASS event snapshots ordering and journal overwrite
+PASS UART grammar overflow and recovery
+PASS actual captured UART acceleration payloads
+make[1]: Leaving directory '/workspace/tests'
+make -C tests sanitize
+make[1]: Entering directory '/workspace/tests'
+mkdir -p build/Linux-aarch64
+cc -std=c11 -Wall -Wextra -Werror -g -I../firmware/Sensors -I../firmware/Guard -fsanitize=address,undefined -fno-omit-frame-pointer test_lockbox.c ../firmware/Sensors/mpu6050.c ../firmware/Sensors/analog.c ../firmware/Guard/guard.c ../firmware/Guard/commands.c -o build/Linux-aarch64/sanitized
+./build/Linux-aarch64/sanitized
+PASS register order and all bus error positions
+PASS signed acceleration ADC and median
+PASS debounce hold startup and tick wrap
+PASS calibration stability timeout and boundaries
+PASS shock threshold vector latch and disarm
+PASS light threshold persistence glitch drift and invalid data
+PASS concurrent causes PIR fault and recovery
+PASS event snapshots ordering and journal overwrite
+PASS UART grammar overflow and recovery
+PASS actual captured UART acceleration payloads
+make[1]: Leaving directory '/workspace/tests'
+make -C tests coverage
+make[1]: Entering directory '/workspace/tests'
+mkdir -p coverage/Linux-aarch64
+rm -f coverage/Linux-aarch64/*.gcda coverage/Linux-aarch64/*.gcno
+cc -std=c11 -Wall -Wextra -Werror -g -I../firmware/Sensors -I../firmware/Guard --coverage test_lockbox.c ../firmware/Sensors/mpu6050.c ../firmware/Sensors/analog.c ../firmware/Guard/guard.c ../firmware/Guard/commands.c -o coverage/Linux-aarch64/test_lockbox
+./coverage/Linux-aarch64/test_lockbox
+PASS register order and all bus error positions
+PASS signed acceleration ADC and median
+PASS debounce hold startup and tick wrap
+PASS calibration stability timeout and boundaries
+PASS shock threshold vector latch and disarm
+PASS light threshold persistence glitch drift and invalid data
+PASS concurrent causes PIR fault and recovery
+PASS event snapshots ordering and journal overwrite
+PASS UART grammar overflow and recovery
+PASS actual captured UART acceleration payloads
+cd coverage/Linux-aarch64 && gcov -b -c *.gcno
+Cannot open source file ../firmware/Sensors/analog.c
+Cannot open source file ../firmware/Guard/commands.c
+Cannot open source file ../firmware/Guard/guard.c
+Cannot open source file ../firmware/Sensors/mpu6050.c
+Cannot open source file test_lockbox.c
+File '../firmware/Sensors/analog.c'
+Lines executed:100.00% of 7
+Branches executed:100.00% of 6
+Taken at least once:100.00% of 6
+No calls
+Creating 'analog.c.gcov'
+
+File '../firmware/Guard/commands.c'
+Lines executed:100.00% of 15
+Branches executed:100.00% of 14
+Taken at least once:100.00% of 14
+No calls
+Creating 'commands.c.gcov'
+
+File '../firmware/Guard/guard.c'
+Lines executed:100.00% of 122
+Branches executed:100.00% of 114
+Taken at least once:97.37% of 114
+Calls executed:100.00% of 17
+Creating 'guard.c.gcov'
+
+File '../firmware/Sensors/mpu6050.c'
+Lines executed:100.00% of 42
+Branches executed:100.00% of 23
+Taken at least once:100.00% of 23
+Calls executed:100.00% of 10
+Creating 'mpu6050.c.gcov'
+
+File 'test_lockbox.c'
+Lines executed:100.00% of 222
+Branches executed:100.00% of 298
+Taken at least once:63.42% of 298
+Calls executed:66.26% of 243
+Creating 'test_lockbox.c.gcov'
+
+Lines executed:100.00% of 408
+make[1]: Leaving directory '/workspace/tests'

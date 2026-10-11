@@ -7,7 +7,7 @@
 static mpu6050_t imu;
 static guard_t guard;
 static command_input_t input;
-static uint32_t sampled, heartbeat, printed, retry;
+static uint32_t sampled, heartbeat, printed, retry, rx_errors;
 static bool imu_ready, adc_ready;
 static acceleration_t acceleration;
 static uint16_t light;
@@ -24,12 +24,12 @@ static void print_event(void *context, const guard_event_t *event)
 }
 static void status(uint32_t now)
 {
-    serial_line("LB STATUS ms=%lu mode=%s cause=%u adc=%u mv=%lu ax=%ld ay=%ld az=%ld pir=%u imu_ok=%u adc_ok=%u records=%u overwritten=%lu dropped=%lu\r\n",
+    serial_line("LB STATUS ms=%lu mode=%s cause=%u adc=%u mv=%lu ax=%ld ay=%ld az=%ld pir=%u imu_ok=%u adc_ok=%u records=%u overwritten=%lu dropped=%lu rx_errors=%lu\r\n",
         (unsigned long)now, guard_mode_name(guard.mode), guard.causes, light,
         (unsigned long)adc_to_mv(light), (long)acceleration.x, (long)acceleration.y,
         (long)acceleration.z, guard.current.pir, guard.current.imu_ok, guard.current.adc_ok,
         guard.journal_count, (unsigned long)guard.overwritten,
-        (unsigned long)serial_dropped_lines());
+        (unsigned long)serial_dropped_lines(), (unsigned long)serial_rx_errors());
 }
 static void probe(bool wrong_address, uint32_t now)
 {
@@ -73,6 +73,7 @@ static void execute(command_t command, uint32_t now)
 }
 void lockbox_start(void)
 {
+    serial_start();
     adc_ready = board_io_start();
     guard_init(&guard, board_button_pressed(), HAL_GetTick());
     guard.on_event = print_event;
@@ -99,6 +100,12 @@ void lockbox_poll(void)
     uint32_t now = HAL_GetTick();
     guard_button(&guard, board_button_pressed(), now);
     char byte;
+    uint32_t errors = serial_rx_errors();
+    if (errors != rx_errors) {
+        rx_errors = errors;
+        input.overflow = true;
+        serial_line("LB RX result=ERROR count=%lu; current line rejected\r\n", (unsigned long)errors);
+    }
     if (serial_receive(&byte)) execute(command_feed(&input, byte), now);
     if (now - sampled >= 20) {
         sampled = now;

@@ -2,3 +2,4 @@
 version = 1
 firmware = 'firmware/build/lockbox.hex'
 elf = 'firmware/build/lockbox.elf'
+rfc2217ServerPort = 4007
