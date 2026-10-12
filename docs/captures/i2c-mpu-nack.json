@@ -1,26 +1,26 @@
 {
-  "sha256": "903c6567470a5b0d824754c26307d4607ccfad02b36c52e9e96d74fda765a3c6",
-  "uart_bytes": 2,
+  "sha256": "4ccc1e1f7c5eb47234435fe6395a5fa01f327626dd3fa2928a1ac06f3321cff5",
+  "uart_bytes": 0,
   "scl_period_ns": 10000,
   "adc_period_ns": null,
   "heartbeat_intervals_ns": [],
   "i2c": [
     {
-      "start_ns": 4074175,
+      "start_ns": 84175,
       "bytes": [
         {
           "value": 210,
           "ack": false,
-          "time_ns": 4164175
+          "time_ns": 174175
         }
       ],
-      "end_ns": 4179175,
+      "end_ns": 189175,
       "end": "STOP"
     },
     {
-      "start_ns": 4195925,
+      "start_ns": 205925,
       "bytes": [],
-      "end_ns": 4205925,
+      "end_ns": 215925,
       "end": "STOP"
     }
   ],
@@ -56,14 +56,5 @@
       ]
     ]
   },
-  "uart_byte_times_ns": [
-    [
-      6771600,
-      76
-    ],
-    [
-      6864750,
-      66
-    ]
-  ]
+  "uart_byte_times_ns": []
 }

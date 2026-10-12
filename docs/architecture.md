@@ -7,6 +7,7 @@ flowchart TB
   core["Core: startup, clock, периферія"] --> board["Board: scheduler, UART, pins"]
   board --> sensors["Sensors: MPU6050 і перерахунок ADC"]
   board --> guard["Guard: режими, причини, журнал"]
+  guard --> sensors
   board --> hal["ST HAL / CMSIS"]
   sensors --> bus["register_bus_t: read/write callbacks"]
   board --> bus

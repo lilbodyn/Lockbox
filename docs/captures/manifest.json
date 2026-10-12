@@ -1,4 +1,8 @@
 {
+  "light-first-full.vcd": {
+    "sha256": "73734a8c90e04cecab3c6a29b4b89b6ea03b1782f02277837521e7ee8b20afc4",
+    "bytes": 10940702
+  },
   "i2c-register-success-full.vcd": {
     "sha256": "69467444a8a9fab5511231b4889ebae1ec1918a4bee40dc15e21a14c8af54c9f",
     "bytes": 13101984
@@ -6,6 +10,10 @@
   "hal-bringup-failure-full.vcd": {
     "sha256": "64836310bffb4fe7a51b55634521b1fa051ee45b5c85b9ce2d44a8dfca47cc35",
     "bytes": 687741
+  },
+  "pir-only-armed-full.vcd": {
+    "sha256": "b3f2686ae6b81a4979fecc2fc0953e51e4a7e03bbb75d9c8c035bed386ac40d0",
+    "bytes": 49209844
   },
   "rx-delay-failure-full.vcd": {
     "sha256": "b5c652c12858e32ac8d9b7794307a82eb63adbde5f8541df387630f999e8582a",

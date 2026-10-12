@@ -1,0 +1,3 @@
+# Preserve decoded UART CRLF bytes as captured evidence.
+docs/captures/*.uart.txt -text whitespace=cr-at-eol
+docs/validation/*.uart.txt -text whitespace=cr-at-eol

@@ -1,0 +1,21 @@
+digraph Lockbox {
+  graph [rankdir=TB, bgcolor="white", pad="0.15", nodesep="0.35", ranksep="0.45"];
+  node [shape=box, style="rounded,filled", fillcolor="#f3f6f8", color="#364a5c", fontname="Times New Roman", fontsize=18, margin="0.18,0.12"];
+  edge [color="#364a5c", arrowsize=0.8];
+  core [label="Core\nstartup · clock · main"];
+  runtime [label="Board / runtime.c\nпланування · команди · UART"];
+  io [label="Board / board_io.c\nGPIO · ADC · I²C"];
+  serial [label="Board / serial.c\nбуфер USART2"];
+  sensor [label="Sensors\nMPU6050\nmedian3 · ADC → mV"];
+  guard [label="Guard\nрежими · кнопка\nSHOCK · LIGHT\nжурнал RAM"];
+  hal [label="ST HAL / CMSIS\nрегістри й ініціалізація"];
+  bus [label="register_bus_t\ncontext · read · write"];
+  tests [label="Host tests\nfake registers · mock order", fillcolor="#ffffff", style="rounded,dashed"];
+  core -> runtime;
+  runtime -> io; runtime -> serial; runtime -> sensor; runtime -> guard;
+  io -> hal; serial -> hal; io -> bus; sensor -> bus;
+  guard -> sensor [label="acceleration_t", constraint=false, fontname="Times New Roman", fontsize=12];
+  tests -> sensor [style=dashed]; tests -> guard [style=dashed];
+  {rank=same; io; sensor; guard}
+  {rank=same; hal; bus; serial}
+}

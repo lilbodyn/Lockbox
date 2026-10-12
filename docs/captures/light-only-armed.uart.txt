@@ -1,0 +1,3 @@
+LB STATUS ms=23000 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=23500 mode=ARMED cause=0 adc=999 mv=805 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB EVENT seq=3 ms=23541 type=LIGHT mode=ALARM cause=2 adc=999 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1

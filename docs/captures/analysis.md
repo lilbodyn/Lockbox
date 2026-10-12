@@ -6,7 +6,7 @@
 
 VCD має timescale 1 ns. Це роздільність часових позначок симулятора, не частота фізичного sampler. Аналізатор triggerMode=off, bufferSize=3000000 переходів. Канали D0 SCL/PB8; D1 SDA/PB9; D2 UART_TX/PA2; D3 PIR/PA10; D4 ADC_MARK/PA4; D5 BUTTON/PA1; D6 HEARTBEAT/PA5; D7 ALARM/PB5. Вхідна земля спільна.
 
-Для SR імпорт sigrok-cli 0.7.2 `-I vcd:downsample=50` дає 20 MHz. Записи починаються разом із симуляцією. I2C decoder: `i2c:scl=SCL:sda=SDA`; UART: `uart:rx=UART_TX:baudrate=115200`. `*.decode.txt` є справжнім експортом sigrok, `*.uart.txt` незалежним декодуванням capture.py. `*.pvs` налаштовує перегляд, не змінює сигналів.
+Для I2C/UART SR імпорт sigrok-cli 0.7.2 `-I vcd:downsample=50` дає 20 MHz. ADC SR імпортовано на 200 kHz, button/PIR SR на 20 kHz для оглядових знімків. Точні часові значення нижче обчислені з вихідних VCD, а не з оглядових SR. Записи починаються разом із симуляцією. I2C decoder: `i2c:scl=SCL:sda=SDA`; UART: `uart:rx=UART_TX:baudrate=115200`. `*.decode.txt` є справжнім експортом sigrok, `*.uart.txt` незалежним декодуванням capture.py. `*.pvs` налаштовує перегляд, не змінює сигналів.
 
 Команди `probe` і `nack` із LF повторюють WHO_AM_I/6-byte acceleration та звернення 0x69. `imu 69` задає постійну контрольовану помилку, `imu 68` повертає адресу 0x68. AD0 у схемі залишається GND. I2C driver read бере лише 0x3B…0x40, не температуру/gyro.
 
@@ -39,3 +39,7 @@ PIR rising=73.741532075 s, falling=74.741532100 s, high width=1.000000025 s. П�
 20223 ms ARMING; 20721 ARMED, 498 ms stable calibration. 26701 SHOCK, ax399/cause1. 53641 LIGHT, ADC999/cause3. 63390 NACK diagnostic. 73741 MOTION_ON/cause3; 73860 IMU_FAULT; 74760 MOTION_OFF; 78223 IMU_RECOVERED/cause3. 100998 DISARMED/cause0. `journal` повернув дев'ять записів у правильному порядку.
 
 Host vectors у tests/fixtures/captured_acceleration.h взято з реально декодованих UART payloads, не з невідповідних SDA read annotations. Fake bus відтворює ці 6-byte frame, tests перевіряють mg. Послідовність register writes 6B00,1A03,1909,1C08 окремо перевіряє recording mock. Синтетичні boundary vectors для threshold349/350 і599/600 прямо позначені тестами, не записами симулятора.
+
+## Додаткове приймання на фінальному ELF
+
+Другий запуск із кнопкою дав MOTION_ON у ARMED, ms21241,cause0, і MOTION_OFF ms22241,cause0. Окремий запуск дав LIGHT ms23541,cause2 при ax0, потім SHOCK ms43081,cause3. Отже PIR сам не встановлює тривогу, LIGHT спрацьовує до SHOCK, обидва порядки причин перевірені реальними запусками. Вирізки pir-only-armed, light-only-armed та shock-after-light походять з відповідних повних VCD у manifest.json. Вендор, driver та guard не змінювались після попередніх перевірок.

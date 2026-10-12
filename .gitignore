@@ -4,3 +4,5 @@ wokwi.vcd
 *.swp
 tests/build/
 tests/coverage/
+.uart-venv/
+__pycache__/

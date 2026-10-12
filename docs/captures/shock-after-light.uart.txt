@@ -1,0 +1,2 @@
+LB STATUS ms=43000 mode=ALARM cause=2 adc=999 mv=805 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0
+LB EVENT seq=4 ms=43081 type=SHOCK mode=ALARM cause=3 adc=999 ax=399 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1

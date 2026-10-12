@@ -1,0 +1,6 @@
+LB STATUS ms=21000 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB EVENT seq=3 ms=21241 type=MOTION_ON mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=1 imu_ok=1 adc_ok=1
+LB STATUS ms=21500 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=1 imu_ok=1 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=22000 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=1 imu_ok=1 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0
+LB EVENT seq=4 ms=22241 type=MOTION_OFF mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB STATUS ms=22500 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=4 overwritten=0 dropped=0 rx_errors=0
