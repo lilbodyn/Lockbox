@@ -78,3 +78,4 @@ Erase повернувся до VERIFY_FAIL page1 offset0 word0x00000000 зам�
 
 ## Додаткове порівняльне випробування поточного ELF
 Схему, стимул і UART див. у `docs/lab3/fault-fixture` та `docs/metrics/fault-20261101`; повний VCD збережений у Lab03/Work. SDA штучно утримувалась LOW 10–13 с модельного часу; зафіксовані IMU_FAULT і IMU_RECOVERED. PIR high/low у OFF — синтетичний сигнал; окремий тест в ARMED дав cause=0, LIGHT дав cause=2. Не переносити старі Lab2 результати на цей ELF без повторення.
+Для порівняння startup і SHOCK збережено окремий тестовий I²C fixture: NACK→ACK і 399 mg після ARMED. Повний VCD та хеш наведені в актуальному статусі; фізичний датчик не випробувано.

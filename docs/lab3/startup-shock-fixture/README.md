@@ -1,0 +1,3 @@
+# Startup and shock synthetic I²C fixture
+
+This custom Wokwi I²C test interface is not an MPU or physical sensor. It returns NACK for four model seconds, then acknowledges 0x68, supplies WHO_AM_I=0x68 and synthetic accelerometer registers. At 25 seconds its x-axis changes from 0 to 0x0ccc (399 mg at 8192 LSB/g), z remains 0x2000 (1000 mg). In this recording `arm` occurred after recovery, and UART confirmed ARMED before SHOCK/cause=1. VCD confirms ALARM rise at 25.007391625 s. Full capture SHA-256 `a4d094aa48ef782a701ceaf352fbd7742cdc8a99ea84da176fd62b4e78fe64e3` is in Lab03/Work. Collector connected after startup, so early boot/self-test are decoded independently from the VCD. Tested ELF SHA-256 `591c0ee8923ab6f66ceacc4acad3c561a040eec68663a281db92708c3abaa2a1`.
