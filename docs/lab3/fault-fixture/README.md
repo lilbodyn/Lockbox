@@ -1,0 +1,3 @@
+# Controlled SDA and PIR fixture
+
+Wokwi digital model only. This custom component drives PIR high from 6 to 7 seconds and SDA low from 10 to 13 seconds after model startup; it does not emulate a physical PIR or sensor disconnection. Diagram connects it to the existing MPU and firmware. Firmware source `484fae964f8e7cb1`, ELF SHA-256 `591c0ee8923ab6f66ceacc4acad3c561a040eec68663a281db92708c3abaa2a1`, HEX `6bdc00688a6d26ef0f7743f005319e3b14fb4e655df73d489e3cd2610d153182`. Full VCD SHA-256 `20201ab9b3408f3d6dfc78deb87c89660b2bcfc98b7e46e31fb2180ef1c1b53d` retained in Lab03/Work. Raw collector connected after the initial PIR and fault events; those events were decoded from the VCD UART, not invented from collector output.

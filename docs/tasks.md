@@ -23,3 +23,5 @@ IRQ використовуються для USART2 RX, timestamp EXTI PA1/PA10 �
 `stats` форматує кілька рядків синхронно і сам навантажує цикл. Його час входить до наступного вікна статистики. Це окремий діагностичний вплив, який треба показувати, а не приховувати.
 
 Uptime Guard накопичується з unsigned різниць TIM3 через `uptime_update`; `stats reset` його не скидає. Це зберігає мілісекундний uptime через 32-bit microsecond wrap і не покладається на кількість SysTick ISR після flash stall. HAL tick лишається часовою базою vendor HAL. I²C register wait має timeout10000 мкс за TIM3. Це ще не підтверджено реальним flash stall.
+
+Додаткова перевірка поточного ELF: SDA LOW 10–13 с моделі, IMU_FAULT 10026 мс і IMU_RECOVERED 14009 мс, heartbeat тривав. Синтетичний PIR в OFF дав MOTION_ON/OFF без alarm cause. Не перевірено startup неготового підключеного датчика та нові стимули PIR в ARMED, SHOCK/LIGHT на цьому ELF. Див. [актуальний стан](lab3-status-20261101.md).

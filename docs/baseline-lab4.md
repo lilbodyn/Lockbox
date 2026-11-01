@@ -75,3 +75,6 @@ TIM3 1 MHz має 16-bit wrap кожні 65.536 мс. Кандидат нако�
 Erase повернувся до VERIFY_FAIL page1 offset0 word0x00000000 замість FF, SR=CR=0; failed1/ticket0. Код verify виконується після HAL_OK, реєстри зчитані після Lock. Успішний program/CRC/durability не підтверджено; загальна непідтримка моделі не встановлена. Деталі й raw у `docs/metrics/pilot-1fe-20261028-r2/`, шляхи від кореня repo; із цієї папки metrics це `pilot-1fe-20261028-r2/`.
 
 Кандидат2c6940d3488ab256 прибирає UIF/IRQ high-word. Атомарне накопичення raw CNT виконується також із SysTick, щоб HAL startup wait не пропускав читання. Строга умова: інтервал читання<65536 мкс; її треба звірити незалежним VCD. 400000 host counter-кроків через16/32-bit wrap, негативний приклад uint32-backstep, macOS/Linux tests та sanitizers пройшли. Це не MCU перевірка. Діагностика Flash додає HAL status/error/CR і before/after readback. Повторний pilot і приймальні S1/S2/S3 лишаються потрібними.
+
+## Додаткове порівняльне випробування поточного ELF
+Схему, стимул і UART див. у `docs/lab3/fault-fixture` та `docs/metrics/fault-20261101`; повний VCD збережений у Lab03/Work. SDA штучно утримувалась LOW 10–13 с модельного часу; зафіксовані IMU_FAULT і IMU_RECOVERED. PIR high/low у OFF — синтетичний сигнал; для ARMED потрібен окремий тест. Не переносити старі Lab2 результати на цей ELF без повторення.
