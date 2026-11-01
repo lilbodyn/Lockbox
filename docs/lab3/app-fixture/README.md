@@ -1,0 +1,3 @@
+# PIR and analog input fixture
+
+Wokwi fixture drives synthetic PIR high at 20 s for 1 s and changes analog output at 24 s. Sensor module is replaced with synthetic input; this is not physical lux calibration or physical PIR. In the measured run `arm` was sent via UART, `ARMED` occurred at 10567 ms, PIR events at 20007/21007 ms had cause=0, and LIGHT appeared at 24067 ms with ADC 655 and cause=2. VCD ALARM rose at 24.070446 s. UART is in `docs/metrics/app-20261101`, full VCD in Lab03/Work with SHA-256 `0c01ac803fccc422595decdef04a50b7d20e194708b090b3cf935f73030695dd`. Tested ELF SHA-256 `591c0ee8923ab6f66ceacc4acad3c561a040eec68663a281db92708c3abaa2a1`. Analog stimulus verifies the path under these values only.
