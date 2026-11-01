@@ -237,14 +237,18 @@ static void test_journal(void)
 }
 static void test_commands(void)
 {
-    const char *names[]={"status","arm","disarm","probe","nack","journal","help","imu 68","imu 69"};
+    const char *names[]={"status","arm","disarm","probe","nack","journal","help","imu 68","imu 69",
+        "stats","stats reset","persist","history","sample 20","sample 10","sample 5","sample 2","sample 1"};
     command_input_t input={0};
-    for(unsigned i=0;i<9;++i){for(const char *p=names[i];*p;++p)assert(command_feed(&input,*p)==CMD_NONE);
+    for(unsigned i=0;i<sizeof names/sizeof names[0];++i){for(const char *p=names[i];*p;++p)assert(command_feed(&input,*p)==CMD_NONE);
         assert(command_feed(&input,'\r')==CMD_NONE);assert(command_feed(&input,'\n')==(command_t)(CMD_STATUS+i));}
     assert(command_feed(&input,'\n')==CMD_NONE);
     command_feed(&input,'x');assert(command_feed(&input,'\n')==CMD_INVALID);
     for(unsigned i=0;i<50;++i)command_feed(&input,'a');
     assert(command_feed(&input,'\n')==CMD_INVALID&&input.length==0&&!input.overflow);
+    const unsigned char damaged[]={'a','r','m',0,'x',255};
+    for(unsigned i=0;i<sizeof damaged;++i)assert(command_feed(&input,(char)damaged[i])==CMD_NONE);
+    assert(command_feed(&input,'\n')==CMD_INVALID);
     for(const char *p="status\n";*p;++p)command_feed(&input,*p);
     assert(input.length==0);
 }

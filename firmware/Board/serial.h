@@ -9,4 +9,7 @@ void serial_pump(void);
 bool serial_receive(char *byte);
 uint32_t serial_dropped_lines(void);
 uint32_t serial_rx_errors(void);
+uint32_t serial_received_at(void);
+uint32_t serial_received_errors(void);
+unsigned serial_free(void);
 #endif

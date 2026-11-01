@@ -24,6 +24,7 @@
 
 #include <stdio.h>
 #include "board_io.h"
+#include "perf.h"
 
 /* USER CODE END Includes */
 
@@ -83,7 +84,7 @@ int __io_putchar(int ch)
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+  perf_paint_stack();
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/

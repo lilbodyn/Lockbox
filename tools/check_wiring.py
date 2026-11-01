@@ -15,7 +15,7 @@ ioc=(root/'firmware/lockbox.ioc').read_text()
 for declaration in ('PA0.Signal=ADC1_IN0','PA1.Signal=GPIO_Input','PA10.Signal=GPIO_Input',
                     'PB5.Signal=GPIO_Output','PB8.Signal=I2C1_SCL','PB9.Signal=I2C1_SDA'):
     assert declaration in ioc,declaration
-for i,pin in enumerate(['PB8','PB9','PA2','PA10','PA4','PA1','PA5','PB5']):
+for i,pin in enumerate(['PA7','PB1','PB0','PA1','PA10','PA2','PA5','PB5']):
     assert {f'logic:D{i}',f'nucleo:{pin}'} in edges
 assert len(set(expected.values()))==len(expected)
 print('PASS Lockbox simultaneous wiring, analyzer channels and .ioc')

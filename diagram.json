@@ -92,8 +92,8 @@
       "top": -210,
       "left": 530,
       "attrs": {
-        "bufferSize": "3000000",
-        "channelNames": "SCL,SDA,UART_TX,PIR,ADC_MARK,BUTTON,HEARTBEAT,ALARM",
+        "bufferSize": "10000000",
+        "channelNames": "SAMPLE,STORE,REACTION,BUTTON,PIR,UART_TX,HEARTBEAT,ALARM",
         "triggerMode": "off"
       }
     }
@@ -239,37 +239,37 @@
     ],
     [
       "logic:D0",
-      "nucleo:PB8",
+      "nucleo:PA7",
       "green",
       []
     ],
     [
       "logic:D1",
-      "nucleo:PB9",
+      "nucleo:PB1",
       "green",
       []
     ],
     [
       "logic:D2",
-      "nucleo:PA2",
+      "nucleo:PB0",
       "green",
       []
     ],
     [
       "logic:D3",
-      "nucleo:PA10",
+      "nucleo:PA1",
       "green",
       []
     ],
     [
       "logic:D4",
-      "nucleo:PA4",
+      "nucleo:PA10",
       "green",
       []
     ],
     [
       "logic:D5",
-      "nucleo:PA1",
+      "nucleo:PA2",
       "green",
       []
     ],

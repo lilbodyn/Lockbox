@@ -1,5 +1,6 @@
 #include "board_io.h"
 #include "board_pins.h"
+#include "perf.h"
 extern I2C_HandleTypeDef hi2c1;
 static ADC_HandleTypeDef light_adc;
 
@@ -22,14 +23,14 @@ static bus_result_t wait_flag(uint32_t flag, uint32_t started)
         if ((flags & I2C_ISR_NACKF) != 0) return BUS_NACK;
         if ((flags & (I2C_ISR_BERR | I2C_ISR_ARLO)) != 0) return BUS_IO_ERROR;
         if ((flags & flag) != 0) return BUS_OK;
-        if (HAL_GetTick() - started >= 10) return BUS_TIMEOUT;
+        if (perf_now() - started >= 10000) return BUS_TIMEOUT;
     }
 }
 static bus_result_t transfer(uint8_t address, uint8_t *data, size_t length, bool reading)
 {
     if (length == 0 || length > 255) return BUS_IO_ERROR;
     I2C1->ICR = I2C_ICR_NACKCF | I2C_ICR_STOPCF | I2C_ICR_BERRCF | I2C_ICR_ARLOCF;
-    uint32_t started = HAL_GetTick();
+    uint32_t started = perf_now();
     I2C1->CR2 = ((uint32_t)address << 1) | ((uint32_t)length << 16) |
         I2C_CR2_AUTOEND | I2C_CR2_START | (reading ? I2C_CR2_RD_WRN : 0U);
     bus_result_t result = BUS_OK;

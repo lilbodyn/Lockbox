@@ -6,3 +6,4 @@ tests/build/
 tests/coverage/
 .uart-venv/
 __pycache__/
+firmware/Board/build_version.h
