@@ -1,0 +1,133 @@
+{
+  "source": "docs/captures/lab3-bringup-14ab26d1.vcd",
+  "sha256": "3a06d3f8c230ba9b3aa1b6883f0ae506d0ecef0c3a409caf7afa84fe6d8e2e5a",
+  "timescale_ns": 1,
+  "capture_end_s": 115.749970625,
+  "banner": "LB BOOT project=Lockbox lab=3 mode=OFF base=4d9a0a0a2777 source=14ab26d1a2a4730a",
+  "sample_width": {
+    "n": 5782,
+    "min_us": 1093.225,
+    "avg_us": 1154.909200968523,
+    "max_us": 3768.4,
+    "p99_us": 1165.55
+  },
+  "sample_period": {
+    "n": 5781,
+    "min_us": 6316.825,
+    "avg_us": 19999.989024390245,
+    "max_us": 33721.275,
+    "p99_us": 23174.15
+  },
+  "heartbeat_period": {
+    "n": 230,
+    "min_us": 495486.45,
+    "avg_us": 499986.4595652174,
+    "max_us": 504517.375,
+    "p99_us": 504495.75
+  },
+  "store_pulses": [
+    {
+      "start_us": 15987308.025,
+      "duration_us": 73.5
+    }
+  ],
+  "regions": {
+    "bringup_idle": {
+      "width": {
+        "n": 421,
+        "min_us": 1093.225,
+        "avg_us": 1107.1331947743467,
+        "max_us": 1111.2,
+        "p99_us": 1109.725
+      },
+      "period": {
+        "n": 420,
+        "min_us": 16817.75,
+        "avg_us": 20000.073392857143,
+        "max_us": 23227.65,
+        "p99_us": 23048.925
+      },
+      "jitter": {
+        "n": 420,
+        "min_us": -3182.25,
+        "avg_us": 0.07339285714285021,
+        "max_us": 3227.6500000000015,
+        "p99_us": 3048.9249999999993
+      },
+      "skipped_from_intervals": 0
+    },
+    "after_stats": {
+      "width": {
+        "n": 373,
+        "min_us": 1104.975,
+        "avg_us": 1107.1092493297585,
+        "max_us": 1110.875,
+        "p99_us": 1108.35
+      },
+      "period": {
+        "n": 372,
+        "min_us": 6316.825,
+        "avg_us": 20000.151142473118,
+        "max_us": 33721.275,
+        "p99_us": 20080.325
+      },
+      "jitter": {
+        "n": 372,
+        "min_us": -13683.175,
+        "avg_us": 0.15114247311827567,
+        "max_us": 13721.275000000001,
+        "p99_us": 80.32500000000073
+      },
+      "skipped_from_intervals": 0
+    },
+    "armed_partial": {
+      "width": {
+        "n": 4957,
+        "min_us": 1157.975,
+        "avg_us": 1161.7938723017953,
+        "max_us": 1168.45,
+        "p99_us": 1164.975
+      },
+      "period": {
+        "n": 4956,
+        "min_us": 16657.775,
+        "avg_us": 19999.97815274415,
+        "max_us": 23242.175,
+        "p99_us": 23176.15
+      },
+      "jitter": {
+        "n": 4956,
+        "min_us": -3342.2249999999985,
+        "avg_us": -0.021847255851517658,
+        "max_us": 3242.1749999999993,
+        "p99_us": 3176.1500000000015
+      },
+      "skipped_from_intervals": 0
+    }
+  },
+  "matched_first_stat_window": {
+    "gpio_width": {
+      "n": 422,
+      "min_us": 1093.225,
+      "avg_us": 1107.1328199052132,
+      "max_us": 1111.2,
+      "p99_us": 1109.725
+    },
+    "firmware_stat": {
+      "n": 422,
+      "min_us": 1114,
+      "avg_us": 1149,
+      "max_us": 1155
+    },
+    "average_wrapper_overhead_us": 41.86718009478682,
+    "gpio_jitter": {
+      "n": 421,
+      "min_us": -3182.25,
+      "avg_us": 0.049703087885975376,
+      "max_us": 3227.6500000000015,
+      "p99_us": 3048.9249999999993
+    },
+    "note": "Exact known bring-up trace only; not applied to a new stats-reset window."
+  },
+  "uart_bytes": 35724
+}

@@ -1,0 +1,1162 @@
+[
+  {
+    "vcd_ns": 91388725,
+    "text": "LB BOOT project=Lockbox lab=3 mode=OFF base=4d9a0a0a2777 source=1fe69e83f010d8fe"
+  },
+  {
+    "vcd_ns": 99455525,
+    "text": "LB SELFTEST device=MPU6050 addr=0x68 expected_id=0x68 result=OK sample_ok=1"
+  },
+  {
+    "vcd_ns": 106926325,
+    "text": "LB SELFTEST device=LDR result=READABLE adc=3413"
+  },
+  {
+    "vcd_ns": 112983650,
+    "text": "LB SELFTEST device=PIR result=READABLE level=0"
+  },
+  {
+    "vcd_ns": 117692350,
+    "text": "LB READY sample_ms=20 heartbeat_ms=500 debounce_ms=30 calibration_samples=25"
+  },
+  {
+    "vcd_ns": 125331050,
+    "text": "LB PERSIST ticket=0 boot=1 pending=0 lost=0 failures=0 failed=0 recovered=0 corrupt=64 slot=32 phase=1"
+  },
+  {
+    "vcd_ns": 136764375,
+    "text": "LB STARTUP first_imu_us=79483 first_adc_us=79566 valid_imu=1 valid_adc=1"
+  },
+  {
+    "vcd_ns": 143962975,
+    "text": "LB VERSION base=4d9a0a0a2777 source=1fe69e83f010d8fe lab=3"
+  },
+  {
+    "vcd_ns": 149827475,
+    "text": "LB HELP status|arm|disarm|probe|nack|journal|help|imu 68|imu 69|stats|stats reset|persist|history|sample 20/10/5/2/1; LF"
+  },
+  {
+    "vcd_ns": 593121775,
+    "text": "LB STATUS ms=585 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 1094527575,
+    "text": "LB STATUS ms=1087 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 1593177925,
+    "text": "LB STATUS ms=1585 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 2094506000,
+    "text": "LB STATUS ms=2087 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 2594540575,
+    "text": "LB STATUS ms=2587 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 3094408150,
+    "text": "LB STATUS ms=3087 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 3594520500,
+    "text": "LB STATUS ms=3587 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 4093124850,
+    "text": "LB STATUS ms=4085 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 4594525150,
+    "text": "LB STATUS ms=4587 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 5093191775,
+    "text": "LB STATUS ms=5085 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 5594539050,
+    "text": "LB STATUS ms=5587 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 6094487925,
+    "text": "LB STATUS ms=6087 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 6594522225,
+    "text": "LB STATUS ms=6587 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 7093125600,
+    "text": "LB STATUS ms=7085 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 7594525400,
+    "text": "LB STATUS ms=7587 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 8093191775,
+    "text": "LB STATUS ms=8085 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 8594544800,
+    "text": "LB STATUS ms=8587 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 9093185925,
+    "text": "LB STATUS ms=9085 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 9594532975,
+    "text": "LB STATUS ms=9587 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 10094546800,
+    "text": "LB STATUS ms=10087 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 10594552150,
+    "text": "LB STATUS ms=10587 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 11094507725,
+    "text": "LB STATUS ms=11087 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 11594538300,
+    "text": "LB STATUS ms=11587 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 12094531400,
+    "text": "LB STATUS ms=12087 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 12594421475,
+    "text": "LB STATUS ms=12587 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 13094413050,
+    "text": "LB STATUS ms=13087 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 13594564650,
+    "text": "LB STATUS ms=13587 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 14094546275,
+    "text": "LB STATUS ms=14087 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 14594511050,
+    "text": "LB STATUS ms=14587 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 15093136175,
+    "text": "LB STATUS ms=15085 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 15594545725,
+    "text": "LB STATUS ms=15587 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 16094528550,
+    "text": "LB STATUS ms=16087 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 16594520900,
+    "text": "LB STATUS ms=16587 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 17094517725,
+    "text": "LB STATUS ms=17087 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 17594563050,
+    "text": "LB STATUS ms=17587 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 18094561400,
+    "text": "LB STATUS ms=18087 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 18594572725,
+    "text": "LB STATUS ms=18587 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 19093211100,
+    "text": "LB STATUS ms=19085 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 19593204675,
+    "text": "LB STATUS ms=19585 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 20094581725,
+    "text": "LB STATUS ms=20087 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 20593145600,
+    "text": "LB STATUS ms=20585 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 21094578650,
+    "text": "LB STATUS ms=21087 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 21594660975,
+    "text": "LB STATUS ms=4316554 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 22094647300,
+    "text": "LB STATUS ms=4317054 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 22594655150,
+    "text": "LB STATUS ms=4317554 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 23094645475,
+    "text": "LB STATUS ms=4318054 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 23593233075,
+    "text": "LB STATUS ms=4318553 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 24094519400,
+    "text": "LB STATUS ms=4319054 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 24594649475,
+    "text": "LB STATUS ms=4319554 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 25093229325,
+    "text": "LB STATUS ms=4320053 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 25594624150,
+    "text": "LB STATUS ms=4320554 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 26093236750,
+    "text": "LB STATUS ms=4321053 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 26594625300,
+    "text": "LB STATUS ms=4321554 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 27094660400,
+    "text": "LB STATUS ms=4322054 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 27594643975,
+    "text": "LB STATUS ms=4322554 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 28094602300,
+    "text": "LB STATUS ms=4323054 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 28594627400,
+    "text": "LB STATUS ms=4323554 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 29094650975,
+    "text": "LB STATUS ms=4324054 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 29593235575,
+    "text": "LB STATUS ms=4324553 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 30093290925,
+    "text": "LB STATUS ms=4325053 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 30594519475,
+    "text": "LB STATUS ms=4325554 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 31094637050,
+    "text": "LB STATUS ms=4326054 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 31594624150,
+    "text": "LB STATUS ms=4326554 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 32094592975,
+    "text": "LB STATUS ms=4327054 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 32594623800,
+    "text": "LB STATUS ms=4327554 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 33094649900,
+    "text": "LB STATUS ms=4328054 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 33594651225,
+    "text": "LB STATUS ms=4328554 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 34093289825,
+    "text": "LB STATUS ms=4329053 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 34594626400,
+    "text": "LB STATUS ms=4329554 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 35094505725,
+    "text": "LB STATUS ms=4330054 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 35594643550,
+    "text": "LB STATUS ms=4330554 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 36094511400,
+    "text": "LB STATUS ms=4331054 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 36594649475,
+    "text": "LB STATUS ms=4331554 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 37094614550,
+    "text": "LB STATUS ms=4332054 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 37594654400,
+    "text": "LB STATUS ms=4332554 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 38094613225,
+    "text": "LB STATUS ms=4333054 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 38593229825,
+    "text": "LB STATUS ms=4333553 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 39094629650,
+    "text": "LB STATUS ms=4334054 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 39594511225,
+    "text": "LB STATUS ms=4334554 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 40094639550,
+    "text": "LB STATUS ms=4335054 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 40594609650,
+    "text": "LB STATUS ms=4335554 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 41093288250,
+    "text": "LB STATUS ms=4336053 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 41594635800,
+    "text": "LB STATUS ms=4336554 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 42094613150,
+    "text": "LB STATUS ms=4337054 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 42593229000,
+    "text": "LB STATUS ms=4337553 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 43094634050,
+    "text": "LB STATUS ms=4338054 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 43454875025,
+    "text": "LB VERSION base=4d9a0a0a2777 source=1fe69e83f010d8fe lab=3"
+  },
+  {
+    "vcd_ns": 43460740775,
+    "text": "LB HELP status|arm|disarm|probe|nack|journal|help|imu 68|imu 69|stats|stats reset|persist|history|sample 20/10/5/2/1; LF"
+  },
+  {
+    "vcd_ns": 43473941300,
+    "text": "LB COMMAND id=7 rx_us=43446590 done_us=43449094 latency_us=2504"
+  },
+  {
+    "vcd_ns": 43593235650,
+    "text": "LB STATUS ms=4338553 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 43862196800,
+    "text": "LB SAMPLE period_us=20000 diagnostic=1"
+  },
+  {
+    "vcd_ns": 43866105800,
+    "text": "LB COMMAND id=14 rx_us=43855129 done_us=43856429 latency_us=1300"
+  },
+  {
+    "vcd_ns": 44093437000,
+    "text": "LB STATUS ms=4339053 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 44262575475,
+    "text": "LB COMMAND id=3 rx_us=44254972 done_us=44255624 latency_us=652"
+  },
+  {
+    "vcd_ns": 44593227325,
+    "text": "LB STATUS ms=4339553 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 44663585125,
+    "text": "LB STATS reset=1"
+  },
+  {
+    "vcd_ns": 44665367075,
+    "text": "LB COMMAND id=11 rx_us=44655411 done_us=44657831 latency_us=2420"
+  },
+  {
+    "vcd_ns": 45166444150,
+    "text": "LB STATUS ms=4340126 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 45468098600,
+    "text": "LB EVENT seq=1 ms=4340421 type=ARMING mode=CALIBRATING cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1"
+  },
+  {
+    "vcd_ns": 45479538600,
+    "text": "LB COMMAND id=2 rx_us=45454224 done_us=45457309 latency_us=3085"
+  },
+  {
+    "vcd_ns": 45487405275,
+    "text": "LB FLASH op=erase result=VERIFY_FAIL page=1 offset=0 word=0x00000000 sr=0x00000000 cr=0x00000000"
+  },
+  {
+    "vcd_ns": 45497123475,
+    "text": "LB PERSIST ticket=0 boot=1 pending=1 lost=0 failures=1 failed=1 recovered=0 corrupt=64 slot=32 phase=1"
+  },
+  {
+    "vcd_ns": 45666639725,
+    "text": "LB STATUS ms=4340626 mode=CALIBRATING cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=1 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 45945941150,
+    "text": "LB EVENT seq=2 ms=4340906 type=ARMED mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1"
+  },
+  {
+    "vcd_ns": 46166558050,
+    "text": "LB STATUS ms=4341126 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 46666531025,
+    "text": "LB STATUS ms=4341626 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 46875708525,
+    "text": "LB EVENT seq=3 ms=4341835 type=IMU_FAULT mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1"
+  },
+  {
+    "vcd_ns": 47165427750,
+    "text": "LB STATUS ms=4342125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 47472473275,
+    "text": "LB DIAG ms=4342422 sampling_addr=0x69"
+  },
+  {
+    "vcd_ns": 47476432025,
+    "text": "LB COMMAND id=9 rx_us=47455107 done_us=47456398 latency_us=1291"
+  },
+  {
+    "vcd_ns": 47665540825,
+    "text": "LB STATUS ms=4342625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 48165424150,
+    "text": "LB STATUS ms=4343125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 48665549000,
+    "text": "LB STATUS ms=4343625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 49165519575,
+    "text": "LB STATUS ms=4344125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 49665560650,
+    "text": "LB STATUS ms=4344625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 50165533000,
+    "text": "LB STATUS ms=4345125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 50665157825,
+    "text": "LB STATUS ms=4345624 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 51165567400,
+    "text": "LB STATUS ms=4346125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 51474907375,
+    "text": "LB STATUS ms=4346422 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 51489660800,
+    "text": "LB COMMAND id=1 rx_us=51455048 done_us=51458820 latency_us=3772"
+  },
+  {
+    "vcd_ns": 51665567725,
+    "text": "LB STATUS ms=4346625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 52165532325,
+    "text": "LB STATUS ms=4347125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 52665096150,
+    "text": "LB STATUS ms=4347624 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 53165573225,
+    "text": "LB STATUS ms=4348125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 53665528800,
+    "text": "LB STATUS ms=4348625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 54165423150,
+    "text": "LB STATUS ms=4349125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 54665564225,
+    "text": "LB STATUS ms=4349625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 55165536550,
+    "text": "LB STATUS ms=4350125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 55461554650,
+    "text": "LB DIAG ms=4350422 sampling_addr=0x68"
+  },
+  {
+    "vcd_ns": 55475817600,
+    "text": "LB COMMAND id=8 rx_us=55454489 done_us=55455789 latency_us=1300"
+  },
+  {
+    "vcd_ns": 55665552150,
+    "text": "LB STATUS ms=4350625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 56165521725,
+    "text": "LB STATUS ms=4351125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 56665565050,
+    "text": "LB STATUS ms=4351625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 57165534400,
+    "text": "LB STATUS ms=4352125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 57665569725,
+    "text": "LB STATUS ms=4352625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 58165536550,
+    "text": "LB STATUS ms=4353125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 58665563400,
+    "text": "LB STATUS ms=4353625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 59165531725,
+    "text": "LB STATUS ms=4354125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 59665564550,
+    "text": "LB STATUS ms=4354625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 60165532150,
+    "text": "LB STATUS ms=4355125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 60478208400,
+    "text": "LB STATUS ms=4355436 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 60492871375,
+    "text": "LB COMMAND id=1 rx_us=60463339 done_us=60472419 latency_us=9080"
+  },
+  {
+    "vcd_ns": 60665533725,
+    "text": "LB STATUS ms=4355625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 61165423550,
+    "text": "LB STATUS ms=4356125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 61665542650,
+    "text": "LB STATUS ms=4356625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 62165508725,
+    "text": "LB STATUS ms=4357125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 62665554050,
+    "text": "LB STATUS ms=4357625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 63165529900,
+    "text": "LB STATUS ms=4358125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 63665567225,
+    "text": "LB STATUS ms=4358625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 64165541050,
+    "text": "LB STATUS ms=4359125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 64665568400,
+    "text": "LB STATUS ms=4359625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 65165536475,
+    "text": "LB STATUS ms=4360125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 65665091575,
+    "text": "LB STATUS ms=4360624 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 66165565400,
+    "text": "LB STATUS ms=4361125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 66665423975,
+    "text": "LB STATUS ms=4361625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 67165571050,
+    "text": "LB STATUS ms=4362125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 67665523400,
+    "text": "LB STATUS ms=4362625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 68165158500,
+    "text": "LB STATUS ms=4363124 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 68665547300,
+    "text": "LB STATUS ms=4363625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 69165524400,
+    "text": "LB STATUS ms=4364125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 69665564475,
+    "text": "LB STATUS ms=4364625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 70165533300,
+    "text": "LB STATUS ms=4365125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 70665566650,
+    "text": "LB STATUS ms=4365625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 71165534475,
+    "text": "LB STATUS ms=4366125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 71665155800,
+    "text": "LB STATUS ms=4366624 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 72165570900,
+    "text": "LB STATUS ms=4367125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 72665524725,
+    "text": "LB STATUS ms=4367625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 73165419800,
+    "text": "LB STATUS ms=4368125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 73665537400,
+    "text": "LB STATUS ms=4368625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 74165425475,
+    "text": "LB STATUS ms=4369125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 74665555800,
+    "text": "LB STATUS ms=4369625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 75165531900,
+    "text": "LB STATUS ms=4370125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 75665563725,
+    "text": "LB STATUS ms=4370625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 76165535050,
+    "text": "LB STATUS ms=4371125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 76665551900,
+    "text": "LB STATUS ms=4371625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 77165427475,
+    "text": "LB STATUS ms=4372125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 77665542050,
+    "text": "LB STATUS ms=4372625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 78165159400,
+    "text": "LB STATUS ms=4373124 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 78665565225,
+    "text": "LB STATUS ms=4373625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 79165534050,
+    "text": "LB STATUS ms=4374125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 79665567900,
+    "text": "LB STATUS ms=4374625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 80165538225,
+    "text": "LB STATUS ms=4375125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 80665162550,
+    "text": "LB STATUS ms=4375624 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 81165095900,
+    "text": "LB STATUS ms=4376124 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 81665545475,
+    "text": "LB STATUS ms=4376625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 82165517800,
+    "text": "LB STATUS ms=4377125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 82665557900,
+    "text": "LB STATUS ms=4377625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 83165525475,
+    "text": "LB STATUS ms=4378125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 83665553800,
+    "text": "LB STATUS ms=4378625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 84165529150,
+    "text": "LB STATUS ms=4379125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 84665563725,
+    "text": "LB STATUS ms=4379625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 85165537800,
+    "text": "LB STATUS ms=4380125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 85665572900,
+    "text": "LB STATUS ms=4380625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 86165539225,
+    "text": "LB STATUS ms=4381125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 86665158050,
+    "text": "LB STATUS ms=4381624 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 87165576650,
+    "text": "LB STATUS ms=4382125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 87665523725,
+    "text": "LB STATUS ms=4382625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 88165421050,
+    "text": "LB STATUS ms=4383125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 88665545150,
+    "text": "LB STATUS ms=4383625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 89165514975,
+    "text": "LB STATUS ms=4384125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 89665561550,
+    "text": "LB STATUS ms=4384625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 90165532650,
+    "text": "LB STATUS ms=4385125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 90665151225,
+    "text": "LB STATUS ms=4385624 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 91165567525,
+    "text": "LB STATUS ms=4386125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 91665509650,
+    "text": "LB STATUS ms=4386625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 92165568975,
+    "text": "LB STATUS ms=4387125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 92665510800,
+    "text": "LB STATUS ms=4387625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 93165094900,
+    "text": "LB STATUS ms=4388124 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 93665543725,
+    "text": "LB STATUS ms=4388625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 94165515050,
+    "text": "LB STATUS ms=4389125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 94665560400,
+    "text": "LB STATUS ms=4389625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 95165536225,
+    "text": "LB STATUS ms=4390125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 95665154050,
+    "text": "LB STATUS ms=4390624 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 96165567900,
+    "text": "LB STATUS ms=4391125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 96665525225,
+    "text": "LB STATUS ms=4391625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 97165422300,
+    "text": "LB STATUS ms=4392125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 97665564900,
+    "text": "LB STATUS ms=4392625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 98165531975,
+    "text": "LB STATUS ms=4393125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 98665564300,
+    "text": "LB STATUS ms=4393625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 99165538650,
+    "text": "LB STATUS ms=4394125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 99665095725,
+    "text": "LB STATUS ms=4394624 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 100165573300,
+    "text": "LB STATUS ms=4395125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 100665532150,
+    "text": "LB STATUS ms=4395625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 101165424475,
+    "text": "LB STATUS ms=4396125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 101665552050,
+    "text": "LB STATUS ms=4396625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 102165519125,
+    "text": "LB STATUS ms=4397125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 102665549200,
+    "text": "LB STATUS ms=4397625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 103165516050,
+    "text": "LB STATUS ms=4398125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 103491981925,
+    "text": "LB PERF window_us=58797969 busy_us=5812286 load_permille=73145 stack_used=1188 stack_reserved=2048 heap_peak=0 timer=TIM3_1MHz"
+  },
+  {
+    "vcd_ns": 103515148200,
+    "text": "LB STAT name=rx n=38 min_us=12 avg_us=540 max_us=4732"
+  },
+  {
+    "vcd_ns": 103520553200,
+    "text": "LB STAT name=button n=57983 min_us=49 avg_us=74141 max_us=4294901830"
+  },
+  {
+    "vcd_ns": 103527740625,
+    "text": "LB STAT name=sample n=2939 min_us=244 avg_us=478 max_us=13689"
+  },
+  {
+    "vcd_ns": 103534032825,
+    "text": "LB STAT name=heartbeat n=117 min_us=20 avg_us=40 max_us=44"
+  },
+  {
+    "vcd_ns": 103539972825,
+    "text": "LB STAT name=telemetry n=117 min_us=3196 avg_us=3224 max_us=3265"
+  },
+  {
+    "vcd_ns": 103546720125,
+    "text": "LB STAT name=archive n=1 min_us=1655 avg_us=1655 max_us=1655"
+  },
+  {
+    "vcd_ns": 103552844675,
+    "text": "LB STAT name=export n=0 min_us=0 avg_us=0 max_us=0"
+  },
+  {
+    "vcd_ns": 103558056975,
+    "text": "LB STAT name=loop n=575802 min_us=70 avg_us=67216 max_us=4294901837"
+  },
+  {
+    "vcd_ns": 103565154000,
+    "text": "LB STAT name=button_latency n=0 min_us=0 avg_us=0 max_us=0"
+  },
+  {
+    "vcd_ns": 103571093750,
+    "text": "LB STAT name=pir_latency n=0 min_us=0 avg_us=0 max_us=0"
+  },
+  {
+    "vcd_ns": 103576679300,
+    "text": "LB STAT name=command_latency n=6 min_us=1291 avg_us=3491 max_us=9080"
+  },
+  {
+    "vcd_ns": 103583866475,
+    "text": "LB RELEASE name=sample period_us=20000 late_max_us=3474 missed=0 deadlines=0 jitter_min_us=-3371 jitter_max_us=3335 hist=56,2043,809,30,0,0"
+  },
+  {
+    "vcd_ns": 103597815050,
+    "text": "LB RELEASE name=button period_us=1000 late_max_us=12919 missed=814 deadlines=57 jitter_min_us=-812 jitter_max_us=12879 hist=919,55740,1124,143,56,0"
+  },
+  {
+    "vcd_ns": 103612829075,
+    "text": "LB RELEASE name=heartbeat period_us=500000 late_max_us=3676 missed=0 deadlines=0 jitter_min_us=-3286 jitter_max_us=3669 hist=2,66,37,11,0,0"
+  },
+  {
+    "vcd_ns": 103627118150,
+    "text": "LB RELEASE name=telemetry period_us=500000 late_max_us=1507 missed=0 deadlines=0 jitter_min_us=-1094 jitter_max_us=475 hist=2,68,45,1,0,0"
+  },
+  {
+    "vcd_ns": 103640804575,
+    "text": "LB PERSIST ticket=0 boot=1 pending=3 lost=0 failures=1 failed=1 recovered=0 corrupt=64 slot=32 phase=1"
+  },
+  {
+    "vcd_ns": 103651404600,
+    "text": "LB COMMAND id=10 rx_us=103454975 done_us=103485839 latency_us=30864"
+  },
+  {
+    "vcd_ns": 103665563625,
+    "text": "LB STATUS ms=4398625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 103970786775,
+    "text": "LB PERSIST ticket=0 boot=1 pending=3 lost=0 failures=1 failed=1 recovered=0 corrupt=64 slot=32 phase=1"
+  },
+  {
+    "vcd_ns": 103981129875,
+    "text": "LB COMMAND id=12 rx_us=103962533 done_us=103964959 latency_us=2426"
+  },
+  {
+    "vcd_ns": 104165567450,
+    "text": "LB STATUS ms=4399125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 104665531800,
+    "text": "LB STATUS ms=4399625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 105165422150,
+    "text": "LB STATUS ms=4400125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 105665569700,
+    "text": "LB STATUS ms=4400625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 106165538050,
+    "text": "LB STATUS ms=4401125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 106665567875,
+    "text": "LB STATUS ms=4401625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 107165541950,
+    "text": "LB STATUS ms=4402125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 107665095550,
+    "text": "LB STATUS ms=4402624 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 108165572375,
+    "text": "LB STATUS ms=4403125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 108665519700,
+    "text": "LB STATUS ms=4403625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 109165569050,
+    "text": "LB STATUS ms=4404125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 109665515875,
+    "text": "LB STATUS ms=4404625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 110165093975,
+    "text": "LB STATUS ms=4405124 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 110665541300,
+    "text": "LB STATUS ms=4405625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 111165512375,
+    "text": "LB STATUS ms=4406125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 111665559700,
+    "text": "LB STATUS ms=4406625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 112165534550,
+    "text": "LB STATUS ms=4407125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 112665568625,
+    "text": "LB STATUS ms=4407625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 113165538700,
+    "text": "LB STATUS ms=4408125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 113665093300,
+    "text": "LB STATUS ms=4408624 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 114165564875,
+    "text": "LB STATUS ms=4409125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 114665508700,
+    "text": "LB STATUS ms=4409625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 115165569550,
+    "text": "LB STATUS ms=4410125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 115665518875,
+    "text": "LB STATUS ms=4410625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 116165094725,
+    "text": "LB STATUS ms=4411124 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 116665543550,
+    "text": "LB STATUS ms=4411625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 117165429625,
+    "text": "LB STATUS ms=4412125 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 117665571200,
+    "text": "LB STATUS ms=4412625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 118165428050,
+    "text": "LB STATUS ms=8708092 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 118665105400,
+    "text": "LB STATUS ms=8708592 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 119165552950,
+    "text": "LB STATUS ms=8709092 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  },
+  {
+    "vcd_ns": 119665533550,
+    "text": "LB STATUS ms=8709592 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0"
+  }
+]

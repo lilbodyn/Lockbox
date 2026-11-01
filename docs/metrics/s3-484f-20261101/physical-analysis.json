@@ -1,0 +1,336 @@
+{
+  "vcd_sha256": "70b99e2a0f13e2d7880ab87a7794284079003a6bf8509105542b234ab6e46314",
+  "boot_lines": [
+    "LB BOOT project=Lockbox lab=3 mode=OFF base=4d9a0a0a2777 source=484fae964f8e7cb1"
+  ],
+  "record_tx_lines": 1708,
+  "physical_falling_edges": 40,
+  "eligible_actual_presses_in_record_tx": 40,
+  "eligible_with_response": 40,
+  "latency_min_ms": 30.1287,
+  "latency_avg_ms": 30.902945625,
+  "latency_max_ms": 34.03755,
+  "rows": [
+    {
+      "press_ns": 43381851025,
+      "release_ns": 43461851025,
+      "response_ns": 43412827900,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.976875,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 43929715125,
+      "release_ns": 44009715125,
+      "response_ns": 43959843825,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.1287,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 44476827475,
+      "release_ns": 44556827475,
+      "response_ns": 44509522475,
+      "press_width_ms": 80.0,
+      "latency_ms": 32.695,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 45015117725,
+      "release_ns": 45095117725,
+      "response_ns": 45045833550,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.715825,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 45653792125,
+      "release_ns": 45733792125,
+      "response_ns": 45684806225,
+      "press_width_ms": 80.0,
+      "latency_ms": 31.0141,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 46188913700,
+      "release_ns": 46268913700,
+      "response_ns": 46219790250,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.87655,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 46724134550,
+      "release_ns": 46804134550,
+      "response_ns": 46754832925,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.698375,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 47260072700,
+      "release_ns": 47340072700,
+      "response_ns": 47291596375,
+      "press_width_ms": 80.0,
+      "latency_ms": 31.523675,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 47806073175,
+      "release_ns": 47886073175,
+      "response_ns": 47836764400,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.691225,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 48353030025,
+      "release_ns": 48433030025,
+      "response_ns": 48383755750,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.725725,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 48899732575,
+      "release_ns": 48979732575,
+      "response_ns": 48930792600,
+      "press_width_ms": 80.0,
+      "latency_ms": 31.060025,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 49432236950,
+      "release_ns": 49512236950,
+      "response_ns": 49463000700,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.76375,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 49980705300,
+      "release_ns": 50060705300,
+      "response_ns": 50011765575,
+      "press_width_ms": 80.0,
+      "latency_ms": 31.060275,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 50530812525,
+      "release_ns": 50610812525,
+      "response_ns": 50561677975,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.86545,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 51088191450,
+      "release_ns": 51168191450,
+      "response_ns": 51118738775,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.547325,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 51618997475,
+      "release_ns": 51698997475,
+      "response_ns": 51649690200,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.692725,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 52156777900,
+      "release_ns": 52236777900,
+      "response_ns": 52187708250,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.93035,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 52707470500,
+      "release_ns": 52787470500,
+      "response_ns": 52737649050,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.17855,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 53279418800,
+      "release_ns": 53359418800,
+      "response_ns": 53309648875,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.230075,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 53815461675,
+      "release_ns": 53895461675,
+      "response_ns": 53845688950,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.227275,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 54351436750,
+      "release_ns": 54431436750,
+      "response_ns": 54382843200,
+      "press_width_ms": 80.0,
+      "latency_ms": 31.40645,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 54904309100,
+      "release_ns": 54984309100,
+      "response_ns": 54934628275,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.319175,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 55452750450,
+      "release_ns": 55532750450,
+      "response_ns": 55483586075,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.835625,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 56004108025,
+      "release_ns": 56084108025,
+      "response_ns": 56034627850,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.519825,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 56540679375,
+      "release_ns": 56620679375,
+      "response_ns": 56571596425,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.91705,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 57099688150,
+      "release_ns": 57179688150,
+      "response_ns": 57130553550,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.8654,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 57629899250,
+      "release_ns": 57709899250,
+      "response_ns": 57660599975,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.700725,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 58170235300,
+      "release_ns": 58250235300,
+      "response_ns": 58200542225,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.306925,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 58719827800,
+      "release_ns": 58799827800,
+      "response_ns": 58750535525,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.707725,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 59250394700,
+      "release_ns": 59330394700,
+      "response_ns": 59284432250,
+      "press_width_ms": 80.0,
+      "latency_ms": 34.03755,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 59803107625,
+      "release_ns": 59883107625,
+      "response_ns": 59833487550,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.379925,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 60346846400,
+      "release_ns": 60426846400,
+      "response_ns": 60377541375,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.694975,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 60894459175,
+      "release_ns": 60974459175,
+      "response_ns": 60926539425,
+      "press_width_ms": 80.0,
+      "latency_ms": 32.08025,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 61427971525,
+      "release_ns": 61507971525,
+      "response_ns": 61460958800,
+      "press_width_ms": 80.0,
+      "latency_ms": 32.987275,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 61973311975,
+      "release_ns": 62053311975,
+      "response_ns": 62003498625,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.18665,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 62514972625,
+      "release_ns": 62594972625,
+      "response_ns": 62545435475,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.46285,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 63095612475,
+      "release_ns": 63175612475,
+      "response_ns": 63126492350,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.879875,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 63630073050,
+      "release_ns": 63710073050,
+      "response_ns": 63660481475,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.408425,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 64174906300,
+      "release_ns": 64254906300,
+      "response_ns": 64205402650,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.49635,
+      "during_record_tx": true
+    },
+    {
+      "press_ns": 64707077100,
+      "release_ns": 64787077100,
+      "response_ns": 64737400050,
+      "press_width_ms": 80.0,
+      "latency_ms": 30.32295,
+      "during_record_tx": true
+    }
+  ],
+  "scope": "S3 only if >=30 eligible real edges, response pairing, clock and experiment conditions validated. Missing response is not zero latency."
+}

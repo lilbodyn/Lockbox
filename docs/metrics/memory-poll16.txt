@@ -1,0 +1,45 @@
+firmware/build/lockbox.elf  :
+section               size        addr
+.isr_vector            192   134217728
+.text                22992   134217920
+.rodata               3528   134240912
+.ARM                     8   134244440
+.init_array              4   134244448
+.fini_array              4   134244452
+.data                  168   536870912
+.bss                  7368   536871080
+._user_heap_stack     2560   536878448
+.ARM.attributes         40           0
+.comment                51           0
+.debug_info         153463           0
+.debug_abbrev        24503           0
+.debug_loc           90704           0
+.debug_aranges        4864           0
+.debug_ranges         4712           0
+.debug_line          88819           0
+.debug_str           25225           0
+.debug_frame         11588           0
+Total               440793
+
+
+080037ca 00000170 T archive_step
+08003180 0000018c T guard_observe
+08004d18 00000190 T HAL_RCC_ClockConfig
+08001348 00000196 T __udivmoddi4
+080051fc 000001bc T HAL_GPIO_Init
+08005590 000001c8 T UART_SetConfig
+080010d4 000001cc T __divsi3
+08001e80 000001d8 t execute
+08002110 000001d8 T lockbox_start
+20001b40 00000200 b received_time
+20000734 00000200 b snapshot
+0800068c 0000023c T _svfiprintf_r
+0800068c 0000023c T _svfprintf_r
+080022e8 00000260 T lockbox_poll
+08003d9c 00000268 T HAL_ADC_Init
+080040c4 00000280 T HAL_ADC_ConfigChannel
+200003e8 00000280 b guard
+08000a04 00000288 T _printf_i
+080049d8 000002e4 T HAL_RCC_OscConfig
+20000ac0 00001000 b queue
+arm-none-eabi-gcc (15:10.3-2021.07-4) 10.3.1 20210621 (release)

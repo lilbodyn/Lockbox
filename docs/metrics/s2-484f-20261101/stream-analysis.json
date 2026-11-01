@@ -1,0 +1,64 @@
+{
+  "source_expected": "484fae964f8e7cb1",
+  "vcd_sha256": "46501e281289b8a426dd56ce01da2986f346843c26f80764e8922c7305c35213",
+  "uart_sha256": "44660948a4b6838b40e280563f89c906c9e5d15bd8a8a540f3b6da581c0313fe",
+  "vcd_end_s": 3945.883733525,
+  "boot_lines": [
+    {
+      "t_ns": 91255975,
+      "text": "LB BOOT project=Lockbox lab=3 mode=OFF base=4d9a0a0a2777 source=484fae964f8e7cb1"
+    }
+  ],
+  "all_decoded_statuses": 7952,
+  "rejected_frame_candidates": 1,
+  "baseline_mcu_ms": 317779,
+  "last_mcu_ms": 3928275,
+  "reported_mcu_span_ms": 3610496,
+  "window_statuses": 7282,
+  "matching_statuses_in_raw": 7282,
+  "nominal_statuses": 7282,
+  "timestamp_regressions": 0,
+  "nonzero_drop_statuses": 0,
+  "nonzero_rx_error_statuses": 0,
+  "max_status_gap_ms": 501,
+  "first_window_status": {
+    "t_ns": 317789508875,
+    "ms": 317779,
+    "idle_ms": 0.0030944444580078127,
+    "text": "LB STATUS ms=317779 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0"
+  },
+  "last_window_status": {
+    "t_ns": 3928200067750,
+    "ms": 3928275,
+    "idle_ms": 484.64709444433595,
+    "text": "LB STATUS ms=3928275 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0"
+  },
+  "vcd_corresponding_span_s": 3610.410558875,
+  "quiet_clock_fit": {
+    "n": 7267,
+    "span_ms": 75.5464000000502,
+    "slope_ms_per_s": -0.020824997385714857,
+    "slope_ppm": -20.82499738571486,
+    "residual_min_ms": -0.3312556262601376,
+    "residual_max_ms": 3.3532436688851277,
+    "residual_rms_ms": 0.21321253418520744
+  },
+  "max_host_rx_gap_s": 0.958767917,
+  "sample_edges_in_window": 180518,
+  "heartbeat_edges_in_window": 7220,
+  "sample_periods": {
+    "n": 180517,
+    "min_ms": 7.5256,
+    "mean_ms": 20.000247855326645,
+    "p99_ms": 20.107325,
+    "max_ms": 52.47115
+  },
+  "heartbeat_periods": {
+    "n": 7219,
+    "min_ms": 496.646175,
+    "mean_ms": 499.9895821270259,
+    "p99_ms": 503.29025,
+    "max_ms": 503.331425
+  },
+  "status": "evidence only; validate endpoints, conditions and physical limitations independently"
+}

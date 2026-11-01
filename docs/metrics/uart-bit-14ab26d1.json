@@ -1,0 +1,12 @@
+{
+  "source": "lab3-bringup-14ab26d1.vcd",
+  "sample_intervals": 93229,
+  "median_bit_us": 8.7,
+  "min_bit_us": 8.675,
+  "max_bit_us": 8.7,
+  "BRR417_48MHz_bit_us": 8.6875,
+  "nominal_115200_bit_us": 8.680555555555555,
+  "note": "Consecutive edges separated by approximately one bit; inter-byte and multi-bit intervals excluded. This is simulator agreement, not a hardware oscillator calibration.",
+  "average_edge_interval_us": 8.688041542867563,
+  "observed_25ns_quantization": true
+}

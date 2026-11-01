@@ -1,0 +1,9 @@
+[wokwi]
+version = 1
+firmware = 'lockbox.hex'
+elf = 'lockbox.elf'
+rfc2217ServerPort = 4007
+
+[[chip]]
+name = 'mode_stim'
+binary = 'mode_stim.chip.wasm'

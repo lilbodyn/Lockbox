@@ -1,0 +1,89 @@
+{
+  "vcd": "<LOCAL_HOME>/Projects/university/Study/People/\u041e\u043c\u0435\u043b\u044c\u0447\u0435\u043d\u043a\u043e \u0411\u043e\u0433\u0434\u0430\u043d \u042e\u0440\u0456\u0439\u043e\u0432\u0438\u0447/2026-Fall/SP/Lab01/Work/Lockbox/docs/captures/lab3-bringup-14ab26d1.vcd",
+  "vcd_sha256": "3a06d3f8c230ba9b3aa1b6883f0ae506d0ecef0c3a409caf7afa84fe6d8e2e5a",
+  "interval_s": [
+    2.0,
+    8.0
+  ],
+  "eligible_status_lines": 12,
+  "required_status_lines": 10,
+  "offset_span_ms": 0.34212500000057844,
+  "allowed_offset_span_ms": 5,
+  "baseline_offset_ms": 7.266900000000078,
+  "result": "pass",
+  "rows": [
+    {
+      "vcd_start_ns": 2092964525,
+      "mcu_ms": 2086,
+      "offset_ms": 6.964524999999867,
+      "wire_idle_us": 485365.56944444444
+    },
+    {
+      "vcd_start_ns": 2594273075,
+      "mcu_ms": 2587,
+      "offset_ms": 7.273075000000063,
+      "wire_idle_us": 486676.2694444444
+    },
+    {
+      "vcd_start_ns": 3094266900,
+      "mcu_ms": 3087,
+      "offset_ms": 7.266900000000078,
+      "wire_idle_us": 486641.34444444464
+    },
+    {
+      "vcd_start_ns": 3594199250,
+      "mcu_ms": 3587,
+      "offset_ms": 7.19925000000012,
+      "wire_idle_us": 486580.69444444467
+    },
+    {
+      "vcd_start_ns": 4094278575,
+      "mcu_ms": 4087,
+      "offset_ms": 7.278574999999819,
+      "wire_idle_us": 486727.16944444465
+    },
+    {
+      "vcd_start_ns": 4594306650,
+      "mcu_ms": 4587,
+      "offset_ms": 7.306650000000445,
+      "wire_idle_us": 486674.59444444464
+    },
+    {
+      "vcd_start_ns": 5094295750,
+      "mcu_ms": 5087,
+      "offset_ms": 7.2957500000002256,
+      "wire_idle_us": 486635.54444444465
+    },
+    {
+      "vcd_start_ns": 5594287825,
+      "mcu_ms": 5587,
+      "offset_ms": 7.287825000000339,
+      "wire_idle_us": 486638.0194444447
+    },
+    {
+      "vcd_start_ns": 6094278425,
+      "mcu_ms": 6087,
+      "offset_ms": 7.278425000000425,
+      "wire_idle_us": 486636.36944444466
+    },
+    {
+      "vcd_start_ns": 6594299750,
+      "mcu_ms": 6587,
+      "offset_ms": 7.299750000000131,
+      "wire_idle_us": 486663.41944444465
+    },
+    {
+      "vcd_start_ns": 7092972100,
+      "mcu_ms": 7086,
+      "offset_ms": 6.972099999999955,
+      "wire_idle_us": 485318.29444444465
+    },
+    {
+      "vcd_start_ns": 7594304675,
+      "mcu_ms": 7587,
+      "offset_ms": 7.304675000000316,
+      "wire_idle_us": 486703.61944444466
+    }
+  ],
+  "scope": "Digital-model VCD only. Requires quiet UART and no MCU reset/ms wrap within this interval. No inference of physical HSI accuracy, clock polling bound outside the capture, or MCU-hour completion."
+}

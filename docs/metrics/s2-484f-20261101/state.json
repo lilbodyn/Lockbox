@@ -1,0 +1,14 @@
+{
+  "phase": "FINISHED",
+  "result": "MCU_WINDOW_REPORTED",
+  "reason": "VCD and full conditions still require independent verification",
+  "host_elapsed_s": 3923.971431,
+  "mcu_latest_ms": 3928275,
+  "mcu_baseline_ms": 317779,
+  "version_confirmed": true,
+  "help_ack": true,
+  "status_ack": true,
+  "uart_sha256": "44660948a4b6838b40e280563f89c906c9e5d15bd8a8a540f3b6da581c0313fe",
+  "command_count": 74,
+  "note": "No accepted S2 without full independent VCD/conditions verification."
+}

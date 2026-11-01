@@ -1,0 +1,473 @@
+{
+  "vcd": "<LOCAL_HOME>/Projects/university/Study/People/\u041e\u043c\u0435\u043b\u044c\u0447\u0435\u043d\u043a\u043e \u0411\u043e\u0433\u0434\u0430\u043d \u042e\u0440\u0456\u0439\u043e\u0432\u0438\u0447/2026-Fall/SP/Lab01/Work/Lockbox/docs/captures/lab3-pilot-1fe-20261028.vcd",
+  "vcd_sha256": "c1ea6311e7b76a5119f2706cbf931936ac8840db3e1edadb700192dfd1b5a753",
+  "interval_s": [
+    2,
+    40.0
+  ],
+  "eligible_status_lines": 76,
+  "required_status_lines": 30,
+  "offset_span_ms": 4294967.981775,
+  "allowed_offset_span_ms": 5,
+  "baseline_offset_ms": 7.520500000000084,
+  "result": "fail",
+  "rows": [
+    {
+      "vcd_start_ns": 2094506000,
+      "mcu_ms": 2087,
+      "offset_ms": 7.505999999999858,
+      "wire_idle_us": 486159.0944444444
+    },
+    {
+      "vcd_start_ns": 2594540575,
+      "mcu_ms": 2587,
+      "offset_ms": 7.54057499999999,
+      "wire_idle_us": 486161.94444444444
+    },
+    {
+      "vcd_start_ns": 3094408150,
+      "mcu_ms": 3087,
+      "offset_ms": 7.408150000000205,
+      "wire_idle_us": 485998.5194444447
+    },
+    {
+      "vcd_start_ns": 3594520500,
+      "mcu_ms": 3587,
+      "offset_ms": 7.520500000000084,
+      "wire_idle_us": 486243.19444444467
+    },
+    {
+      "vcd_start_ns": 4093124850,
+      "mcu_ms": 4085,
+      "offset_ms": 8.124850000000151,
+      "wire_idle_us": 484736.79444444465
+    },
+    {
+      "vcd_start_ns": 4594525150,
+      "mcu_ms": 4587,
+      "offset_ms": 7.525150000000394,
+      "wire_idle_us": 486178.24444444466
+    },
+    {
+      "vcd_start_ns": 5093191775,
+      "mcu_ms": 5085,
+      "offset_ms": 8.191775000000234,
+      "wire_idle_us": 484798.06944444467
+    },
+    {
+      "vcd_start_ns": 5594539050,
+      "mcu_ms": 5587,
+      "offset_ms": 7.539050000000316,
+      "wire_idle_us": 486183.66944444465
+    },
+    {
+      "vcd_start_ns": 6094487925,
+      "mcu_ms": 6087,
+      "offset_ms": 7.487925000000359,
+      "wire_idle_us": 486082.81944444467
+    },
+    {
+      "vcd_start_ns": 6594522225,
+      "mcu_ms": 6587,
+      "offset_ms": 7.5222249999997075,
+      "wire_idle_us": 486162.54444444465
+    },
+    {
+      "vcd_start_ns": 7093125600,
+      "mcu_ms": 7085,
+      "offset_ms": 8.125600000000304,
+      "wire_idle_us": 484737.6444444447
+    },
+    {
+      "vcd_start_ns": 7594525400,
+      "mcu_ms": 7587,
+      "offset_ms": 7.525400000000445,
+      "wire_idle_us": 486181.19444444467
+    },
+    {
+      "vcd_start_ns": 8093191775,
+      "mcu_ms": 8085,
+      "offset_ms": 8.191775000000234,
+      "wire_idle_us": 484796.56944444467
+    },
+    {
+      "vcd_start_ns": 8594544800,
+      "mcu_ms": 8587,
+      "offset_ms": 7.544799999999668,
+      "wire_idle_us": 486185.91944444465
+    },
+    {
+      "vcd_start_ns": 9093185925,
+      "mcu_ms": 9085,
+      "offset_ms": 8.18592499999977,
+      "wire_idle_us": 484776.81944444467
+    },
+    {
+      "vcd_start_ns": 9594532975,
+      "mcu_ms": 9587,
+      "offset_ms": 7.532975000000079,
+      "wire_idle_us": 486182.66944444465
+    },
+    {
+      "vcd_start_ns": 10094546800,
+      "mcu_ms": 10087,
+      "offset_ms": 7.546800000000076,
+      "wire_idle_us": 486150.0194444447
+    },
+    {
+      "vcd_start_ns": 10594552150,
+      "mcu_ms": 10587,
+      "offset_ms": 7.5521499999995285,
+      "wire_idle_us": 486047.3944444447
+    },
+    {
+      "vcd_start_ns": 11094507725,
+      "mcu_ms": 11087,
+      "offset_ms": 7.507724999999482,
+      "wire_idle_us": 485997.86944444466
+    },
+    {
+      "vcd_start_ns": 11594538300,
+      "mcu_ms": 11587,
+      "offset_ms": 7.538300000000163,
+      "wire_idle_us": 486075.11944444466
+    },
+    {
+      "vcd_start_ns": 12094531400,
+      "mcu_ms": 12087,
+      "offset_ms": 7.531399999999849,
+      "wire_idle_us": 486032.71944444464
+    },
+    {
+      "vcd_start_ns": 12594421475,
+      "mcu_ms": 12587,
+      "offset_ms": 7.421474999999191,
+      "wire_idle_us": 485934.61944444466
+    },
+    {
+      "vcd_start_ns": 13094413050,
+      "mcu_ms": 13087,
+      "offset_ms": 7.4130499999992026,
+      "wire_idle_us": 486035.61944444466
+    },
+    {
+      "vcd_start_ns": 13594564650,
+      "mcu_ms": 13587,
+      "offset_ms": 7.564650000000256,
+      "wire_idle_us": 486197.1444444447
+    },
+    {
+      "vcd_start_ns": 14094546275,
+      "mcu_ms": 14087,
+      "offset_ms": 7.546275000000605,
+      "wire_idle_us": 486023.66944444465
+    },
+    {
+      "vcd_start_ns": 14594511050,
+      "mcu_ms": 14587,
+      "offset_ms": 7.511049999999159,
+      "wire_idle_us": 486007.56944444467
+    },
+    {
+      "vcd_start_ns": 15093136175,
+      "mcu_ms": 15085,
+      "offset_ms": 8.13617499999964,
+      "wire_idle_us": 484668.16944444465
+    },
+    {
+      "vcd_start_ns": 15594545725,
+      "mcu_ms": 15587,
+      "offset_ms": 7.545724999999948,
+      "wire_idle_us": 486097.2694444447
+    },
+    {
+      "vcd_start_ns": 16094528550,
+      "mcu_ms": 16087,
+      "offset_ms": 7.528550000000905,
+      "wire_idle_us": 486022.36944444466
+    },
+    {
+      "vcd_start_ns": 16594520900,
+      "mcu_ms": 16587,
+      "offset_ms": 7.5208999999995285,
+      "wire_idle_us": 486037.16944444465
+    },
+    {
+      "vcd_start_ns": 17094517725,
+      "mcu_ms": 17087,
+      "offset_ms": 7.517725000001519,
+      "wire_idle_us": 486039.61944444466
+    },
+    {
+      "vcd_start_ns": 17594563050,
+      "mcu_ms": 17587,
+      "offset_ms": 7.563050000000658,
+      "wire_idle_us": 486088.86944444466
+    },
+    {
+      "vcd_start_ns": 18094561400,
+      "mcu_ms": 18087,
+      "offset_ms": 7.5613999999986845,
+      "wire_idle_us": 486040.39444444276
+    },
+    {
+      "vcd_start_ns": 18594572725,
+      "mcu_ms": 18587,
+      "offset_ms": 7.57272500000181,
+      "wire_idle_us": 486053.36944444274
+    },
+    {
+      "vcd_start_ns": 19093211100,
+      "mcu_ms": 19085,
+      "offset_ms": 8.211100000000442,
+      "wire_idle_us": 484680.9194444427
+    },
+    {
+      "vcd_start_ns": 19593204675,
+      "mcu_ms": 19585,
+      "offset_ms": 8.204675000000861,
+      "wire_idle_us": 484743.0444444427
+    },
+    {
+      "vcd_start_ns": 20094581725,
+      "mcu_ms": 20087,
+      "offset_ms": 7.581725000000006,
+      "wire_idle_us": 486122.61944444274
+    },
+    {
+      "vcd_start_ns": 20593145600,
+      "mcu_ms": 20585,
+      "offset_ms": 8.145599999999831,
+      "wire_idle_us": 484606.1694444427
+    },
+    {
+      "vcd_start_ns": 21094578650,
+      "mcu_ms": 21087,
+      "offset_ms": 7.57864999999947,
+      "wire_idle_us": 486128.86944444274
+    },
+    {
+      "vcd_start_ns": 21594660975,
+      "mcu_ms": 4316554,
+      "offset_ms": -4294959.339025,
+      "wire_idle_us": 486122.61944444274
+    },
+    {
+      "vcd_start_ns": 22094647300,
+      "mcu_ms": 4317054,
+      "offset_ms": -4294959.3527,
+      "wire_idle_us": 485850.39444444276
+    },
+    {
+      "vcd_start_ns": 22594655150,
+      "mcu_ms": 4317554,
+      "offset_ms": -4294959.34485,
+      "wire_idle_us": 485872.39444444276
+    },
+    {
+      "vcd_start_ns": 23094645475,
+      "mcu_ms": 4318054,
+      "offset_ms": -4294959.354525,
+      "wire_idle_us": 485854.64444444276
+    },
+    {
+      "vcd_start_ns": 23593233075,
+      "mcu_ms": 4318553,
+      "offset_ms": -4294959.766925,
+      "wire_idle_us": 484452.4194444427
+    },
+    {
+      "vcd_start_ns": 24094519400,
+      "mcu_ms": 4319054,
+      "offset_ms": -4294959.4806,
+      "wire_idle_us": 485800.56944444275
+    },
+    {
+      "vcd_start_ns": 24594649475,
+      "mcu_ms": 4319554,
+      "offset_ms": -4294959.350525,
+      "wire_idle_us": 485993.7944444427
+    },
+    {
+      "vcd_start_ns": 25093229325,
+      "mcu_ms": 4320053,
+      "offset_ms": -4294959.770675,
+      "wire_idle_us": 484445.44444444275
+    },
+    {
+      "vcd_start_ns": 25594624150,
+      "mcu_ms": 4320554,
+      "offset_ms": -4294959.37585,
+      "wire_idle_us": 485910.56944444275
+    },
+    {
+      "vcd_start_ns": 26093236750,
+      "mcu_ms": 4321053,
+      "offset_ms": -4294959.76325,
+      "wire_idle_us": 484477.19444444275
+    },
+    {
+      "vcd_start_ns": 26594625300,
+      "mcu_ms": 4321554,
+      "offset_ms": -4294959.3747,
+      "wire_idle_us": 485907.14444444276
+    },
+    {
+      "vcd_start_ns": 27094660400,
+      "mcu_ms": 4322054,
+      "offset_ms": -4294959.3396,
+      "wire_idle_us": 485899.9194444427
+    },
+    {
+      "vcd_start_ns": 27594643975,
+      "mcu_ms": 4322554,
+      "offset_ms": -4294959.356025,
+      "wire_idle_us": 485847.9694444428
+    },
+    {
+      "vcd_start_ns": 28094602300,
+      "mcu_ms": 4323054,
+      "offset_ms": -4294959.3977,
+      "wire_idle_us": 485818.9694444428
+    },
+    {
+      "vcd_start_ns": 28594627400,
+      "mcu_ms": 4323554,
+      "offset_ms": -4294959.3726,
+      "wire_idle_us": 485890.4194444427
+    },
+    {
+      "vcd_start_ns": 29094650975,
+      "mcu_ms": 4324054,
+      "offset_ms": -4294959.349025,
+      "wire_idle_us": 485889.19444444275
+    },
+    {
+      "vcd_start_ns": 29593235575,
+      "mcu_ms": 4324553,
+      "offset_ms": -4294959.764425,
+      "wire_idle_us": 484445.8444444428
+    },
+    {
+      "vcd_start_ns": 30093290925,
+      "mcu_ms": 4325053,
+      "offset_ms": -4294959.709075,
+      "wire_idle_us": 484574.11944444274
+    },
+    {
+      "vcd_start_ns": 30594519475,
+      "mcu_ms": 4325554,
+      "offset_ms": -4294959.480525,
+      "wire_idle_us": 485800.1694444427
+    },
+    {
+      "vcd_start_ns": 31094637050,
+      "mcu_ms": 4326054,
+      "offset_ms": -4294959.36295,
+      "wire_idle_us": 485982.31944444275
+    },
+    {
+      "vcd_start_ns": 31594624150,
+      "mcu_ms": 4326554,
+      "offset_ms": -4294959.37585,
+      "wire_idle_us": 485852.8444444428
+    },
+    {
+      "vcd_start_ns": 32094592975,
+      "mcu_ms": 4327054,
+      "offset_ms": -4294959.407025,
+      "wire_idle_us": 485833.06944444275
+    },
+    {
+      "vcd_start_ns": 32594623800,
+      "mcu_ms": 4327554,
+      "offset_ms": -4294959.3762,
+      "wire_idle_us": 485896.81944444275
+    },
+    {
+      "vcd_start_ns": 33094649900,
+      "mcu_ms": 4328054,
+      "offset_ms": -4294959.3501,
+      "wire_idle_us": 485889.8444444428
+    },
+    {
+      "vcd_start_ns": 33594651225,
+      "mcu_ms": 4328554,
+      "offset_ms": -4294959.348775,
+      "wire_idle_us": 485862.5944444428
+    },
+    {
+      "vcd_start_ns": 34093289825,
+      "mcu_ms": 4329053,
+      "offset_ms": -4294959.710175,
+      "wire_idle_us": 484502.5944444428
+    },
+    {
+      "vcd_start_ns": 34594626400,
+      "mcu_ms": 4329554,
+      "offset_ms": -4294959.3736,
+      "wire_idle_us": 485908.0944444428
+    },
+    {
+      "vcd_start_ns": 35094505725,
+      "mcu_ms": 4330054,
+      "offset_ms": -4294959.494275,
+      "wire_idle_us": 485741.81944444275
+    },
+    {
+      "vcd_start_ns": 35594643550,
+      "mcu_ms": 4330554,
+      "offset_ms": -4294959.35645,
+      "wire_idle_us": 486002.56944444275
+    },
+    {
+      "vcd_start_ns": 36094511400,
+      "mcu_ms": 4331054,
+      "offset_ms": -4294959.4886,
+      "wire_idle_us": 485731.5944444428
+    },
+    {
+      "vcd_start_ns": 36594649475,
+      "mcu_ms": 4331554,
+      "offset_ms": -4294959.350525,
+      "wire_idle_us": 486003.56944444275
+    },
+    {
+      "vcd_start_ns": 37094614550,
+      "mcu_ms": 4332054,
+      "offset_ms": -4294959.38545,
+      "wire_idle_us": 485829.64444444276
+    },
+    {
+      "vcd_start_ns": 37594654400,
+      "mcu_ms": 4332554,
+      "offset_ms": -4294959.3456,
+      "wire_idle_us": 485899.6694444427
+    },
+    {
+      "vcd_start_ns": 38094613225,
+      "mcu_ms": 4333054,
+      "offset_ms": -4294959.386775,
+      "wire_idle_us": 485823.56944444275
+    },
+    {
+      "vcd_start_ns": 38593229825,
+      "mcu_ms": 4333553,
+      "offset_ms": -4294959.770175,
+      "wire_idle_us": 484480.8444444428
+    },
+    {
+      "vcd_start_ns": 39094629650,
+      "mcu_ms": 4334054,
+      "offset_ms": -4294959.37035,
+      "wire_idle_us": 485916.64444444276
+    },
+    {
+      "vcd_start_ns": 39594511225,
+      "mcu_ms": 4334554,
+      "offset_ms": -4294959.488775,
+      "wire_idle_us": 485745.31944444275
+    }
+  ],
+  "scope": "Digital-model VCD only. Requires quiet UART and no MCU reset/ms wrap within this interval. No inference of physical HSI accuracy, clock polling bound outside the capture, or MCU-hour completion."
+}

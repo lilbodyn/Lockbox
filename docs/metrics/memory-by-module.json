@@ -1,0 +1,1967 @@
+{
+  "source_manifest": "2c6940d3488ab256ec28e1f7bbb80b203387037b5eb7099d2299946f067a6d79",
+  "module_retained_input_sections": {
+    "analog.o": {
+      "flash_bytes": 60,
+      "ram_bytes": 0
+    },
+    "archive.o": {
+      "flash_bytes": 1534,
+      "ram_bytes": 0
+    },
+    "board_io.o": {
+      "flash_bytes": 820,
+      "ram_bytes": 100
+    },
+    "commands.o": {
+      "flash_bytes": 377,
+      "ram_bytes": 0
+    },
+    "crtbegin.o": {
+      "flash_bytes": 160,
+      "ram_bytes": 28
+    },
+    "crti.o": {
+      "flash_bytes": 8,
+      "ram_bytes": 0
+    },
+    "crtn.o": {
+      "flash_bytes": 16,
+      "ram_bytes": 0
+    },
+    "flash_archive.o": {
+      "flash_bytes": 1078,
+      "ram_bytes": 0
+    },
+    "guard.o": {
+      "flash_bytes": 1806,
+      "ram_bytes": 0
+    },
+    "libc/libgcc": {
+      "flash_bytes": 5380,
+      "ram_bytes": 112
+    },
+    "main.o": {
+      "flash_bytes": 440,
+      "ram_bytes": 220
+    },
+    "mpu6050.o": {
+      "flash_bytes": 389,
+      "ram_bytes": 0
+    },
+    "perf.o": {
+      "flash_bytes": 1562,
+      "ram_bytes": 305
+    },
+    "releases.o": {
+      "flash_bytes": 374,
+      "ram_bytes": 0
+    },
+    "runtime.o": {
+      "flash_bytes": 4503,
+      "ram_bytes": 1879
+    },
+    "serial.o": {
+      "flash_bytes": 572,
+      "ram_bytes": 4769
+    },
+    "startup_stm32c031xx.o": {
+      "flash_bytes": 274,
+      "ram_bytes": 0
+    },
+    "stm32c0xx_hal.o": {
+      "flash_bytes": 156,
+      "ram_bytes": 12
+    },
+    "stm32c0xx_hal_adc.o": {
+      "flash_bytes": 2048,
+      "ram_bytes": 0
+    },
+    "stm32c0xx_hal_adc_ex.o": {
+      "flash_bytes": 304,
+      "ram_bytes": 0
+    },
+    "stm32c0xx_hal_cortex.o": {
+      "flash_bytes": 208,
+      "ram_bytes": 0
+    },
+    "stm32c0xx_hal_flash.o": {
+      "flash_bytes": 368,
+      "ram_bytes": 80
+    },
+    "stm32c0xx_hal_flash_ex.o": {
+      "flash_bytes": 180,
+      "ram_bytes": 0
+    },
+    "stm32c0xx_hal_gpio.o": {
+      "flash_bytes": 538,
+      "ram_bytes": 0
+    },
+    "stm32c0xx_hal_i2c.o": {
+      "flash_bytes": 204,
+      "ram_bytes": 0
+    },
+    "stm32c0xx_hal_i2c_ex.o": {
+      "flash_bytes": 172,
+      "ram_bytes": 0
+    },
+    "stm32c0xx_hal_msp.o": {
+      "flash_bytes": 280,
+      "ram_bytes": 0
+    },
+    "stm32c0xx_hal_rcc.o": {
+      "flash_bytes": 1284,
+      "ram_bytes": 0
+    },
+    "stm32c0xx_hal_rcc_ex.o": {
+      "flash_bytes": 308,
+      "ram_bytes": 0
+    },
+    "stm32c0xx_hal_uart.o": {
+      "flash_bytes": 1160,
+      "ram_bytes": 0
+    },
+    "stm32c0xx_it.o": {
+      "flash_bytes": 44,
+      "ram_bytes": 0
+    },
+    "sysmem.o": {
+      "flash_bytes": 100,
+      "ram_bytes": 4
+    },
+    "system_stm32c0xx.o": {
+      "flash_bytes": 116,
+      "ram_bytes": 4
+    }
+  },
+  "excluded": "linker fill, heap/stack reservations, debug sections, discarded input sections; totals can differ by alignment",
+  "largest_compiler_frames": [
+    {
+      "function": "Board/serial.c:41:6:serial_line",
+      "frame_bytes": 280,
+      "kind": "static"
+    },
+    {
+      "function": "Board/runtime.c:147:6:lockbox_start",
+      "frame_bytes": 128,
+      "kind": "static"
+    },
+    {
+      "function": "Board/runtime.c:75:13:status",
+      "frame_bytes": 112,
+      "kind": "static"
+    },
+    {
+      "function": "Board/runtime.c:84:13:probe",
+      "frame_bytes": 112,
+      "kind": "static"
+    },
+    {
+      "function": "Board/flash_archive.c:13:13:erase_media",
+      "frame_bytes": 96,
+      "kind": "static"
+    },
+    {
+      "function": "Guard/archive.c:106:6:archive_read",
+      "frame_bytes": 88,
+      "kind": "static"
+    },
+    {
+      "function": "Board/perf.c:92:6:perf_release_report",
+      "frame_bytes": 88,
+      "kind": "static"
+    },
+    {
+      "function": "Board/flash_archive.c:48:13:program_media",
+      "frame_bytes": 88,
+      "kind": "static"
+    },
+    {
+      "function": "Board/runtime.c:41:13:print_event",
+      "frame_bytes": 88,
+      "kind": "static"
+    },
+    {
+      "function": "Guard/archive.c:81:6:archive_step",
+      "frame_bytes": 80,
+      "kind": "static"
+    },
+    {
+      "function": "Guard/guard.c:5:13:record",
+      "frame_bytes": 72,
+      "kind": "static"
+    },
+    {
+      "function": "Board/runtime.c:179:13:sample_task",
+      "frame_bytes": 72,
+      "kind": "static"
+    },
+    {
+      "function": "Sensors/mpu6050.c:49:14:mpu6050_read",
+      "frame_bytes": 64,
+      "kind": "static"
+    },
+    {
+      "function": "Core/Src/main.c:253:13:MX_GPIO_Init",
+      "frame_bytes": 64,
+      "kind": "static"
+    },
+    {
+      "function": "Board/perf.c:74:6:perf_report",
+      "frame_bytes": 64,
+      "kind": "static"
+    },
+    {
+      "function": "Core/Src/stm32c0xx_hal_msp.c:85:6:HAL_I2C_MspInit",
+      "frame_bytes": 64,
+      "kind": "static"
+    },
+    {
+      "function": "Board/runtime.c:23:13:archive_status",
+      "frame_bytes": 64,
+      "kind": "static"
+    },
+    {
+      "function": "Board/board_io.c:70:6:board_io_start",
+      "frame_bytes": 64,
+      "kind": "static"
+    },
+    {
+      "function": "Guard/guard.c:121:6:guard_observe",
+      "frame_bytes": 56,
+      "kind": "static"
+    },
+    {
+      "function": "Core/Src/main.c:132:6:SystemClock_Config",
+      "frame_bytes": 56,
+      "kind": "static"
+    },
+    {
+      "function": "Board/runtime.c:198:13:export_step",
+      "frame_bytes": 56,
+      "kind": "static"
+    },
+    {
+      "function": "Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:2373:19:HAL_I2C_Mem_Write",
+      "frame_bytes": 48,
+      "kind": "static"
+    },
+    {
+      "function": "Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:2510:19:HAL_I2C_Mem_Read",
+      "frame_bytes": 48,
+      "kind": "static"
+    },
+    {
+      "function": "Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:2647:19:HAL_I2C_Mem_Write_IT",
+      "frame_bytes": 48,
+      "kind": "static"
+    },
+    {
+      "function": "Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:2741:19:HAL_I2C_Mem_Read_IT",
+      "frame_bytes": 48,
+      "kind": "static"
+    },
+    {
+      "function": "Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:2833:19:HAL_I2C_Mem_Write_DMA",
+      "frame_bytes": 48,
+      "kind": "static"
+    },
+    {
+      "function": "Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:2980:19:HAL_I2C_Mem_Read_DMA",
+      "frame_bytes": 48,
+      "kind": "static"
+    },
+    {
+      "function": "Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:3123:19:HAL_I2C_IsDeviceReady",
+      "frame_bytes": 48,
+      "kind": "static"
+    },
+    {
+      "function": "Guard/guard.c:59:13:calibrate",
+      "frame_bytes": 48,
+      "kind": "static"
+    },
+    {
+      "function": "Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc.c:785:6:HAL_RCC_MCOConfig",
+      "frame_bytes": 48,
+      "kind": "static"
+    }
+  ],
+  "static_stack_limit": "Per-function compiler frames only. Prebuilt newlib/libgcc do not provide .su; do not claim a complete call-chain bound.",
+  "input_sections": [
+    {
+      "section": ".isr_vector",
+      "address": "0x8000000",
+      "size": 192,
+      "object": "build/startup_stm32c031xx.o"
+    },
+    {
+      "section": ".text",
+      "address": "0x80000c0",
+      "size": 152,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o"
+    },
+    {
+      "section": ".text",
+      "address": "0x8000158",
+      "size": 12,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-errno.o)"
+    },
+    {
+      "section": ".text",
+      "address": "0x8000164",
+      "size": 68,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)"
+    },
+    {
+      "section": ".text",
+      "address": "0x80001a8",
+      "size": 72,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcmp.o)"
+    },
+    {
+      "section": ".text",
+      "address": "0x80001f0",
+      "size": 164,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)"
+    },
+    {
+      "section": ".text",
+      "address": "0x8000294",
+      "size": 168,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)"
+    },
+    {
+      "section": ".text",
+      "address": "0x800033c",
+      "size": 136,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-strcmp.o)"
+    },
+    {
+      "section": ".text",
+      "address": "0x80003c4",
+      "size": 220,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-vsnprintf.o)"
+    },
+    {
+      "section": ".text",
+      "address": "0x80004a0",
+      "size": 1064,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-svfprintf.o)"
+    },
+    {
+      "section": ".text",
+      "address": "0x80008c8",
+      "size": 964,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf_i.o)"
+    },
+    {
+      "section": ".text",
+      "address": "0x8000c8c",
+      "size": 116,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memchr-stub.o)"
+    },
+    {
+      "section": ".text",
+      "address": "0x8000d00",
+      "size": 172,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memmove.o)"
+    },
+    {
+      "section": ".text",
+      "address": "0x8000dac",
+      "size": 192,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-freer.o)"
+    },
+    {
+      "section": ".text",
+      "address": "0x8000e6c",
+      "size": 196,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)"
+    },
+    {
+      "section": ".text",
+      "address": "0x8000f30",
+      "size": 80,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-reallocr.o)"
+    },
+    {
+      "section": ".text",
+      "address": "0x8000f80",
+      "size": 36,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-sbrkr.o)"
+    },
+    {
+      "section": ".text",
+      "address": "0x8000fa4",
+      "size": 8,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-mlock.o)"
+    },
+    {
+      "section": ".text",
+      "address": "0x8000fac",
+      "size": 20,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-msizer.o)"
+    },
+    {
+      "section": ".text",
+      "address": "0x8000fc0",
+      "size": 276,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)"
+    },
+    {
+      "section": ".text",
+      "address": "0x80010d4",
+      "size": 468,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)"
+    },
+    {
+      "section": ".text",
+      "address": "0x80012a8",
+      "size": 4,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)"
+    },
+    {
+      "section": ".text",
+      "address": "0x80012ac",
+      "size": 64,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o)"
+    },
+    {
+      "section": ".text",
+      "address": "0x80012ec",
+      "size": 92,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_muldi3.o)"
+    },
+    {
+      "section": ".text",
+      "address": "0x8001348",
+      "size": 408,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)"
+    },
+    {
+      "section": ".text",
+      "address": "0x80014e0",
+      "size": 24,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzdi2.o)"
+    },
+    {
+      "section": ".text",
+      "address": "0x80014f8",
+      "size": 60,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)"
+    },
+    {
+      "section": ".text.MX_GPIO_Init",
+      "address": "0x8001534",
+      "size": 168,
+      "object": "build/main.o"
+    },
+    {
+      "section": ".text.Error_Handler",
+      "address": "0x80015dc",
+      "size": 4,
+      "object": "build/main.o"
+    },
+    {
+      "section": ".text.MX_I2C1_Init",
+      "address": "0x80015e0",
+      "size": 88,
+      "object": "build/main.o"
+    },
+    {
+      "section": ".text.MX_USART2_UART_Init",
+      "address": "0x8001638",
+      "size": 60,
+      "object": "build/main.o"
+    },
+    {
+      "section": ".text.SystemClock_Config",
+      "address": "0x8001674",
+      "size": 84,
+      "object": "build/main.o"
+    },
+    {
+      "section": ".text.main",
+      "address": "0x80016c8",
+      "size": 36,
+      "object": "build/main.o"
+    },
+    {
+      "section": ".text.byte_settle",
+      "address": "0x80016ec",
+      "size": 48,
+      "object": "build/board_io.o"
+    },
+    {
+      "section": ".text.wait_flag",
+      "address": "0x800171c",
+      "size": 64,
+      "object": "build/board_io.o"
+    },
+    {
+      "section": ".text.transfer",
+      "address": "0x800175c",
+      "size": 200,
+      "object": "build/board_io.o"
+    },
+    {
+      "section": ".text.register_write",
+      "address": "0x8001824",
+      "size": 38,
+      "object": "build/board_io.o"
+    },
+    {
+      "section": ".text.register_read",
+      "address": "0x800184a",
+      "size": 46,
+      "object": "build/board_io.o"
+    },
+    {
+      "section": ".text.board_register_bus",
+      "address": "0x8001878",
+      "size": 16,
+      "object": "build/board_io.o"
+    },
+    {
+      "section": ".text.board_adc_read",
+      "address": "0x8001888",
+      "size": 88,
+      "object": "build/board_io.o"
+    },
+    {
+      "section": ".text.board_button_pressed",
+      "address": "0x80018e0",
+      "size": 20,
+      "object": "build/board_io.o"
+    },
+    {
+      "section": ".text.board_pir_level",
+      "address": "0x80018f4",
+      "size": 24,
+      "object": "build/board_io.o"
+    },
+    {
+      "section": ".text.board_alarm",
+      "address": "0x800190c",
+      "size": 20,
+      "object": "build/board_io.o"
+    },
+    {
+      "section": ".text.board_io_start",
+      "address": "0x8001920",
+      "size": 244,
+      "object": "build/board_io.o"
+    },
+    {
+      "section": ".text.archive_status",
+      "address": "0x8001a14",
+      "size": 124,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".text.sample_task",
+      "address": "0x8001a90",
+      "size": 236,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".text.print_event",
+      "address": "0x8001b7c",
+      "size": 136,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".text.on_event",
+      "address": "0x8001c04",
+      "size": 196,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".text.init_releases",
+      "address": "0x8001cc8",
+      "size": 92,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".text.status",
+      "address": "0x8001d24",
+      "size": 164,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".text.probe",
+      "address": "0x8001dc8",
+      "size": 184,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".text.execute",
+      "address": "0x8001e80",
+      "size": 472,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".text.export_step",
+      "address": "0x8002058",
+      "size": 184,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".text.lockbox_start",
+      "address": "0x8002110",
+      "size": 472,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".text.lockbox_poll",
+      "address": "0x80022e8",
+      "size": 608,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".text.perf_paint_stack",
+      "address": "0x8002548",
+      "size": 48,
+      "object": "build/perf.o"
+    },
+    {
+      "section": ".text.perf_stack_used",
+      "address": "0x8002578",
+      "size": 40,
+      "object": "build/perf.o"
+    },
+    {
+      "section": ".text.perf_now",
+      "address": "0x80025a0",
+      "size": 36,
+      "object": "build/perf.o"
+    },
+    {
+      "section": ".text.perf_tick",
+      "address": "0x80025c4",
+      "size": 24,
+      "object": "build/perf.o"
+    },
+    {
+      "section": ".text.perf_ms",
+      "address": "0x80025dc",
+      "size": 20,
+      "object": "build/perf.o"
+    },
+    {
+      "section": ".text.perf_reset",
+      "address": "0x80025f0",
+      "size": 48,
+      "object": "build/perf.o"
+    },
+    {
+      "section": ".text.perf_start",
+      "address": "0x8002620",
+      "size": 124,
+      "object": "build/perf.o"
+    },
+    {
+      "section": ".text.perf_probe",
+      "address": "0x800269c",
+      "size": 48,
+      "object": "build/perf.o"
+    },
+    {
+      "section": ".text.perf_add",
+      "address": "0x80026cc",
+      "size": 132,
+      "object": "build/perf.o"
+    },
+    {
+      "section": ".text.perf_report",
+      "address": "0x8002750",
+      "size": 208,
+      "object": "build/perf.o"
+    },
+    {
+      "section": ".text.perf_release_report",
+      "address": "0x8002820",
+      "size": 108,
+      "object": "build/perf.o"
+    },
+    {
+      "section": ".text.board_edges_start",
+      "address": "0x800288c",
+      "size": 104,
+      "object": "build/perf.o"
+    },
+    {
+      "section": ".text.EXTI0_1_IRQHandler",
+      "address": "0x80028f4",
+      "size": 36,
+      "object": "build/perf.o"
+    },
+    {
+      "section": ".text.board_pir_interrupt",
+      "address": "0x8002918",
+      "size": 44,
+      "object": "build/perf.o"
+    },
+    {
+      "section": ".text.board_edge",
+      "address": "0x8002944",
+      "size": 12,
+      "object": "build/perf.o"
+    },
+    {
+      "section": ".text.read_media",
+      "address": "0x8002950",
+      "size": 48,
+      "object": "build/flash_archive.o"
+    },
+    {
+      "section": ".text.program_media",
+      "address": "0x8002980",
+      "size": 252,
+      "object": "build/flash_archive.o"
+    },
+    {
+      "section": ".text.erase_media",
+      "address": "0x8002a7c",
+      "size": 256,
+      "object": "build/flash_archive.o"
+    },
+    {
+      "section": ".text.board_archive_media",
+      "address": "0x8002b7c",
+      "size": 20,
+      "object": "build/flash_archive.o"
+    },
+    {
+      "section": ".text.translate",
+      "address": "0x8002b90",
+      "size": 16,
+      "object": "build/mpu6050.o"
+    },
+    {
+      "section": ".text.mpu6050_identify",
+      "address": "0x8002ba0",
+      "size": 54,
+      "object": "build/mpu6050.o"
+    },
+    {
+      "section": ".text.mpu6050_start",
+      "address": "0x8002bd8",
+      "size": 76,
+      "object": "build/mpu6050.o"
+    },
+    {
+      "section": ".text.mpu6050_to_mg",
+      "address": "0x8002c24",
+      "size": 44,
+      "object": "build/mpu6050.o"
+    },
+    {
+      "section": ".text.mpu6050_read",
+      "address": "0x8002c50",
+      "size": 86,
+      "object": "build/mpu6050.o"
+    },
+    {
+      "section": ".text.mpu6050_result_name",
+      "address": "0x8002ca8",
+      "size": 64,
+      "object": "build/mpu6050.o"
+    },
+    {
+      "section": ".text.adc_to_mv",
+      "address": "0x8002ce8",
+      "size": 32,
+      "object": "build/analog.o"
+    },
+    {
+      "section": ".text.median3",
+      "address": "0x8002d08",
+      "size": 28,
+      "object": "build/analog.o"
+    },
+    {
+      "section": ".text.record",
+      "address": "0x8002d24",
+      "size": 170,
+      "object": "build/guard.o"
+    },
+    {
+      "section": ".text.stationary",
+      "address": "0x8002dd0",
+      "size": 172,
+      "object": "build/guard.o"
+    },
+    {
+      "section": ".text.calibrate",
+      "address": "0x8002e7c",
+      "size": 320,
+      "object": "build/guard.o"
+    },
+    {
+      "section": ".text.alarm_reason",
+      "address": "0x8002fbc",
+      "size": 30,
+      "object": "build/guard.o"
+    },
+    {
+      "section": ".text.light_step",
+      "address": "0x8002fda",
+      "size": 264,
+      "object": "build/guard.o"
+    },
+    {
+      "section": ".text.guard_init",
+      "address": "0x80030e2",
+      "size": 30,
+      "object": "build/guard.o"
+    },
+    {
+      "section": ".text.guard_arm",
+      "address": "0x8003100",
+      "size": 32,
+      "object": "build/guard.o"
+    },
+    {
+      "section": ".text.guard_disarm",
+      "address": "0x8003120",
+      "size": 34,
+      "object": "build/guard.o"
+    },
+    {
+      "section": ".text.guard_button",
+      "address": "0x8003142",
+      "size": 62,
+      "object": "build/guard.o"
+    },
+    {
+      "section": ".text.guard_observe",
+      "address": "0x8003180",
+      "size": 396,
+      "object": "build/guard.o"
+    },
+    {
+      "section": ".text.guard_journal_at",
+      "address": "0x800330c",
+      "size": 46,
+      "object": "build/guard.o"
+    },
+    {
+      "section": ".text.guard_mode_name",
+      "address": "0x800333c",
+      "size": 12,
+      "object": "build/guard.o"
+    },
+    {
+      "section": ".text.guard_event_name",
+      "address": "0x8003348",
+      "size": 12,
+      "object": "build/guard.o"
+    },
+    {
+      "section": ".text.command_feed",
+      "address": "0x8003354",
+      "size": 144,
+      "object": "build/commands.o"
+    },
+    {
+      "section": ".text.get",
+      "address": "0x80033e4",
+      "size": 24,
+      "object": "build/archive.o"
+    },
+    {
+      "section": ".text.put",
+      "address": "0x80033fc",
+      "size": 22,
+      "object": "build/archive.o"
+    },
+    {
+      "section": ".text.blank",
+      "address": "0x8003412",
+      "size": 24,
+      "object": "build/archive.o"
+    },
+    {
+      "section": ".text.archive_crc",
+      "address": "0x800342c",
+      "size": 60,
+      "object": "build/archive.o"
+    },
+    {
+      "section": ".text.valid",
+      "address": "0x8003468",
+      "size": 180,
+      "object": "build/archive.o"
+    },
+    {
+      "section": ".text.encode",
+      "address": "0x800351c",
+      "size": 264,
+      "object": "build/archive.o"
+    },
+    {
+      "section": ".text.archive_open",
+      "address": "0x8003624",
+      "size": 334,
+      "object": "build/archive.o"
+    },
+    {
+      "section": ".text.archive_enqueue",
+      "address": "0x8003772",
+      "size": 88,
+      "object": "build/archive.o"
+    },
+    {
+      "section": ".text.archive_step",
+      "address": "0x80037ca",
+      "size": 368,
+      "object": "build/archive.o"
+    },
+    {
+      "section": ".text.archive_read",
+      "address": "0x800393a",
+      "size": 170,
+      "object": "build/archive.o"
+    },
+    {
+      "section": ".text.release_init",
+      "address": "0x80039e4",
+      "size": 28,
+      "object": "build/releases.o"
+    },
+    {
+      "section": ".text.release_due",
+      "address": "0x8003a00",
+      "size": 224,
+      "object": "build/releases.o"
+    },
+    {
+      "section": ".text.release_complete",
+      "address": "0x8003ae0",
+      "size": 24,
+      "object": "build/releases.o"
+    },
+    {
+      "section": ".text.uptime_update",
+      "address": "0x8003af8",
+      "size": 72,
+      "object": "build/releases.o"
+    },
+    {
+      "section": ".text.counter16_update",
+      "address": "0x8003b40",
+      "size": 26,
+      "object": "build/releases.o"
+    },
+    {
+      "section": ".text.serial_start",
+      "address": "0x8003b5c",
+      "size": 36,
+      "object": "build/serial.o"
+    },
+    {
+      "section": ".text.serial_interrupt",
+      "address": "0x8003b80",
+      "size": 168,
+      "object": "build/serial.o"
+    },
+    {
+      "section": ".text.serial_line",
+      "address": "0x8003c28",
+      "size": 124,
+      "object": "build/serial.o"
+    },
+    {
+      "section": ".text.serial_pump",
+      "address": "0x8003ca4",
+      "size": 56,
+      "object": "build/serial.o"
+    },
+    {
+      "section": ".text.serial_receive",
+      "address": "0x8003cdc",
+      "size": 104,
+      "object": "build/serial.o"
+    },
+    {
+      "section": ".text.serial_dropped_lines",
+      "address": "0x8003d44",
+      "size": 12,
+      "object": "build/serial.o"
+    },
+    {
+      "section": ".text.serial_rx_errors",
+      "address": "0x8003d50",
+      "size": 12,
+      "object": "build/serial.o"
+    },
+    {
+      "section": ".text.serial_received_at",
+      "address": "0x8003d5c",
+      "size": 12,
+      "object": "build/serial.o"
+    },
+    {
+      "section": ".text.serial_received_errors",
+      "address": "0x8003d68",
+      "size": 12,
+      "object": "build/serial.o"
+    },
+    {
+      "section": ".text.serial_free",
+      "address": "0x8003d74",
+      "size": 36,
+      "object": "build/serial.o"
+    },
+    {
+      "section": ".text.HAL_ADC_MspInit",
+      "address": "0x8003d98",
+      "size": 2,
+      "object": "build/stm32c0xx_hal_adc.o"
+    },
+    {
+      "section": ".text.HAL_ADC_Init",
+      "address": "0x8003d9c",
+      "size": 616,
+      "object": "build/stm32c0xx_hal_adc.o"
+    },
+    {
+      "section": ".text.HAL_ADC_PollForConversion",
+      "address": "0x8004004",
+      "size": 184,
+      "object": "build/stm32c0xx_hal_adc.o"
+    },
+    {
+      "section": ".text.HAL_ADC_GetValue",
+      "address": "0x80040bc",
+      "size": 6,
+      "object": "build/stm32c0xx_hal_adc.o"
+    },
+    {
+      "section": ".text.HAL_ADC_ConfigChannel",
+      "address": "0x80040c4",
+      "size": 640,
+      "object": "build/stm32c0xx_hal_adc.o"
+    },
+    {
+      "section": ".text.ADC_ConversionStop",
+      "address": "0x8004344",
+      "size": 88,
+      "object": "build/stm32c0xx_hal_adc.o"
+    },
+    {
+      "section": ".text.ADC_Enable",
+      "address": "0x800439c",
+      "size": 200,
+      "object": "build/stm32c0xx_hal_adc.o"
+    },
+    {
+      "section": ".text.HAL_ADC_Start",
+      "address": "0x8004464",
+      "size": 104,
+      "object": "build/stm32c0xx_hal_adc.o"
+    },
+    {
+      "section": ".text.ADC_Disable",
+      "address": "0x80044cc",
+      "size": 140,
+      "object": "build/stm32c0xx_hal_adc.o"
+    },
+    {
+      "section": ".text.HAL_ADC_Stop",
+      "address": "0x8004558",
+      "size": 68,
+      "object": "build/stm32c0xx_hal_adc.o"
+    },
+    {
+      "section": ".text.HAL_ADCEx_Calibration_Start",
+      "address": "0x800459c",
+      "size": 304,
+      "object": "build/stm32c0xx_hal_adc_ex.o"
+    },
+    {
+      "section": ".text.NMI_Handler",
+      "address": "0x80046cc",
+      "size": 2,
+      "object": "build/stm32c0xx_it.o"
+    },
+    {
+      "section": ".text.HardFault_Handler",
+      "address": "0x80046ce",
+      "size": 2,
+      "object": "build/stm32c0xx_it.o"
+    },
+    {
+      "section": ".text.SVC_Handler",
+      "address": "0x80046d0",
+      "size": 2,
+      "object": "build/stm32c0xx_it.o"
+    },
+    {
+      "section": ".text.PendSV_Handler",
+      "address": "0x80046d2",
+      "size": 2,
+      "object": "build/stm32c0xx_it.o"
+    },
+    {
+      "section": ".text.SysTick_Handler",
+      "address": "0x80046d4",
+      "size": 12,
+      "object": "build/stm32c0xx_it.o"
+    },
+    {
+      "section": ".text.EXTI4_15_IRQHandler",
+      "address": "0x80046e0",
+      "size": 16,
+      "object": "build/stm32c0xx_it.o"
+    },
+    {
+      "section": ".text.USART2_IRQHandler",
+      "address": "0x80046f0",
+      "size": 8,
+      "object": "build/stm32c0xx_it.o"
+    },
+    {
+      "section": ".text.HAL_MspInit",
+      "address": "0x80046f8",
+      "size": 48,
+      "object": "build/stm32c0xx_hal_msp.o"
+    },
+    {
+      "section": ".text.HAL_I2C_MspInit",
+      "address": "0x8004728",
+      "size": 136,
+      "object": "build/stm32c0xx_hal_msp.o"
+    },
+    {
+      "section": ".text.HAL_UART_MspInit",
+      "address": "0x80047b0",
+      "size": 96,
+      "object": "build/stm32c0xx_hal_msp.o"
+    },
+    {
+      "section": ".text.lockbox_heap_peak",
+      "address": "0x8004810",
+      "size": 28,
+      "object": "build/sysmem.o"
+    },
+    {
+      "section": ".text._sbrk",
+      "address": "0x800482c",
+      "size": 72,
+      "object": "build/sysmem.o"
+    },
+    {
+      "section": ".text.HAL_InitTick",
+      "address": "0x8004874",
+      "size": 88,
+      "object": "build/stm32c0xx_hal.o"
+    },
+    {
+      "section": ".text.HAL_Init",
+      "address": "0x80048cc",
+      "size": 24,
+      "object": "build/stm32c0xx_hal.o"
+    },
+    {
+      "section": ".text.HAL_IncTick",
+      "address": "0x80048e4",
+      "size": 24,
+      "object": "build/stm32c0xx_hal.o"
+    },
+    {
+      "section": ".text.HAL_GetTick",
+      "address": "0x80048fc",
+      "size": 12,
+      "object": "build/stm32c0xx_hal.o"
+    },
+    {
+      "section": ".text.HAL_NVIC_SetPriority",
+      "address": "0x8004908",
+      "size": 96,
+      "object": "build/stm32c0xx_hal_cortex.o"
+    },
+    {
+      "section": ".text.HAL_NVIC_EnableIRQ",
+      "address": "0x8004968",
+      "size": 24,
+      "object": "build/stm32c0xx_hal_cortex.o"
+    },
+    {
+      "section": ".text.HAL_NVIC_DisableIRQ",
+      "address": "0x8004980",
+      "size": 32,
+      "object": "build/stm32c0xx_hal_cortex.o"
+    },
+    {
+      "section": ".text.HAL_SYSTICK_Config",
+      "address": "0x80049a0",
+      "size": 56,
+      "object": "build/stm32c0xx_hal_cortex.o"
+    },
+    {
+      "section": ".text.HAL_RCC_OscConfig",
+      "address": "0x80049d8",
+      "size": 740,
+      "object": "build/stm32c0xx_hal_rcc.o"
+    },
+    {
+      "section": ".text.HAL_RCC_GetSysClockFreq",
+      "address": "0x8004cbc",
+      "size": 92,
+      "object": "build/stm32c0xx_hal_rcc.o"
+    },
+    {
+      "section": ".text.HAL_RCC_ClockConfig",
+      "address": "0x8004d18",
+      "size": 400,
+      "object": "build/stm32c0xx_hal_rcc.o"
+    },
+    {
+      "section": ".text.HAL_RCC_GetHCLKFreq",
+      "address": "0x8004ea8",
+      "size": 12,
+      "object": "build/stm32c0xx_hal_rcc.o"
+    },
+    {
+      "section": ".text.HAL_RCC_GetPCLK1Freq",
+      "address": "0x8004eb4",
+      "size": 40,
+      "object": "build/stm32c0xx_hal_rcc.o"
+    },
+    {
+      "section": ".text.HAL_RCCEx_PeriphCLKConfig",
+      "address": "0x8004edc",
+      "size": 308,
+      "object": "build/stm32c0xx_hal_rcc_ex.o"
+    },
+    {
+      "section": ".text.FLASH_Program_DoubleWord",
+      "address": "0x8005010",
+      "size": 28,
+      "object": "build/stm32c0xx_hal_flash.o"
+    },
+    {
+      "section": ".text.HAL_FLASH_Unlock",
+      "address": "0x800502c",
+      "size": 48,
+      "object": "build/stm32c0xx_hal_flash.o"
+    },
+    {
+      "section": ".text.HAL_FLASH_Lock",
+      "address": "0x800505c",
+      "size": 32,
+      "object": "build/stm32c0xx_hal_flash.o"
+    },
+    {
+      "section": ".text.HAL_FLASH_GetError",
+      "address": "0x800507c",
+      "size": 12,
+      "object": "build/stm32c0xx_hal_flash.o"
+    },
+    {
+      "section": ".text.FLASH_WaitForLastOperation",
+      "address": "0x8005088",
+      "size": 92,
+      "object": "build/stm32c0xx_hal_flash.o"
+    },
+    {
+      "section": ".text.HAL_FLASH_Program",
+      "address": "0x80050e4",
+      "size": 100,
+      "object": "build/stm32c0xx_hal_flash.o"
+    },
+    {
+      "section": ".text.FLASH_MassErase",
+      "address": "0x8005148",
+      "size": 20,
+      "object": "build/stm32c0xx_hal_flash_ex.o"
+    },
+    {
+      "section": ".text.FLASH_PageErase",
+      "address": "0x800515c",
+      "size": 28,
+      "object": "build/stm32c0xx_hal_flash_ex.o"
+    },
+    {
+      "section": ".text.HAL_FLASHEx_Erase",
+      "address": "0x8005178",
+      "size": 132,
+      "object": "build/stm32c0xx_hal_flash_ex.o"
+    },
+    {
+      "section": ".text.HAL_GPIO_Init",
+      "address": "0x80051fc",
+      "size": 444,
+      "object": "build/stm32c0xx_hal_gpio.o"
+    },
+    {
+      "section": ".text.HAL_GPIO_ReadPin",
+      "address": "0x80053b8",
+      "size": 14,
+      "object": "build/stm32c0xx_hal_gpio.o"
+    },
+    {
+      "section": ".text.HAL_GPIO_WritePin",
+      "address": "0x80053c6",
+      "size": 12,
+      "object": "build/stm32c0xx_hal_gpio.o"
+    },
+    {
+      "section": ".text.HAL_GPIO_TogglePin",
+      "address": "0x80053d2",
+      "size": 16,
+      "object": "build/stm32c0xx_hal_gpio.o"
+    },
+    {
+      "section": ".text.HAL_GPIO_EXTI_Rising_Callback",
+      "address": "0x80053e2",
+      "size": 2,
+      "object": "build/stm32c0xx_hal_gpio.o"
+    },
+    {
+      "section": ".text.HAL_GPIO_EXTI_Falling_Callback",
+      "address": "0x80053e4",
+      "size": 2,
+      "object": "build/stm32c0xx_hal_gpio.o"
+    },
+    {
+      "section": ".text.HAL_GPIO_EXTI_IRQHandler",
+      "address": "0x80053e8",
+      "size": 48,
+      "object": "build/stm32c0xx_hal_gpio.o"
+    },
+    {
+      "section": ".text.HAL_I2C_Init",
+      "address": "0x8005418",
+      "size": 204,
+      "object": "build/stm32c0xx_hal_i2c.o"
+    },
+    {
+      "section": ".text.HAL_I2CEx_ConfigAnalogFilter",
+      "address": "0x80054e4",
+      "size": 88,
+      "object": "build/stm32c0xx_hal_i2c_ex.o"
+    },
+    {
+      "section": ".text.HAL_I2CEx_ConfigDigitalFilter",
+      "address": "0x800553c",
+      "size": 84,
+      "object": "build/stm32c0xx_hal_i2c_ex.o"
+    },
+    {
+      "section": ".text.UART_SetConfig",
+      "address": "0x8005590",
+      "size": 456,
+      "object": "build/stm32c0xx_hal_uart.o"
+    },
+    {
+      "section": ".text.UART_AdvFeatureConfig",
+      "address": "0x8005758",
+      "size": 224,
+      "object": "build/stm32c0xx_hal_uart.o"
+    },
+    {
+      "section": ".text.UART_WaitOnFlagUntilTimeout",
+      "address": "0x8005838",
+      "size": 228,
+      "object": "build/stm32c0xx_hal_uart.o"
+    },
+    {
+      "section": ".text.UART_CheckIdleState",
+      "address": "0x800591c",
+      "size": 116,
+      "object": "build/stm32c0xx_hal_uart.o"
+    },
+    {
+      "section": ".text.HAL_UART_Init",
+      "address": "0x8005990",
+      "size": 112,
+      "object": "build/stm32c0xx_hal_uart.o"
+    },
+    {
+      "section": ".text.SystemInit",
+      "address": "0x8005a00",
+      "size": 16,
+      "object": "build/system_stm32c0xx.o"
+    },
+    {
+      "section": ".text.Reset_Handler",
+      "address": "0x8005a10",
+      "size": 80,
+      "object": "build/startup_stm32c031xx.o"
+    },
+    {
+      "section": ".text.Default_Handler",
+      "address": "0x8005a60",
+      "size": 2,
+      "object": "build/startup_stm32c031xx.o"
+    },
+    {
+      "section": ".init",
+      "address": "0x8005a64",
+      "size": 4,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o"
+    },
+    {
+      "section": ".init",
+      "address": "0x8005a68",
+      "size": 8,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o"
+    },
+    {
+      "section": ".fini",
+      "address": "0x8005a70",
+      "size": 4,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o"
+    },
+    {
+      "section": ".fini",
+      "address": "0x8005a74",
+      "size": 8,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o"
+    },
+    {
+      "section": ".rodata",
+      "address": "0x8005a90",
+      "size": 12,
+      "object": "build/board_io.o"
+    },
+    {
+      "section": ".rodata",
+      "address": "0x8005a9c",
+      "size": 16,
+      "object": "build/flash_archive.o"
+    },
+    {
+      "section": ".rodata",
+      "address": "0x8005aac",
+      "size": 132,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf_i.o)"
+    },
+    {
+      "section": ".rodata.archive_status.str1.4",
+      "address": "0x8005b30",
+      "size": 119,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".rodata.print_event.str1.4",
+      "address": "0x8005ba8",
+      "size": 119,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".rodata.on_event.str1.4",
+      "address": "0x8005c20",
+      "size": 77,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".rodata.status.str1.4",
+      "address": "0x8005c70",
+      "size": 151,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".rodata.probe.str1.4",
+      "address": "0x8005d08",
+      "size": 105,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".rodata.execute.str1.4",
+      "address": "0x8005d74",
+      "size": 448,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".rodata.execute",
+      "address": "0x8005f34",
+      "size": 76,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".rodata.export_step.str1.4",
+      "address": "0x8005f80",
+      "size": 63,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".rodata.lockbox_start.str1.4",
+      "address": "0x8005fc0",
+      "size": 401,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".rodata.lockbox_poll.str1.4",
+      "address": "0x8006154",
+      "size": 56,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".rodata.periods.0",
+      "address": "0x800618c",
+      "size": 20,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".rodata.perf_report.str1.4",
+      "address": "0x80061a0",
+      "size": 273,
+      "object": "build/perf.o"
+    },
+    {
+      "section": ".rodata.perf_release_report.str1.4",
+      "address": "0x80062b4",
+      "size": 141,
+      "object": "build/perf.o"
+    },
+    {
+      "section": ".rodata.str1.4",
+      "address": "0x8006344",
+      "size": 72,
+      "object": "build/perf.o"
+    },
+    {
+      "section": ".rodata.names.0",
+      "address": "0x800638c",
+      "size": 44,
+      "object": "build/perf.o"
+    },
+    {
+      "section": ".rodata.program_media.str1.4",
+      "address": "0x80063b8",
+      "size": 190,
+      "object": "build/flash_archive.o"
+    },
+    {
+      "section": ".rodata.erase_media.str1.4",
+      "address": "0x8006478",
+      "size": 296,
+      "object": "build/flash_archive.o"
+    },
+    {
+      "section": ".rodata.mpu6050_result_name.str1.4",
+      "address": "0x80065a0",
+      "size": 41,
+      "object": "build/mpu6050.o"
+    },
+    {
+      "section": ".rodata.setup.0",
+      "address": "0x80065cc",
+      "size": 8,
+      "object": "build/mpu6050.o"
+    },
+    {
+      "section": ".rodata.str1.4",
+      "address": "0x80065d4",
+      "size": 162,
+      "object": "build/guard.o"
+    },
+    {
+      "section": ".rodata.names.0",
+      "address": "0x8006678",
+      "size": 48,
+      "object": "build/guard.o"
+    },
+    {
+      "section": ".rodata.names.1",
+      "address": "0x80066a8",
+      "size": 16,
+      "object": "build/guard.o"
+    },
+    {
+      "section": ".rodata.str1.4",
+      "address": "0x80066b8",
+      "size": 161,
+      "object": "build/commands.o"
+    },
+    {
+      "section": ".rodata.names.0",
+      "address": "0x800675c",
+      "size": 72,
+      "object": "build/commands.o"
+    },
+    {
+      "section": ".rodata.UARTPrescTable",
+      "address": "0x80067a4",
+      "size": 24,
+      "object": "build/stm32c0xx_hal_uart.o"
+    },
+    {
+      "section": ".rodata.AHBPrescTable",
+      "address": "0x80067bc",
+      "size": 64,
+      "object": "build/system_stm32c0xx.o"
+    },
+    {
+      "section": ".rodata.APBPrescTable",
+      "address": "0x80067fc",
+      "size": 32,
+      "object": "build/system_stm32c0xx.o"
+    },
+    {
+      "section": ".rodata.str1.4",
+      "address": "0x800681c",
+      "size": 19,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-svfprintf.o)"
+    },
+    {
+      "section": ".rodata.str1.4",
+      "address": "0x8006830",
+      "size": 37,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf_i.o)"
+    },
+    {
+      "section": ".ARM.exidx",
+      "address": "0x8006858",
+      "size": 8,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)"
+    },
+    {
+      "section": ".init_array",
+      "address": "0x8006860",
+      "size": 4,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o"
+    },
+    {
+      "section": ".fini_array",
+      "address": "0x8006864",
+      "size": 4,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o"
+    },
+    {
+      "section": ".data",
+      "address": "0x20000000",
+      "size": 100,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)"
+    },
+    {
+      "section": ".data.uwTickFreq",
+      "address": "0x20000064",
+      "size": 4,
+      "object": "build/stm32c0xx_hal.o"
+    },
+    {
+      "section": ".data.uwTickPrio",
+      "address": "0x20000068",
+      "size": 4,
+      "object": "build/stm32c0xx_hal.o"
+    },
+    {
+      "section": ".data.SystemCoreClock",
+      "address": "0x2000006c",
+      "size": 4,
+      "object": "build/system_stm32c0xx.o"
+    },
+    {
+      "section": ".RamFunc",
+      "address": "0x20000070",
+      "size": 56,
+      "object": "build/stm32c0xx_hal_flash.o"
+    },
+    {
+      "section": ".bss",
+      "address": "0x200000a8",
+      "size": 28,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o"
+    },
+    {
+      "section": ".bss",
+      "address": "0x200000c4",
+      "size": 8,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)"
+    },
+    {
+      "section": ".bss",
+      "address": "0x200000cc",
+      "size": 4,
+      "object": "/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-reent.o)"
+    },
+    {
+      "section": ".bss.hi2c1",
+      "address": "0x200000d0",
+      "size": 76,
+      "object": "build/main.o"
+    },
+    {
+      "section": ".bss.huart2",
+      "address": "0x2000011c",
+      "size": 144,
+      "object": "build/main.o"
+    },
+    {
+      "section": ".bss.light_adc",
+      "address": "0x200001ac",
+      "size": 100,
+      "object": "build/board_io.o"
+    },
+    {
+      "section": ".bss.acceleration",
+      "address": "0x20000210",
+      "size": 12,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".bss.adc_ready",
+      "address": "0x2000021c",
+      "size": 1,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".bss.archive",
+      "address": "0x20000220",
+      "size": 368,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".bss.button_dispatch",
+      "address": "0x20000390",
+      "size": 1,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".bss.buttons",
+      "address": "0x20000394",
+      "size": 68,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".bss.export_count",
+      "address": "0x200003d8",
+      "size": 1,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".bss.export_index",
+      "address": "0x200003d9",
+      "size": 1,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".bss.export_ticket",
+      "address": "0x200003dc",
+      "size": 4,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".bss.flash_export",
+      "address": "0x200003e0",
+      "size": 1,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".bss.flash_slot",
+      "address": "0x200003e4",
+      "size": 4,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".bss.guard",
+      "address": "0x200003e8",
+      "size": 640,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".bss.heartbeat",
+      "address": "0x20000668",
+      "size": 68,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".bss.imu",
+      "address": "0x200006ac",
+      "size": 16,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".bss.imu_ready",
+      "address": "0x200006bc",
+      "size": 1,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".bss.input",
+      "address": "0x200006c0",
+      "size": 34,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".bss.light",
+      "address": "0x200006e2",
+      "size": 2,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".bss.reaction_level",
+      "address": "0x200006e4",
+      "size": 1,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".bss.retry",
+      "address": "0x200006e8",
+      "size": 4,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".bss.rx_errors",
+      "address": "0x200006ec",
+      "size": 4,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".bss.sampling",
+      "address": "0x200006f0",
+      "size": 68,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".bss.snapshot",
+      "address": "0x20000734",
+      "size": 512,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".bss.telemetry",
+      "address": "0x20000934",
+      "size": 68,
+      "object": "build/runtime.o"
+    },
+    {
+      "section": ".bss.busy",
+      "address": "0x20000978",
+      "size": 8,
+      "object": "build/perf.o"
+    },
+    {
+      "section": ".bss.clock_started",
+      "address": "0x20000980",
+      "size": 1,
+      "object": "build/perf.o"
+    },
+    {
+      "section": ".bss.clock_ticks",
+      "address": "0x20000984",
+      "size": 8,
+      "object": "build/perf.o"
+    },
+    {
+      "section": ".bss.edge",
+      "address": "0x2000098c",
+      "size": 8,
+      "object": "build/perf.o"
+    },
+    {
+      "section": ".bss.since",
+      "address": "0x20000994",
+      "size": 4,
+      "object": "build/perf.o"
+    },
+    {
+      "section": ".bss.stats",
+      "address": "0x20000998",
+      "size": 264,
+      "object": "build/perf.o"
+    },
+    {
+      "section": ".bss.uptime",
+      "address": "0x20000aa0",
+      "size": 12,
+      "object": "build/perf.o"
+    },
+    {
+      "section": ".bss.discard_rx",
+      "address": "0x20000aac",
+      "size": 1,
+      "object": "build/serial.o"
+    },
+    {
+      "section": ".bss.dropped",
+      "address": "0x20000ab0",
+      "size": 4,
+      "object": "build/serial.o"
+    },
+    {
+      "section": ".bss.head",
+      "address": "0x20000ab4",
+      "size": 4,
+      "object": "build/serial.o"
+    },
+    {
+      "section": ".bss.popped_errors",
+      "address": "0x20000ab8",
+      "size": 4,
+      "object": "build/serial.o"
+    },
+    {
+      "section": ".bss.popped_time",
+      "address": "0x20000abc",
+      "size": 4,
+      "object": "build/serial.o"
+    },
+    {
+      "section": ".bss.queue",
+      "address": "0x20000ac0",
+      "size": 4096,
+      "object": "build/serial.o"
+    },
+    {
+      "section": ".bss.received",
+      "address": "0x20001ac0",
+      "size": 128,
+      "object": "build/serial.o"
+    },
+    {
+      "section": ".bss.received_time",
+      "address": "0x20001b40",
+      "size": 512,
+      "object": "build/serial.o"
+    },
+    {
+      "section": ".bss.rx_errors",
+      "address": "0x20001d40",
+      "size": 4,
+      "object": "build/serial.o"
+    },
+    {
+      "section": ".bss.rx_head",
+      "address": "0x20001d44",
+      "size": 4,
+      "object": "build/serial.o"
+    },
+    {
+      "section": ".bss.rx_tail",
+      "address": "0x20001d48",
+      "size": 4,
+      "object": "build/serial.o"
+    },
+    {
+      "section": ".bss.tail",
+      "address": "0x20001d4c",
+      "size": 4,
+      "object": "build/serial.o"
+    },
+    {
+      "section": ".bss.__sbrk_heap_end",
+      "address": "0x20001d50",
+      "size": 4,
+      "object": "build/sysmem.o"
+    },
+    {
+      "section": ".bss.uwTick",
+      "address": "0x20001d54",
+      "size": 4,
+      "object": "build/stm32c0xx_hal.o"
+    },
+    {
+      "section": ".bss.pFlash",
+      "address": "0x20001d58",
+      "size": 24,
+      "object": "build/stm32c0xx_hal_flash.o"
+    }
+  ]
+}

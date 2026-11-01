@@ -1,0 +1,15 @@
+digraph Lockbox {
+  graph [rankdir=TB, bgcolor="white", pad="0.18", nodesep="0.2", ranksep="0.22"];
+  node [shape=box, fontname="DejaVu Sans", fontsize=16, margin="0.16,0.10", color="#263238"];
+  edge [color="#455a64", arrowsize=0.7];
+  init [label="MCU, TIM3 1 MHz, сенсори,\nscan архіву, OFF", shape=box];
+  rx [label="UART TX + один RX byte\nготова команда"];
+  mode [label="MODE кожні 1 мс\ndebounce 30 мс"];
+  sample [label="Release 20 мс\nIMU → ADC → PIR → Guard"];
+  periodic [label="Release 500 мс\nheartbeat + телеметрія"];
+  store [label="Архів: один doubleword\nабо одне стирання сторінки"];
+  export [label="Експорт одного запису\nза достатнього місця в TX"];
+  measure [label="Метрики циклу\nнаступна ітерація"];
+  init -> rx -> mode -> sample -> periodic -> store -> export -> measure;
+  measure -> rx [constraint=false, label="  super loop", fontname="DejaVu Sans", fontsize=12];
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Lockbox MODE stimulus",
+  "author": "Lockbox test fixture",
+  "pins": ["MODE", "RX"]
+}

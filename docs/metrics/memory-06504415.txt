@@ -1,0 +1,51 @@
+firmware/build/lockbox.elf  :
+section               size        addr
+.isr_vector            192   134217728
+.text                22444   134217920
+.RamFunc                56   134240364
+.rodata               3000   134240420
+.ARM                     8   134243420
+.init_array              4   134243428
+.fini_array              4   134243432
+.data                  112   536870912
+.bss                  7348   536871024
+._user_heap_stack     2564   536878372
+.ARM.attributes         40           0
+.comment                51           0
+.debug_info         152113           0
+.debug_abbrev        24434           0
+.debug_loc           89561           0
+.debug_aranges        4832           0
+.debug_ranges         4656           0
+.debug_line          88380           0
+.debug_str           25060           0
+.debug_frame         11460           0
+Total               436319
+
+
+134219976 00000314 T _printf_common
+134229300 00000320 t calibrate
+134231236 00000334 T archive_open
+536871400 00000368 b archive
+134231658 00000368 T archive_step
+134230072 00000396 T guard_observe
+134236948 00000400 T HAL_RCC_ClockConfig
+134222664 00000406 T __udivmoddi4
+134238188 00000444 T HAL_GPIO_Init
+134225524 00000448 t execute
+134239104 00000456 T UART_SetConfig
+134222036 00000460 T __divsi3
+134226156 00000472 T lockbox_start
+536877812 00000512 b received_time
+536872700 00000512 b snapshot
+134219404 00000572 T _svfiprintf_r
+134219404 00000572 T _svfprintf_r
+134226628 00000584 T lockbox_poll
+134233020 00000616 T HAL_ADC_Init
+134233828 00000640 T HAL_ADC_ConfigChannel
+536871856 00000640 b guard
+134220292 00000648 T _printf_i
+134236116 00000740 T HAL_RCC_OscConfig
+536873588 00004096 b queue
+arm-none-eabi-gcc (15:10.3-2021.07-4) 10.3.1 20210621 (release)
+Linux e1cfb79aded8 6.12.76-linuxkit #1 SMP Thu Jun 18 21:12:39 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux

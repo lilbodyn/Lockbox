@@ -1,0 +1,123 @@
+{
+  "source": "1fe69e83f010d8fe",
+  "decoded_lines": 290,
+  "status_lines": 241,
+  "uptime_jumps": [
+    {
+      "previous": {
+        "vcd_ns": 21094578650,
+        "text": "LB STATUS ms=21087 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0",
+        "ms": 21087
+      },
+      "current": {
+        "vcd_ns": 21594660975,
+        "text": "LB STATUS ms=4316554 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0",
+        "ms": 4316554
+      },
+      "mcu_delta_ms": 4295467,
+      "vcd_delta_ms": 500.082325,
+      "excess_ms": 4294966.917675
+    },
+    {
+      "previous": {
+        "vcd_ns": 117665571200,
+        "text": "LB STATUS ms=4412625 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0",
+        "ms": 4412625
+      },
+      "current": {
+        "vcd_ns": 118165428050,
+        "text": "LB STATUS ms=8708092 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1 records=3 overwritten=0 dropped=0 rx_errors=0",
+        "ms": 8708092
+      },
+      "mcu_delta_ms": 4295467,
+      "vcd_delta_ms": 499.85685,
+      "excess_ms": 4294967.14315
+    }
+  ],
+  "flash_lines": [
+    {
+      "vcd_ns": 45487405275,
+      "text": "LB FLASH op=erase result=VERIFY_FAIL page=1 offset=0 word=0x00000000 sr=0x00000000 cr=0x00000000"
+    }
+  ],
+  "stat_lines": [
+    {
+      "vcd_ns": 103491981925,
+      "text": "LB PERF window_us=58797969 busy_us=5812286 load_permille=73145 stack_used=1188 stack_reserved=2048 heap_peak=0 timer=TIM3_1MHz"
+    },
+    {
+      "vcd_ns": 103515148200,
+      "text": "LB STAT name=rx n=38 min_us=12 avg_us=540 max_us=4732"
+    },
+    {
+      "vcd_ns": 103520553200,
+      "text": "LB STAT name=button n=57983 min_us=49 avg_us=74141 max_us=4294901830"
+    },
+    {
+      "vcd_ns": 103527740625,
+      "text": "LB STAT name=sample n=2939 min_us=244 avg_us=478 max_us=13689"
+    },
+    {
+      "vcd_ns": 103534032825,
+      "text": "LB STAT name=heartbeat n=117 min_us=20 avg_us=40 max_us=44"
+    },
+    {
+      "vcd_ns": 103539972825,
+      "text": "LB STAT name=telemetry n=117 min_us=3196 avg_us=3224 max_us=3265"
+    },
+    {
+      "vcd_ns": 103546720125,
+      "text": "LB STAT name=archive n=1 min_us=1655 avg_us=1655 max_us=1655"
+    },
+    {
+      "vcd_ns": 103552844675,
+      "text": "LB STAT name=export n=0 min_us=0 avg_us=0 max_us=0"
+    },
+    {
+      "vcd_ns": 103558056975,
+      "text": "LB STAT name=loop n=575802 min_us=70 avg_us=67216 max_us=4294901837"
+    },
+    {
+      "vcd_ns": 103565154000,
+      "text": "LB STAT name=button_latency n=0 min_us=0 avg_us=0 max_us=0"
+    },
+    {
+      "vcd_ns": 103571093750,
+      "text": "LB STAT name=pir_latency n=0 min_us=0 avg_us=0 max_us=0"
+    },
+    {
+      "vcd_ns": 103576679300,
+      "text": "LB STAT name=command_latency n=6 min_us=1291 avg_us=3491 max_us=9080"
+    },
+    {
+      "vcd_ns": 103583866475,
+      "text": "LB RELEASE name=sample period_us=20000 late_max_us=3474 missed=0 deadlines=0 jitter_min_us=-3371 jitter_max_us=3335 hist=56,2043,809,30,0,0"
+    },
+    {
+      "vcd_ns": 103597815050,
+      "text": "LB RELEASE name=button period_us=1000 late_max_us=12919 missed=814 deadlines=57 jitter_min_us=-812 jitter_max_us=12879 hist=919,55740,1124,143,56,0"
+    },
+    {
+      "vcd_ns": 103612829075,
+      "text": "LB RELEASE name=heartbeat period_us=500000 late_max_us=3676 missed=0 deadlines=0 jitter_min_us=-3286 jitter_max_us=3669 hist=2,66,37,11,0,0"
+    },
+    {
+      "vcd_ns": 103627118150,
+      "text": "LB RELEASE name=telemetry period_us=500000 late_max_us=1507 missed=0 deadlines=0 jitter_min_us=-1094 jitter_max_us=475 hist=2,68,45,1,0,0"
+    }
+  ],
+  "imu_events": [
+    {
+      "vcd_ns": 45468098600,
+      "text": "LB EVENT seq=1 ms=4340421 type=ARMING mode=CALIBRATING cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1"
+    },
+    {
+      "vcd_ns": 45945941150,
+      "text": "LB EVENT seq=2 ms=4340906 type=ARMED mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1"
+    },
+    {
+      "vcd_ns": 46875708525,
+      "text": "LB EVENT seq=3 ms=4341835 type=IMU_FAULT mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=0 adc_ok=1"
+    }
+  ]
+}

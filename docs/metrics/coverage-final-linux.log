@@ -1,0 +1,103 @@
+make -C tests coverage
+make[1]: Entering directory '/workspace/tests'
+mkdir -p coverage/Linux-aarch64
+rm -f coverage/Linux-aarch64/*.gcda coverage/Linux-aarch64/*.gcno
+cc -std=c11 -Wall -Wextra -Werror -g -I../firmware/Sensors -I../firmware/Guard --coverage /workspace/tests/test_lockbox.c /workspace/firmware/Sensors/mpu6050.c /workspace/firmware/Sensors/analog.c /workspace/firmware/Guard/guard.c /workspace/firmware/Guard/commands.c -o coverage/Linux-aarch64/test_lockbox
+./coverage/Linux-aarch64/test_lockbox
+PASS register order and all bus error positions
+PASS signed acceleration ADC and median
+PASS debounce hold startup and tick wrap
+PASS calibration stability timeout and boundaries
+PASS shock threshold vector latch and disarm
+PASS light threshold persistence glitch drift and invalid data
+PASS concurrent causes PIR fault and recovery
+PASS event snapshots ordering and journal overwrite
+PASS UART grammar overflow and recovery
+PASS actual captured UART acceleration payloads
+cd coverage/Linux-aarch64 && gcov -b -c *.gcno
+File '/workspace/firmware/Sensors/analog.c'
+Lines executed:100.00% of 7
+Branches executed:100.00% of 6
+Taken at least once:100.00% of 6
+No calls
+Creating 'analog.c.gcov'
+
+File '/workspace/firmware/Guard/commands.c'
+Lines executed:100.00% of 15
+Branches executed:100.00% of 14
+Taken at least once:100.00% of 14
+No calls
+Creating 'commands.c.gcov'
+
+File '/workspace/firmware/Guard/guard.c'
+Lines executed:100.00% of 122
+Branches executed:100.00% of 114
+Taken at least once:97.37% of 114
+Calls executed:100.00% of 17
+Creating 'guard.c.gcov'
+
+File '/workspace/firmware/Sensors/mpu6050.c'
+Lines executed:100.00% of 42
+Branches executed:100.00% of 23
+Taken at least once:100.00% of 23
+Calls executed:100.00% of 10
+Creating 'mpu6050.c.gcov'
+
+File '/workspace/tests/test_lockbox.c'
+Lines executed:100.00% of 222
+Branches executed:100.00% of 298
+Taken at least once:63.42% of 298
+Calls executed:66.26% of 243
+Creating 'test_lockbox.c.gcov'
+
+Lines executed:100.00% of 408
+mkdir -p coverage/Linux-aarch64/archive
+rm -f coverage/Linux-aarch64/archive/*.gcda coverage/Linux-aarch64/archive/*.gcno coverage/Linux-aarch64/archive/*.gcov
+cc -std=c11 -Wall -Wextra -Werror -g -I../firmware/Sensors -I../firmware/Guard --coverage /workspace/tests/test_archive.c /workspace/firmware/Guard/archive.c /workspace/firmware/Guard/releases.c /workspace/firmware/Guard/guard.c /workspace/firmware/Guard/commands.c /workspace/firmware/Sensors/analog.c -o coverage/Linux-aarch64/archive/test_archive
+./coverage/Linux-aarch64/archive/test_archive
+PASS Lockbox archive: 200 writes, 65 append cuts, 2113 erase+append cuts, 512 bit corruptions; guard integration; release wrap/deadline/jitter; 3600000 synthetic millisecond releases
+cd coverage/Linux-aarch64/archive && gcov -b -c *.gcno
+File '/workspace/firmware/Sensors/analog.c'
+Lines executed:57.14% of 7
+Branches executed:66.67% of 6
+Taken at least once:33.33% of 6
+No calls
+Creating 'analog.c.gcov'
+
+File '/workspace/firmware/Guard/archive.c'
+Lines executed:100.00% of 82
+Branches executed:100.00% of 90
+Taken at least once:90.00% of 90
+Calls executed:100.00% of 46
+Creating 'archive.c.gcov'
+
+File '/workspace/firmware/Guard/commands.c'
+Lines executed:86.67% of 15
+Branches executed:100.00% of 14
+Taken at least once:71.43% of 14
+No calls
+Creating 'commands.c.gcov'
+
+File '/workspace/firmware/Guard/guard.c'
+Lines executed:72.95% of 122
+Branches executed:84.21% of 114
+Taken at least once:54.39% of 114
+Calls executed:52.94% of 17
+Creating 'guard.c.gcov'
+
+File '/workspace/firmware/Guard/releases.c'
+Lines executed:100.00% of 33
+Branches executed:100.00% of 30
+Taken at least once:96.67% of 30
+No calls
+Creating 'releases.c.gcov'
+
+File '/workspace/tests/test_archive.c'
+Lines executed:100.00% of 132
+Branches executed:100.00% of 260
+Taken at least once:62.31% of 260
+Calls executed:60.22% of 186
+Creating 'test_archive.c.gcov'
+
+Lines executed:90.28% of 391
+make[1]: Leaving directory '/workspace/tests'

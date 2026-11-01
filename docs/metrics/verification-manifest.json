@@ -1,0 +1,54 @@
+{
+  "date_utc": "2026-10-28T20:41:35.421373+00:00",
+  "source_sha256": "2c6940d3488ab256ec28e1f7bbb80b203387037b5eb7099d2299946f067a6d79",
+  "base_git": "4d9a0a0a277720ab26a3d56654547cd7a8acddfd",
+  "branch": "feature/lab-3",
+  "logs": {
+    "host-poll16-macos.log": {
+      "sha256": "ecb09d6310e117bb3f56d0e59ca79bc83ee652174567d01caf6fdfc754cde8f3",
+      "bytes": 1119
+    },
+    "sanitize-poll16-macos.log": {
+      "sha256": "8425b33c4426f32a39c7c7db998f0438c75e4fe93f1d8e8ac4b6552984ad9314",
+      "bytes": 1873
+    },
+    "checks-poll16-linux.log": {
+      "sha256": "dc79f2d126a349550124f9b8070e32453463abb3eef5a07f4fff19ed300fea4e",
+      "bytes": 7633
+    },
+    "arm-build-poll16.log": {
+      "sha256": "cd40b1f9c80c3e37b7a48605294c3f8d521b6194e5fec444cadaaa257c5a4d50",
+      "bytes": 4378
+    },
+    "memory-poll16.txt": {
+      "sha256": "279b60ac6bd742b9cf9064c5e3287875cd9b2d7c0d496f0190341b1d8fcd1f35",
+      "bytes": 1561
+    }
+  },
+  "classification": "macOS/Linux host logic, synthetic raw counter tests and production serial register fixtures passed. Board polling/IRQ sampling and Flash HAL diagnostics ARM-compiled only. New candidate has no MCU validation. Frozen1fe has a negative independent clock/Flash pilot; it is not acceptance.",
+  "commands": [
+    "make test",
+    "make sanitize",
+    "docker run --rm ... lockbox-lab2-build:local make -C firmware all",
+    "docker run --rm ... lockbox-lab2-build:local sh -c \"make test && make sanitize && make coverage\""
+  ],
+  "host_unit_and_tool_hashes": {
+    "tests/fakes/main.h": "15f5f4b3758654dd969375c572589b9ffa4fffaf13cacb59c3f5677730c43589",
+    "tests/fixtures/captured_acceleration.h": "80c6e5bed9941611cea2cecdf4469f43eb8945cacf7b38cf5dc54f797b215dee",
+    "tests/test_archive.c": "de040c096b2ba3caf7c72b6617ec7a417e6c6c55746e88463f8867bf4478df9b",
+    "tests/test_lockbox.c": "da058db9171594e5a7d2956dcc858c07d67f52d2e410d8a9edfee7a97b67ac6e",
+    "tests/test_serial.c": "66cec530fde8907377c83e3340dcc0938600efb492fcb4b3bc7cd1cfc340b39d",
+    "tools/analyze_lab3.py": "a1c858b97560ee6047125ec2e9df3b8751d22a0e563ea9df7fa7fc51105c5ca1",
+    "tools/capture.py": "84597a9cf2e81c03df4598dca29bf0f87a943e4bce44a8cc8d101b560f65989a",
+    "tools/check_clock_vcd.py": "32007fe54f746f925402887239733dc73354cf9222f043e72eb13a2ec1bd462f",
+    "tools/check_layers.py": "1cd675085ad0cd948b8d1df94e72f7cfdc24e93e15a9e78d5c82d582ea6853de",
+    "tools/check_wiring.py": "c5cd8a9bb39f434cbd7c7358aa6f4fde5387ca10aeb8ad4ed7f812c704b8ed1f",
+    "tools/factory_hex.py": "c7ece60be5652f69049c58c9d866c28f5c7a89e95f8bfa7faad81c482bfb49a4",
+    "tools/lab3_scenarios.py": "0e366e9324bc972cb51ca08c4b18f3b76c82af2c0df1e6e6221e3b18a950e157",
+    "tools/memory_lab3.py": "3c39c714f0cb7860ae8b79d168875f4ce2f7bf6a80d076671c6515a311ee11f4",
+    "tools/monitor.py": "630f03ec42dff33dc4cf96411190aea53a6ddc1316dabbc1d8dd31ef4ac697a7",
+    "tools/plot_captures.py": "5582ebc6af43358ea5d439bf17ef043b80674edb9058619d9eaa1326b611ee01",
+    "tools/plot_lab3.py": "6242411406a9e96326c84c4b50c69bb24df9ec1705b8778bcdccb1ec4dd4880e",
+    "tools/stamp_build.py": "10e7a40c24f637e971984790945ac443b658dac91e77559c715a31d7a383110e"
+  }
+}

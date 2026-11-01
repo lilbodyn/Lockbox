@@ -1,0 +1,10 @@
+{
+  "source": "2c6940d3488ab256ec28e1f7bbb80b203387037b5eb7099d2299946f067a6d79",
+  "base": "4d9a0a0a277720ab26a3d56654547cd7a8acddfd",
+  "artifacts": {
+    "lockbox.elf": "20aea63f42aceefb8dc798174a3ddf4624905e6bf081c3d70459eebbcb9ece5d",
+    "lockbox.hex": "a2bae25dd167cd54587dacb868823de2a74deb68d4260a44145d0d2de6098cb2",
+    "lockbox.bin": "41b1b726013551057415f032fce15fb147622e939fea37d971a13ef241cff70d",
+    "lockbox-factory-erased.hex": "8cf7dea5a86d38aa5886634966d6efeaddd140747920ffc6039313fab979a4a3"
+  }
+}

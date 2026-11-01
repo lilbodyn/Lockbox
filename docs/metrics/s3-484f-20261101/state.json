@@ -1,0 +1,13 @@
+{
+  "phase": "FINISHED",
+  "reason": "capture complete; VCD and physical event proof required",
+  "version": true,
+  "help_ack": true,
+  "status_ack": true,
+  "last_mcu_ms": 129780,
+  "max_records_observed": 16,
+  "host_elapsed_s": 121.039228708,
+  "uart_sha256": "2f6a68ee1fa9eecc15e9e65b73c8f517ecf4351a516deb80b4561dd195b5f33e",
+  "command_count": 179,
+  "note": "No S3 pass without >=30 actual overlapping GPIO events in VCD."
+}

@@ -1,0 +1,26 @@
+{
+  "date_utc": "2026-10-28T20:33:37.567853+00:00",
+  "source_sha256": "1fe69e83f010d8fe6e58cd0b48d0b1ab18fb44dddfff956dba014b0ef7eff5d7",
+  "elf_sha256": "d4d048abac3b1f1f2c9919c43a330531bb92f8eef8a7fc8106dcefc41fca4dff",
+  "hex_sha256": "f5950c2dd887de9412b5e716a448735f3f127796d33f372c57fd95fc0cdd6145",
+  "diagram_sha256": "be4493b35b2dcd6e204f461e0f6ee1a8d87c644cb635fba5babfd113f4ddd762",
+  "VCD": {
+    "path": "<LOCAL_HOME>/Projects/university/Study/People/Омельченко Богдан Юрійович/2026-Fall/SP/Lab01/Work/Lockbox/docs/captures/lab3-pilot-1fe-20261028.vcd",
+    "sha256": "c1ea6311e7b76a5119f2706cbf931936ac8840db3e1edadb700192dfd1b5a753",
+    "capture_end_s": 119.942155525
+  },
+  "UART": {
+    "path": "<LOCAL_HOME>/Projects/university/Study/People/Омельченко Богдан Юрійович/2026-Fall/SP/Lab01/Work/Lockbox/docs/metrics/pilot-1fe-20261028-r2/uart.raw",
+    "sha256": "41354e6bb628d8844b7d23d3fb9713f526361838a02f38dd118de86951dec059",
+    "scope": "RFC2217 capture began after boot; independent full boot and later UART decoded from VCD separately"
+  },
+  "stimuli": "Existing fault scenario: help/sample20/disarm/stats reset/arm/imu69/imu68/status/stats/persist. Exact scheduled and sent commands in run.json. No physical button series.",
+  "observations": [
+    "BOOT source confirmed; initial IMU OK and ADC3413.",
+    "Clock gate failed: uptime output grows by roughly one uint32 microsecond period within <120s VCD. Detailed independent analysis pending.",
+    "Flash gate failed: LB FLASH op=erase result=VERIFY_FAIL page=1 offset=0 word=0x00000000 sr=0x00000000 cr=0x00000000; ticket0,failed1. No physical durability conclusion.",
+    "Address fault recorded; successful recovery not established.",
+    "No S1/S2/S3 acceptance or hour claim."
+  ],
+  "capture_stop": "Wokwi Stop exported raw VCD to wokwi.vcd; copied unchanged to docs/captures."
+}

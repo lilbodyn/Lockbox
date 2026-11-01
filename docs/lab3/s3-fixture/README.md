@@ -1,0 +1,9 @@
+# S3 fixture and evidence
+
+This Wokwi-only fixture observes the MCU UART and pulls MODE low for 80 ms when it sees a journal record, then releases it for 450 ms. It generated 40 edges in 40 decoded `LB JOURNAL` groups in the captured run. The 40 GPIO/REACTION timings are Wokwi digital-model measurements, not physical-board measurements. The first fixture used a 160 ms cooldown and produced 40 edges in only 24 groups; its capture is kept separately in Lab03/Work.
+
+The captured firmware was source `484fae964f8e7cb1`; ELF SHA-256 `591c0ee8923ab6f66ceacc4acad3c561a040eec68663a281db92708c3abaa2a1`, HEX SHA-256 `6bdc00688a6d26ef0f7743f005319e3b14fb4e655df73d489e3cd2610d153182`. Copy those exact build outputs as `lockbox.elf` and `lockbox.hex` to a separate working directory together with this fixture. Do not replace existing captures. `mode_stim.chip.wasm` SHA-256 is `4946841fa8aacb6e7190daf0a4ef136a6024a36d38eba32debaa190f7c9ed0bd`.
+
+With the existing Wokwi license, start that workspace in Wokwi with RFC2217 port 4007 free. The collector requires pyserial and a nonexistent output directory and GO file. It verifies VERSION, help/status and an MCU/host clock gate before waiting for a GO file whose contents are `S3 GO 484fae964f8e7cb1`. After collection stop the simulator, save the actual VCD and run `analyze_s3.py` against that file. Preserve raw UART, timing, firmware hashes and VCD; confirm export-group identity independently. The commands and fixture change the device's state and should only run in the intended simulation.
+
+The corrected run: [UART and analyses](../../metrics/s3-484f-20261101/), [VCD](../../captures/lab3-s3-484f-20261101.vcd). Short clock checks yielded 0.545 ms (2–20 s) and 1.451 ms (105–150 s), within the 5 ms short-window tolerance. They do not calibrate a physical clock. Sample sweep intervals were short diagnostic probes, not acceptance-duration tests.

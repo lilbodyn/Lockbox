@@ -1,0 +1,134 @@
+{
+  "analog.o": {
+    "flash_bytes": 60,
+    "ram_bytes": 0
+  },
+  "archive.o": {
+    "flash_bytes": 1534,
+    "ram_bytes": 0
+  },
+  "board_io.o": {
+    "flash_bytes": 820,
+    "ram_bytes": 100
+  },
+  "commands.o": {
+    "flash_bytes": 377,
+    "ram_bytes": 0
+  },
+  "crtbegin.o": {
+    "flash_bytes": 160,
+    "ram_bytes": 28
+  },
+  "crti.o": {
+    "flash_bytes": 8,
+    "ram_bytes": 0
+  },
+  "crtn.o": {
+    "flash_bytes": 16,
+    "ram_bytes": 0
+  },
+  "flash_archive.o": {
+    "flash_bytes": 600,
+    "ram_bytes": 0
+  },
+  "guard.o": {
+    "flash_bytes": 1806,
+    "ram_bytes": 0
+  },
+  "libc/libgcc": {
+    "flash_bytes": 5380,
+    "ram_bytes": 112
+  },
+  "main.o": {
+    "flash_bytes": 440,
+    "ram_bytes": 220
+  },
+  "mpu6050.o": {
+    "flash_bytes": 389,
+    "ram_bytes": 0
+  },
+  "perf.o": {
+    "flash_bytes": 1478,
+    "ram_bytes": 300
+  },
+  "releases.o": {
+    "flash_bytes": 348,
+    "ram_bytes": 0
+  },
+  "runtime.o": {
+    "flash_bytes": 4503,
+    "ram_bytes": 1879
+  },
+  "serial.o": {
+    "flash_bytes": 572,
+    "ram_bytes": 4769
+  },
+  "startup_stm32c031xx.o": {
+    "flash_bytes": 274,
+    "ram_bytes": 0
+  },
+  "stm32c0xx_hal.o": {
+    "flash_bytes": 156,
+    "ram_bytes": 12
+  },
+  "stm32c0xx_hal_adc.o": {
+    "flash_bytes": 2048,
+    "ram_bytes": 0
+  },
+  "stm32c0xx_hal_adc_ex.o": {
+    "flash_bytes": 304,
+    "ram_bytes": 0
+  },
+  "stm32c0xx_hal_cortex.o": {
+    "flash_bytes": 176,
+    "ram_bytes": 0
+  },
+  "stm32c0xx_hal_flash.o": {
+    "flash_bytes": 368,
+    "ram_bytes": 80
+  },
+  "stm32c0xx_hal_flash_ex.o": {
+    "flash_bytes": 180,
+    "ram_bytes": 0
+  },
+  "stm32c0xx_hal_gpio.o": {
+    "flash_bytes": 538,
+    "ram_bytes": 0
+  },
+  "stm32c0xx_hal_i2c.o": {
+    "flash_bytes": 204,
+    "ram_bytes": 0
+  },
+  "stm32c0xx_hal_i2c_ex.o": {
+    "flash_bytes": 172,
+    "ram_bytes": 0
+  },
+  "stm32c0xx_hal_msp.o": {
+    "flash_bytes": 280,
+    "ram_bytes": 0
+  },
+  "stm32c0xx_hal_rcc.o": {
+    "flash_bytes": 1284,
+    "ram_bytes": 0
+  },
+  "stm32c0xx_hal_rcc_ex.o": {
+    "flash_bytes": 308,
+    "ram_bytes": 0
+  },
+  "stm32c0xx_hal_uart.o": {
+    "flash_bytes": 1160,
+    "ram_bytes": 0
+  },
+  "stm32c0xx_it.o": {
+    "flash_bytes": 40,
+    "ram_bytes": 0
+  },
+  "sysmem.o": {
+    "flash_bytes": 100,
+    "ram_bytes": 4
+  },
+  "system_stm32c0xx.o": {
+    "flash_bytes": 116,
+    "ram_bytes": 4
+  }
+}
