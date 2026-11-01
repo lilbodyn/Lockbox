@@ -1,0 +1,250 @@
+LB VERSION base=c7772714dc56 source=diag-cpu-only lab=3
+LB HELP status|arm|disarm|probe|nack|journal|help|imu 68|imu 69|stats|stats reset|persist|history|sample 20/10/5/2/1; LF
+LB COMMAND id=7 rx_us=15013000 done_us=15015000 latency_us=2000
+LB STATUS ms=15087 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=15587 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=15591 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB COMMAND id=1 rx_us=15588000 done_us=15594000 latency_us=6000
+LB STATUS ms=16086 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=16587 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=17087 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=17586 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=18086 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=18586 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=19086 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=19586 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=20086 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=20587 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=21087 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=21587 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=22087 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=22586 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=23086 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=23587 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=24087 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=24587 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=25087 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=25587 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=26087 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=26587 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=27087 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=27587 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=28087 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=28586 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=29087 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=29587 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=30087 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=30586 mode=OFF cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=0 overwritten=0 dropped=0 rx_errors=0
+LB EVENT seq=1 ms=30597 type=ARMING mode=CALIBRATING cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB COMMAND id=2 rx_us=30597000 done_us=30600000 latency_us=3000
+LB FLASH op=erase page=1 hal=0 lock_hal=1 error=0x00000000 failed_page=4294967295 sr=0x00000000 cr_before=0x00000000 cr_after=0x00000000 before=0x00000000 after=0x00000000
+LB PERSIST ticket=0 boot=1 pending=1 lost=0 failures=1 failed=1 recovered=0 corrupt=64 slot=32 phase=1
+LB EVENT seq=2 ms=31087 type=ARMED mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB STATUS ms=31089 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=31586 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=32087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=32587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=33087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=33587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=34087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=34587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=34591 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB COMMAND id=1 rx_us=34589000 done_us=34594000 latency_us=5000
+LB STATUS ms=35087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=35587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=36087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=36587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=37087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=37587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=38087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=38586 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=39087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=39587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=40087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=40587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB JOURNAL count=2 overwritten=0
+LB COMMAND id=6 rx_us=40597000 done_us=40599000 latency_us=2000
+LB RECORD seq=1 ms=30597 type=ARMING mode=CALIBRATING cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB RECORD seq=2 ms=31087 type=ARMED mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB STATUS ms=41087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB JOURNAL count=2 overwritten=0
+LB COMMAND id=6 rx_us=41097000 done_us=41098000 latency_us=1000
+LB RECORD seq=1 ms=30597 type=ARMING mode=CALIBRATING cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB RECORD seq=2 ms=31087 type=ARMED mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB STATUS ms=41587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB JOURNAL count=2 overwritten=0
+LB COMMAND id=6 rx_us=41597000 done_us=41599000 latency_us=2000
+LB RECORD seq=1 ms=30597 type=ARMING mode=CALIBRATING cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB RECORD seq=2 ms=31087 type=ARMED mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB STATUS ms=42087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB JOURNAL count=2 overwritten=0
+LB COMMAND id=6 rx_us=42097000 done_us=42099000 latency_us=2000
+LB RECORD seq=1 ms=30597 type=ARMING mode=CALIBRATING cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB RECORD seq=2 ms=31087 type=ARMED mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB JOURNAL count=2 overwritten=0
+LB COMMAND id=6 rx_us=42581000 done_us=42582000 latency_us=1000
+LB RECORD seq=1 ms=30597 type=ARMING mode=CALIBRATING cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB STATUS ms=42587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB RECORD seq=2 ms=31087 type=ARMED mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB JOURNAL count=2 overwritten=0
+LB COMMAND id=6 rx_us=43081000 done_us=43082000 latency_us=1000
+LB RECORD seq=1 ms=30597 type=ARMING mode=CALIBRATING cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB STATUS ms=43087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB RECORD seq=2 ms=31087 type=ARMED mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB STATUS ms=43587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB JOURNAL count=2 overwritten=0
+LB COMMAND id=6 rx_us=43597000 done_us=43598000 latency_us=1000
+LB RECORD seq=1 ms=30597 type=ARMING mode=CALIBRATING cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB RECORD seq=2 ms=31087 type=ARMED mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB STATUS ms=44087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB JOURNAL count=2 overwritten=0
+LB COMMAND id=6 rx_us=44088000 done_us=44092000 latency_us=4000
+LB RECORD seq=1 ms=30597 type=ARMING mode=CALIBRATING cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB RECORD seq=2 ms=31087 type=ARMED mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB STATUS ms=44587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB JOURNAL count=2 overwritten=0
+LB COMMAND id=6 rx_us=44597000 done_us=44599000 latency_us=2000
+LB RECORD seq=1 ms=30597 type=ARMING mode=CALIBRATING cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB RECORD seq=2 ms=31087 type=ARMED mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB JOURNAL count=2 overwritten=0
+LB COMMAND id=6 rx_us=45081000 done_us=45082000 latency_us=1000
+LB RECORD seq=1 ms=30597 type=ARMING mode=CALIBRATING cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB STATUS ms=45088 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB RECORD seq=2 ms=31087 type=ARMED mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB STATUS ms=45587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB JOURNAL count=2 overwritten=0
+LB COMMAND id=6 rx_us=45588000 done_us=45592000 latency_us=4000
+LB RECORD seq=1 ms=30597 type=ARMING mode=CALIBRATING cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB RECORD seq=2 ms=31087 type=ARMED mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB STATUS ms=46087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB JOURNAL count=2 overwritten=0
+LB COMMAND id=6 rx_us=46097000 done_us=46098000 latency_us=1000
+LB RECORD seq=1 ms=30597 type=ARMING mode=CALIBRATING cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB RECORD seq=2 ms=31087 type=ARMED mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB JOURNAL count=2 overwritten=0
+LB COMMAND id=6 rx_us=46580000 done_us=46581000 latency_us=1000
+LB RECORD seq=1 ms=30597 type=ARMING mode=CALIBRATING cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB RECORD seq=2 ms=31087 type=ARMED mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB STATUS ms=46589 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=47086 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB JOURNAL count=2 overwritten=0
+LB COMMAND id=6 rx_us=47097000 done_us=47098000 latency_us=1000
+LB RECORD seq=1 ms=30597 type=ARMING mode=CALIBRATING cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB RECORD seq=2 ms=31087 type=ARMED mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB STATUS ms=47587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB JOURNAL count=2 overwritten=0
+LB COMMAND id=6 rx_us=47588000 done_us=47592000 latency_us=4000
+LB RECORD seq=1 ms=30597 type=ARMING mode=CALIBRATING cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB RECORD seq=2 ms=31087 type=ARMED mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB STATUS ms=48087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB JOURNAL count=2 overwritten=0
+LB COMMAND id=6 rx_us=48089000 done_us=48092000 latency_us=3000
+LB RECORD seq=1 ms=30597 type=ARMING mode=CALIBRATING cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB RECORD seq=2 ms=31087 type=ARMED mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB STATUS ms=48587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB JOURNAL count=2 overwritten=0
+LB COMMAND id=6 rx_us=48598000 done_us=48599000 latency_us=1000
+LB RECORD seq=1 ms=30597 type=ARMING mode=CALIBRATING cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB RECORD seq=2 ms=31087 type=ARMED mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB JOURNAL count=2 overwritten=0
+LB COMMAND id=6 rx_us=49081000 done_us=49082000 latency_us=1000
+LB RECORD seq=1 ms=30597 type=ARMING mode=CALIBRATING cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB STATUS ms=49087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB RECORD seq=2 ms=31087 type=ARMED mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB STATUS ms=49587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB JOURNAL count=2 overwritten=0
+LB COMMAND id=6 rx_us=49597000 done_us=49598000 latency_us=1000
+LB RECORD seq=1 ms=30597 type=ARMING mode=CALIBRATING cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB RECORD seq=2 ms=31087 type=ARMED mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB STATUS ms=50087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB JOURNAL count=2 overwritten=0
+LB COMMAND id=6 rx_us=50089000 done_us=50092000 latency_us=3000
+LB RECORD seq=1 ms=30597 type=ARMING mode=CALIBRATING cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB RECORD seq=2 ms=31087 type=ARMED mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB JOURNAL count=2 overwritten=0
+LB COMMAND id=6 rx_us=50581000 done_us=50582000 latency_us=1000
+LB RECORD seq=1 ms=30597 type=ARMING mode=CALIBRATING cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB STATUS ms=50587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB RECORD seq=2 ms=31087 type=ARMED mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB JOURNAL count=2 overwritten=0
+LB COMMAND id=6 rx_us=51081000 done_us=51082000 latency_us=1000
+LB RECORD seq=1 ms=30597 type=ARMING mode=CALIBRATING cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB STATUS ms=51088 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB RECORD seq=2 ms=31087 type=ARMED mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB STATUS ms=51587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB JOURNAL count=2 overwritten=0
+LB COMMAND id=6 rx_us=51605000 done_us=51608000 latency_us=3000
+LB RECORD seq=1 ms=30597 type=ARMING mode=CALIBRATING cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB RECORD seq=2 ms=31087 type=ARMED mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB STATUS ms=52087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB JOURNAL count=2 overwritten=0
+LB COMMAND id=6 rx_us=52098000 done_us=52099000 latency_us=1000
+LB RECORD seq=1 ms=30597 type=ARMING mode=CALIBRATING cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB RECORD seq=2 ms=31087 type=ARMED mode=ARMED cause=0 adc=3413 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1
+LB STATUS ms=52587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=53087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=53587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=54087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=54587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB PERF window_us=54598000 stack_used=1188 stack_reserved=2048 heap_peak=0 timer=HAL_SysTick_1ms cpu_load=unavailable subms_wcet=unavailable
+LB CLOCK resolution_us=1000 independent_vcd_check=required masked_ticks=recovery_unavailable
+LB STAT name=rx n=220 min_us=0 avg_us=327 max_us=5000 resolution_us=1000
+LB STAT name=button n=53069 min_us=0 avg_us=0 max_us=1000 resolution_us=1000
+LB STAT name=sample n=2725 min_us=1000 avg_us=1001 max_us=3000 resolution_us=1000
+LB STAT name=heartbeat n=109 min_us=0 avg_us=9 max_us=1000 resolution_us=1000
+LB STAT name=telemetry n=109 min_us=3000 avg_us=3027 max_us=4000 resolution_us=1000
+LB STAT name=archive n=1 min_us=4000 avg_us=4000 max_us=4000 resolution_us=1000
+LB STAT name=export n=48 min_us=2000 avg_us=2604 max_us=3000 resolution_us=1000
+LB STAT name=loop n=591662 min_us=0 avg_us=74 max_us=10000 resolution_us=1000
+LB STAT name=button_latency n=0 min_us=0 avg_us=0 max_us=0 resolution_us=1000
+LB STAT name=pir_latency n=0 min_us=0 avg_us=0 max_us=0 resolution_us=1000
+LB STAT name=command_latency n=28 min_us=1000 avg_us=2107 max_us=6000 resolution_us=1000
+LB RELEASE name=sample period_us=20000 late_max_us=3000 missed=0 deadlines=0 jitter_min_us=-3000 jitter_max_us=3000 hist=2667,0,0,57,0,0
+LB RELEASE name=button period_us=1000 late_max_us=7000 missed=1443 deadlines=7 jitter_min_us=0 jitter_max_us=7000 hist=51969,0,0,1091,8,0
+LB RELEASE name=heartbeat period_us=500000 late_max_us=4000 missed=0 deadlines=0 jitter_min_us=-4000 jitter_max_us=4000 hist=76,0,0,32,0,0
+LB RELEASE name=telemetry period_us=500000 late_max_us=3000 missed=0 deadlines=0 jitter_min_us=-3000 jitter_max_us=3000 hist=78,0,0,30,0,0
+LB PERSIST ticket=0 boot=1 pending=2 lost=0 failures=1 failed=1 recovered=0 corrupt=64 slot=32 phase=1
+LB COMMAND id=10 rx_us=54598000 done_us=54629000 latency_us=31000
+LB STATUS ms=55087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=55587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=56087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=56587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=57087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=57587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=58087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=58587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=58591 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB COMMAND id=1 rx_us=58589000 done_us=58594000 latency_us=5000
+LB STATUS ms=59087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=59587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=60087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=60587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=61087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=61587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=62087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=62587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=63087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=63587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=64087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=64587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=65087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=65587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=66087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=66587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=66591 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB COMMAND id=1 rx_us=66590000 done_us=66594000 latency_us=4000
+LB STATUS ms=67087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=67587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=68086 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=68587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=69087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=69587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=70087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=70587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=71087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=71587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=72087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=72587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=73087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=73587 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0
+LB STATUS ms=74087 mode=ARMED cause=0 adc=3413 mv=2750 ax=0 ay=0 az=1000 pir=0 imu_ok=1 adc_ok=1 records=2 overwritten=0 dropped=0 rx_errors=0

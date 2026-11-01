@@ -1,0 +1,94 @@
+--- a/firmware/Board/runtime.c
++++ b/firmware/Board/runtime.c
+@@ -199,27 +199,26 @@
+ {
+     if (serial_free()<400) return false;
+     if (flash_export) {
+-        guard_event_t e; uint32_t ticket,boot;
++        perf_probe(0,1); guard_event_t e; uint32_t ticket,boot;
+         if (archive_read(&archive,flash_slot++,&e,&ticket,&boot) && ticket<=export_ticket) {
+             serial_line("LB STORED ticket=%lu boot=%lu\r\n",(unsigned long)ticket,(unsigned long)boot);
+             print_event(&guard,&e);
+         }
+         if (flash_slot==ARCHIVE_SLOTS) { flash_export=false; serial_line("LB HISTORY end=1 live_scan=1\r\n"); }
+-        return true;
++        perf_probe(0,0); return true;
+     }
+-    if (export_index<export_count) { print_event(&guard,&snapshot[export_index++]); return true; }
++    if (export_index<export_count) { perf_probe(0,1); print_event(&guard,&snapshot[export_index++]); perf_probe(0,0); return true; }
+     return false;
+ }
+ void lockbox_poll(void)
+ {
+     uint32_t loop=perf_now(),t;
+-    perf_probe(0,1);
+     serial_pump();
+     char byte;
+     uint32_t errors=serial_rx_errors();
+     if (errors!=rx_errors) { rx_errors=errors; input.overflow=true; }
+     if (serial_receive(&byte)) {
+-        t=perf_now();
++        perf_probe(0,1); t=perf_now();
+         errors=serial_received_errors();
+         if (errors!=rx_errors) { rx_errors=errors; input.overflow=true; }
+         command_t command=command_feed(&input,byte);
+@@ -231,35 +230,35 @@
+             serial_line("LB COMMAND id=%u rx_us=%lu done_us=%lu latency_us=%lu\r\n",command,
+                 (unsigned long)received,(unsigned long)done,(unsigned long)(done-received));
+         }
+-        perf_add(PERF_RX,perf_now()-t);
++        perf_add(PERF_RX,perf_now()-t); perf_probe(0,0);
+     }
+     t=perf_now();
+     if (release_due(&buttons,t)) {
+-        button_dispatch=true; guard_button(&guard,board_button_pressed(),perf_ms()); button_dispatch=false;
+-        uint32_t done=perf_now(); perf_add(PERF_BUTTON,done-t); release_complete(&buttons,done);
++        perf_probe(0,1); button_dispatch=true; guard_button(&guard,board_button_pressed(),perf_ms()); button_dispatch=false;
++        uint32_t done=perf_now(); perf_add(PERF_BUTTON,done-t); release_complete(&buttons,done); perf_probe(0,0);
+     }
+     t=perf_now();
+     if (release_due(&sampling,t)) {
+-        perf_probe(1,1); sample_task(); perf_probe(1,0);
+-        uint32_t done=perf_now(); perf_add(PERF_SAMPLE,done-t); release_complete(&sampling,done);
++        perf_probe(0,1); perf_probe(1,1); sample_task(); perf_probe(1,0);
++        uint32_t done=perf_now(); perf_add(PERF_SAMPLE,done-t); release_complete(&sampling,done); perf_probe(0,0);
+     }
+     t=perf_now();
+     if (release_due(&heartbeat,t)) {
+-        HAL_GPIO_TogglePin(Led_GPIO_Port,Led_Pin);
+-        uint32_t done=perf_now(); perf_add(PERF_HEARTBEAT,done-t); release_complete(&heartbeat,done);
++        perf_probe(0,1); HAL_GPIO_TogglePin(Led_GPIO_Port,Led_Pin);
++        uint32_t done=perf_now(); perf_add(PERF_HEARTBEAT,done-t); release_complete(&heartbeat,done); perf_probe(0,0);
+     }
+     t=perf_now();
+     if (release_due(&telemetry,t)) {
+-        status(perf_ms());
+-        uint32_t done=perf_now(); perf_add(PERF_TELEMETRY,done-t); release_complete(&telemetry,done);
++        perf_probe(0,1); status(perf_ms());
++        uint32_t done=perf_now(); perf_add(PERF_TELEMETRY,done-t); release_complete(&telemetry,done); perf_probe(0,0);
+     }
+     if (archive.count && !archive.failed) {
+-        t=perf_now(); perf_probe(3,1); archive_step(&archive); perf_probe(3,0);
++        perf_probe(0,1); t=perf_now(); perf_probe(3,1); archive_step(&archive); perf_probe(3,0);
+         perf_add(PERF_ARCHIVE,perf_now()-t);
+         if (archive.failed) archive_status();
++        perf_probe(0,0);
+     }
+     t=perf_now();
+     if (export_step()) perf_add(PERF_EXPORT,perf_now()-t);
+-    perf_probe(0,0);
+     perf_add(PERF_LOOP,perf_now()-loop);
+ }
+--- a/firmware/Board/serial.c
++++ b/firmware/Board/serial.c
+@@ -59,8 +59,8 @@
+ void serial_pump(void)
+ {
+     if (tail != head && (USART2->ISR & USART_ISR_TXE_TXFNF) != 0) {
+-        USART2->TDR = (uint8_t)queue[tail];
+-        tail = (tail + 1) % sizeof queue;
++        perf_probe(0,1); USART2->TDR = (uint8_t)queue[tail];
++        tail = (tail + 1) % sizeof queue; perf_probe(0,0);
+     }
+ }
+ bool serial_receive(char *byte)

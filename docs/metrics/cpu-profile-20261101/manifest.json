@@ -1,0 +1,9 @@
+{
+  "firmware/build/lockbox.elf": "16fa8699a281f0980540091255bb4e9f94365290a1b8a8df196785e3e719cd33",
+  "firmware/build/lockbox.hex": "b2d51ca9ac521a956045826e81ae568105eeabf5c6d58bef9c0a3fc0a68ec597",
+  "firmware/Board/runtime.c": "238f1c97ff147db5f1cb5cb415271f0101aee830dac4a41e9c40bcce3408c7c3",
+  "firmware/Board/serial.c": "e1cffa425329d3980505f772951d544ec575c1cf67b0828cf4404dde8e01f395",
+  "diagram.json": "0c99c17fc07b176364c01f057fc70e1fad284675448b152a9ebce63d7c4a7a12",
+  "wokwi.toml": "82916a4a7ed815d8b12fd285adc3e8d4ae385267d55ebc806f254a487f0d4128",
+  "collect.py": "d7ed44f8e16c0fcab52e595f29e0515421fa3737d57f0ec8e26658a613e558e7"
+}

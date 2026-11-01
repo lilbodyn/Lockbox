@@ -1,0 +1,2 @@
+uart.raw -text -diff
+firmware/build/lockbox.hex -text -diff

@@ -1,0 +1,56 @@
+{
+  "quiet_off": {
+    "start_s": 2.0,
+    "end_s": 29.628516975,
+    "TASK": {
+      "high_s": 2.714188225,
+      "duration_s": 27.628516975,
+      "pct": 9.823865057454826,
+      "intervals": 37098,
+      "max_interval_us": 4580.75
+    },
+    "SAMPLE": {
+      "high_s": 1.534111775,
+      "duration_s": 27.628516975,
+      "pct": 5.552638878113362,
+      "intervals": 1381,
+      "max_interval_us": 1119.15
+    },
+    "STORE": {
+      "high_s": 0.0,
+      "duration_s": 27.628516975,
+      "pct": 0.0,
+      "intervals": 0,
+      "max_interval_us": null
+    }
+  },
+  "armed_export": {
+    "start_s": 40.626172025,
+    "end_s": 52.1260886,
+    "TASK": {
+      "high_s": 1.3733953,
+      "duration_s": 11.499916575,
+      "pct": 11.942654462256392,
+      "intervals": 22515,
+      "max_interval_us": 3199.75
+    },
+    "SAMPLE": {
+      "high_s": 0.671727625,
+      "duration_s": 11.499916575,
+      "pct": 5.8411521563581426,
+      "intervals": 575,
+      "max_interval_us": 1171.4
+    },
+    "STORE": {
+      "high_s": 0.0,
+      "duration_s": 11.499916575,
+      "pct": 0.0,
+      "intervals": 0,
+      "max_interval_us": null
+    }
+  },
+  "boot": "LB BOOT project=Lockbox lab=3 mode=OFF base=c7772714dc56 source=diag-cpu-only",
+  "sha256": "eda5ac41d0d5e37a944fb4a38a2d01c55fbdd056baa871c8d9adf37785852c21",
+  "journal_headers": 24,
+  "limitations": "Diagnostic copy only; TASK includes active marked foreground sections, synchronous peripheral polling and interrupt time within markers; excludes empty scheduler polls, serial receive pop/empty checks, interrupts outside markers and other instrumentation overhead. UART wire time after return is excluded; changes to probes perturb timing. Not full core utilization, sub-ms WCET, or S2/S3 measurement."
+}
